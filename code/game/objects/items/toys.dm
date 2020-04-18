@@ -1393,3 +1393,11 @@
 
 /obj/item/toy/dummy/GetVoice()
 	return doll_name
+
+//Zeke plushie
+/obj/item/toy/zeke_plushie
+	name = "Zeke Plushie"
+	desc = "Its a greytider with a huge Afro"
+	icon = 'icons/obj/toy.dmi'
+	icon_state = "Zeke"
+
