@@ -1393,3 +1393,22 @@
 
 /obj/item/toy/dummy/GetVoice()
 	return doll_name
+
+//Zeke plushie
+/obj/item/toy/zeke_plushie
+	name = "Zeke Plushie"
+	desc = "Its a greytider with a huge Afro"
+	icon = 'icons/obj/toy.dmi'
+	icon_state = "Zeke"
+/obj/item/toy/shitsec_plushie
+	name = "HoS Plushie"
+	desc = "Thats the Head of Security meanicingly holding a baton"
+	icon = 'icons/obj/toy.dmi'
+	icon_state = "Olaf"
+/obj/item/toy/cloff_plushie
+	name = "Cloff Plushie"
+	desc = "Thats a moth with red wings"
+	icon = 'icons/obj/toy.dmi'
+	icon_state = "Cloff"
+
+

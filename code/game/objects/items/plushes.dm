@@ -31,6 +31,7 @@
 	var/normal_desc
 	//--end of love :'(--
 
+
 /obj/item/toy/plush/Initialize()
 	. = ..()
 	AddComponent(/datum/component/squeak, squeak_override)
@@ -974,3 +975,6 @@
 	icon_state = "maya"
 	item_state = "maya"
 	attack_verb = list("nuked", "arrested", "harmbatonned")
+
+
+
