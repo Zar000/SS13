@@ -13,3 +13,4 @@ Zar0 = Host
 TSaber = Game Master
 Overdrive659 = Game Admin
 FargothUr911 = Trial Admin
+Penwin = Trial Admin
