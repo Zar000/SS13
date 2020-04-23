@@ -331,6 +331,7 @@
 	if(D.materials[MAT_GLASS] && (materials.amount(MAT_GLASS) < (D.materials[MAT_GLASS] * coeff * amount)))
 		return FALSE
 	if(D.materials[MAT_PLASTIC] && (materials.amount(MAT_PLASTIC) < (D.materials[MAT_PLASTIC] * coeff * amount)))
+		return FALSE
 	return TRUE
 
 /obj/machinery/autolathe/proc/get_design_cost(datum/design/D)
