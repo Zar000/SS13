@@ -416,10 +416,10 @@ ROUNDSTART_RACES human
 ## Races that are strictly worse than humans that could probably be turned on without balance concerns
 ROUNDSTART_RACES lizard
 #ROUNDSTART_RACES fly
-#ROUNDSTART_RACES insect
+ROUNDSTART_RACES insect
 ROUNDSTART_RACES plasmaman
 #ROUNDSTART_RACES shadow
-ROUNDSTART_RACES felinid
+#ROUNDSTART_RACES felinid
 
 ## Races that are better than humans in some ways, but worse in others
 #ROUNDSTART_RACES jelly
@@ -442,14 +442,14 @@ ROUNDSTART_RACES felinid
 #ROUNDSTART_RACES agent
 
 ## CITADEL Races
-ROUNDSTART_RACES mammal
-ROUNDSTART_RACES avian
-ROUNDSTART_RACES aquatic
-ROUNDSTART_RACES insect
-ROUNDSTART_RACES xeno
-ROUNDSTART_RACES slimeperson
-ROUNDSTART_RACES guilmon
-ROUNDSTART_RACES ipc
+#ROUNDSTART_RACES mammal
+#ROUNDSTART_RACES avian
+#ROUNDSTART_RACES aquatic
+#ROUNDSTART_RACES insect
+#ROUNDSTART_RACES xeno
+#ROUNDSTART_RACES slimeperson
+#ROUNDSTART_RACES guilmon
+#ROUNDSTART_RACES ipc
 
 ##-------------------------------------------------------------------------------------------
 
@@ -467,7 +467,7 @@ OVERFLOW_CAP -1
 #STARLIGHT
 
 ## Uncomment to bring back old grey suit assistants instead of the now default rainbow colored assistants.
-#GREY_ASSISTANTS
+GREY_ASSISTANTS
 
 ## Midround Antag (aka Mulligan antag) config options ###
 
@@ -552,4 +552,4 @@ ROUNDSTART_TRAITS
 MONKEYCAP 64
 
 ## Uncomment to use TG-style combat
-#DISABLE_STAMBUFFER
+DISABLE_STAMBUFFER
