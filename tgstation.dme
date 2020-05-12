@@ -3082,4 +3082,5 @@
 #include "modular_citadel\code\modules\research\xenobiology\xenobio_camera.dm"
 #include "modular_citadel\code\modules\vehicles\secway.dm"
 #include "modular_citadel\interface\skin.dmf"
+#include "templatestation\code\game\objects\items\plushes.dm"
 // END_INCLUDE
