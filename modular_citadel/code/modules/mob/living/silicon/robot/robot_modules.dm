@@ -1,21 +1,8 @@
-/mob/living/silicon/robot/modules/medihound
-	set_module = /obj/item/robot_module/medihound
-
-/mob/living/silicon/robot/modules/k9
-	set_module = /obj/item/robot_module/k9
-
-/mob/living/silicon/robot/modules/scrubpup
-	set_module = /obj/item/robot_module/scrubpup
-
 /mob/living/silicon/robot/modules/borgi
 	set_module = /obj/item/robot_module/borgi
 
 /mob/living/silicon/robot/proc/get_cit_modules()
 	var/list/modulelist = list()
-	modulelist["MediHound"] = /obj/item/robot_module/medihound
-	if(!CONFIG_GET(flag/disable_secborg))
-		modulelist["Security K-9"] = /obj/item/robot_module/k9
-	modulelist["Scrub Puppy"] = /obj/item/robot_module/scrubpup
 	modulelist["Borgi"] = /obj/item/robot_module/borgi
 	return modulelist
 
@@ -25,154 +12,10 @@
 	var/has_snowflake_deadsprite
 	var/cyborg_pixel_offset
 	var/moduleselect_alternate_icon
-	var/dogborg = FALSE
-
-/obj/item/robot_module/k9
-	name = "Security K-9 Unit"
-	basic_modules = list(
-		/obj/item/restraints/handcuffs/cable/zipties,
-		/obj/item/storage/bag/borgdelivery,
-		/obj/item/dogborg/jaws/big,
-		/obj/item/dogborg/pounce,
-		/obj/item/clothing/mask/gas/sechailer/cyborg,
-		/obj/item/soap/tongue,
-		/obj/item/analyzer/nose,
-		/obj/item/holosign_creator/security,
-		/obj/item/gun/energy/disabler/cyborg,
-		/obj/item/pinpointer/crew)
-	emag_modules = list(/obj/item/gun/energy/laser/cyborg)
-	ratvar_modules = list(/obj/item/clockwork/slab/cyborg/security,
-		/obj/item/clockwork/weapon/ratvarian_spear)
-	cyborg_base_icon = "k9"
-	moduleselect_icon = "k9"
-	moduleselect_alternate_icon = 'modular_citadel/icons/ui/screen_cyborg.dmi'
-	can_be_pushed = FALSE
-	hat_offset = INFINITY
-	sleeper_overlay = "ksleeper"
-	cyborg_icon_override = 'modular_citadel/icons/mob/widerobot.dmi'
-	has_snowflake_deadsprite = TRUE
-	dogborg = TRUE
-	cyborg_pixel_offset = -16
-
-/obj/item/robot_module/k9/do_transform_animation()
-	..()
-	to_chat(loc,"<span class='userdanger'>While you have picked the Security K-9 module, you still have to follow your laws, NOT Space Law. \
-	For Crewsimov, this means you must follow criminals' orders unless there is a law 1 reason not to.</span>")
-
-/obj/item/robot_module/k9/be_transformed_to(obj/item/robot_module/old_module)
-	var/mob/living/silicon/robot/R = loc
-	var/list/sechoundmodels = list("Default")
-	if(R.client && R.client.ckey in list("nezuli"))
-		sechoundmodels += "Alina"
-	var/borg_icon = input(R, "Select an icon!", "Robot Icon", null) as null|anything in sechoundmodels
-	if(!borg_icon)
-		return FALSE
-	switch(borg_icon)
-		if("Default")
-			cyborg_base_icon = "k9"
-			moduleselect_icon = "k9"
-		if("Alina")
-			cyborg_base_icon = "alina-sec"
-			special_light_key = "alina"
-			sleeper_overlay = "alinasleeper"
-	return ..()
-
-/obj/item/robot_module/medihound
-	name = "MediHound"
-	basic_modules = list(
-		/obj/item/dogborg/jaws/small,
-		/obj/item/storage/bag/borgdelivery,
-		/obj/item/analyzer/nose,
-		/obj/item/soap/tongue,
-		/obj/item/extinguisher/mini,
-		/obj/item/healthanalyzer,
-		/obj/item/roller/robo,
-		/obj/item/crowbar/cyborg,
-		/obj/item/borg/apparatus/beaker,
-		/obj/item/reagent_containers/borghypo,
-		/obj/item/twohanded/shockpaddles/cyborg/hound,
-		/obj/item/stack/medical/gauze/cyborg,
-		/obj/item/reagent_containers/syringe,
-		/obj/item/pinpointer/crew,
-		/obj/item/sensor_device)
-	emag_modules = list(/obj/item/dogborg/pounce)
-	ratvar_modules = list(/obj/item/clockwork/slab/cyborg/medical,
-		/obj/item/clockwork/weapon/ratvarian_spear)
-	cyborg_base_icon = "medihound"
-	moduleselect_icon = "medihound"
-	moduleselect_alternate_icon = 'modular_citadel/icons/ui/screen_cyborg.dmi'
-	can_be_pushed = FALSE
-	hat_offset = INFINITY
-	sleeper_overlay = "msleeper"
-	cyborg_icon_override = 'modular_citadel/icons/mob/widerobot.dmi'
-	has_snowflake_deadsprite = TRUE
-	dogborg = TRUE
-	cyborg_pixel_offset = -16
-
-/obj/item/robot_module/medihound/be_transformed_to(obj/item/robot_module/old_module)
-	var/mob/living/silicon/robot/R = loc
-	var/list/medhoundmodels = list("Default", "Dark")
-	if(R.client && R.client.ckey in list("nezuli"))
-		medhoundmodels += "Alina"
-	var/borg_icon = input(R, "Select an icon!", "Robot Icon", null) as null|anything in medhoundmodels
-	if(!borg_icon)
-		return FALSE
-	switch(borg_icon)
-		if("Default")
-			cyborg_base_icon = "medihound"
-		if("Dark")
-			cyborg_base_icon = "medihounddark"
-			sleeper_overlay = "mdsleeper"
-		if("Alina")
-			cyborg_base_icon = "alina-med"
-			special_light_key = "alina"
-			sleeper_overlay = "alinasleeper"
-	return ..()
-
-/obj/item/robot_module/scrubpup
-	name = "Scrub Pup"
-	basic_modules = list(
-		/obj/item/dogborg/jaws/small,
-		/obj/item/analyzer/nose,
-		/obj/item/crowbar/cyborg,
-		/obj/item/soap/tongue/scrubpup,
-		/obj/item/stack/tile/plasteel/cyborg,
-		/obj/item/storage/bag/trash/cyborg,
-		/obj/item/lightreplacer/cyborg,
-		/obj/item/extinguisher/mini,
-		/obj/item/holosign_creator)
-	emag_modules = list(/obj/item/dogborg/pounce)
-	ratvar_modules = list(
-		/obj/item/clockwork/slab/cyborg/janitor,
-		/obj/item/clockwork/replica_fabricator/cyborg)
-	cyborg_base_icon = "scrubpup"
-	moduleselect_icon = "janitor"
-	hat_offset = INFINITY
-	clean_on_move = TRUE
-	sleeper_overlay = "jsleeper"
-	cyborg_icon_override = 'modular_citadel/icons/mob/widerobot.dmi'
-	has_snowflake_deadsprite = TRUE
-	cyborg_pixel_offset = -16
-	dogborg = TRUE
-
-/obj/item/robot_module/scrubpup/respawn_consumable(mob/living/silicon/robot/R, coeff = 1)
-	..()
-	var/obj/item/lightreplacer/LR = locate(/obj/item/lightreplacer) in basic_modules
-	if(LR)
-		for(var/i in 1 to coeff)
-			LR.Charge(R)
-
-/obj/item/robot_module/scrubpup/do_transform_animation()
-	..()
-	to_chat(loc,"<span class='userdanger'>As tempting as it might be, do not begin binging on important items. Eat your garbage responsibly. People are not included under Garbage.</span>")
 
 /obj/item/robot_module/borgi
 	name = "Borgi"
 	basic_modules = list(
-		/obj/item/dogborg/jaws/small,
-		/obj/item/storage/bag/borgdelivery,
-		/obj/item/analyzer/nose,
-		/obj/item/soap/tongue,
 		/obj/item/cookiesynth,
 		/obj/item/holosign_creator/cyborg,
 		/obj/item/crowbar/cyborg,
@@ -181,7 +24,9 @@
 		/obj/item/reagent_containers/borghypo/peace,
 		/obj/item/extinguisher/mini,
 		/obj/item/borg/cyborghug)
-	emag_modules = list(/obj/item/dogborg/pounce)
+	emag_modules = list(
+		/obj/item/reagent_containers/borghypo/clown/hacked,
+		/obj/item/reagent_containers/spray/waterflower/cyborg/hacked)
 	ratvar_modules = list(
 		/obj/item/clockwork/slab/cyborg,
 		/obj/item/clockwork/weapon/ratvarian_spear,
@@ -193,45 +38,9 @@
 	cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
 	has_snowflake_deadsprite = TRUE
 
-/*
-/obj/item/robot_module/orepup
-	name = "Ore Pup"
-	basic_modules = list(
-		/obj/item/storage/bag/ore/cyborg,
-		/obj/item/analyzer/nose,
-		/obj/item/storage/bag/borgdelivery,
-		/obj/item/dogborg/sleeper/ore,
-		/obj/item/pickaxe/drill/cyborg,
-		/obj/item/shovel,
-		/obj/item/crowbar/cyborg,
-		/obj/item/weldingtool/mini,
-		/obj/item/extinguisher/mini,
-		/obj/item/t_scanner/adv_mining_scanner,
-		/obj/item/gun/energy/kinetic_accelerator/cyborg,
-		/obj/item/gps/cyborg)
-	emag_modules = list(/obj/item/dogborg/pounce)
-	ratvar_modules = list(
-		/obj/item/clockwork/slab/cyborg/miner,
-		/obj/item/clockwork/weapon/ratvarian_spear,
-		/obj/item/borg/sight/xray/truesight_lens)
-	cyborg_base_icon = "orepup"
-	moduleselect_icon = "orepup"
-	sleeper_overlay = "osleeper"
-	cyborg_icon_override = 'modular_citadel/icons/mob/widerobot.dmi'
-	has_snowflake_deadsprite = TRUE
-	cyborg_pixel_offset = -16
-/obj/item/robot_module/miner/do_transform_animation()
-	var/mob/living/silicon/robot/R = loc
-	R.cut_overlays()
-	R.setDir(SOUTH)
-	flick("orepup_transform", R)
-	do_transform_delay()
-	R.update_headlamp()
-*/
-
 /obj/item/robot_module/medical/be_transformed_to(obj/item/robot_module/old_module)
 	var/mob/living/silicon/robot/R = loc
-	var/borg_icon = input(R, "Select an icon!", "Robot Icon", null) as null|anything in list("Default", "Heavy", "Sleek", "Marina", "Droid", "Eyebot", "BootyF", "BootyM", "BootyS", "Haydee")
+	var/borg_icon = input(R, "Select an icon!", "Robot Icon", null) as null|anything in list("Default", "Heavy", "Sleek", "Droid", "Eyebot")
 	if(!borg_icon)
 		return FALSE
 	switch(borg_icon)
@@ -244,45 +53,23 @@
 		if("Sleek")
 			cyborg_base_icon = "sleekmed"
 			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-		if("Marina")
-			cyborg_base_icon = "marinamed"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
 		if("Eyebot")
 			cyborg_base_icon = "eyebotmed"
 			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
 		if("Heavy")
 			cyborg_base_icon = "heavymed"
 			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-		if("BootyF")
-			cyborg_base_icon = "bootymedical"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-			hat_offset = 3
-		if("BootyM")
-			cyborg_base_icon = "bootymedicalM"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-			hat_offset = 3
-		if("BootyS")
-			cyborg_base_icon = "bootymedicalS"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-			hat_offset = 3
-		if("Haydee")
-			cyborg_base_icon = "haydeemedical"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-			hat_offset = 3
 	return ..()
 
 /obj/item/robot_module/janitor/be_transformed_to(obj/item/robot_module/old_module)
 	var/mob/living/silicon/robot/R = loc
-	var/list/janimodels = list("Default", "Sleek", "Marina", "Can", "Heavy", "BootyF", "BootyM", "BootyS")
+	var/list/janimodels = list("Default", "Sleek", "Can", "Heavy")
 	var/borg_icon = input(R, "Select an icon!", "Robot Icon", null) as null|anything in janimodels
 	if(!borg_icon)
 		return FALSE
 	switch(borg_icon)
 		if("Default")
 			cyborg_base_icon = "janitor"
-		if("Marina")
-			cyborg_base_icon = "marinajan"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
 		if("Sleek")
 			cyborg_base_icon = "sleekjan"
 			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
@@ -292,23 +79,11 @@
 		if("Heavy")
 			cyborg_base_icon = "heavyres"
 			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-		if("BootyF")
-			cyborg_base_icon = "bootyjanitor"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-			hat_offset = 3
-		if("BootyM")
-			cyborg_base_icon = "bootyjanitorM"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-			hat_offset = 3
-		if("BootyS")
-			cyborg_base_icon = "bootyjanitorS"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-			hat_offset = 3
 	return ..()
 
 /obj/item/robot_module/peacekeeper/be_transformed_to(obj/item/robot_module/old_module)
 	var/mob/living/silicon/robot/R = loc
-	var/borg_icon = input(R, "Select an icon!", "Robot Icon", null) as null|anything in list("Default", "Spider", "BootyF", "BootyM", "BootyS")
+	var/borg_icon = input(R, "Select an icon!", "Robot Icon", null) as null|anything in list("Default", "Spider")
 	if(!borg_icon)
 		return FALSE
 	switch(borg_icon)
@@ -317,23 +92,11 @@
 		if("Spider")
 			cyborg_base_icon = "whitespider"
 			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-		if("BootyF")
-			cyborg_base_icon = "bootypeace"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-			hat_offset = 3
-		if("BootyM")
-			cyborg_base_icon = "bootypeaceM"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-			hat_offset = 3
-		if("BootyS")
-			cyborg_base_icon = "bootypeaceS"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-			hat_offset = 3
 	return ..()
 
 /obj/item/robot_module/security/be_transformed_to(obj/item/robot_module/old_module)
 	var/mob/living/silicon/robot/R = loc
-	var/borg_icon = input(R, "Select an icon!", "Robot Icon", null) as null|anything in list("Default", "Default - Treads", "Heavy", "Sleek", "Can", "Marina", "Spider", "BootyF", "BootyM", "BootyS")
+	var/borg_icon = input(R, "Select an icon!", "Robot Icon", null) as null|anything in list("Default", "Default - Treads", "Heavy", "Sleek", "Can", "Spider")
 	if(!borg_icon)
 		return FALSE
 	switch(borg_icon)
@@ -346,9 +109,6 @@
 		if("Sleek")
 			cyborg_base_icon = "sleeksec"
 			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-		if("Marina")
-			cyborg_base_icon = "marinasec"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
 		if("Can")
 			cyborg_base_icon = "cansec"
 			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
@@ -358,23 +118,11 @@
 		if("Heavy")
 			cyborg_base_icon = "heavysec"
 			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-		if("BootyF")
-			cyborg_base_icon = "bootysecurity"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-			hat_offset = 3
-		if("BootyM")
-			cyborg_base_icon = "bootysecurityM"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-			hat_offset = 3
-		if("BootyS")
-			cyborg_base_icon = "bootysecurityS"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-			hat_offset = 3
 	return ..()
 
 /obj/item/robot_module/butler/be_transformed_to(obj/item/robot_module/old_module)
 	var/mob/living/silicon/robot/R = loc
-	var/borg_icon = input(R, "Select an icon!", "Robot Icon", null) as null|anything in list("Waitress", "Heavy", "Sleek", "Butler", "Tophat", "Kent", "Bro", "BootyF", "BootyM", "BootyS")
+	var/borg_icon = input(R, "Select an icon!", "Robot Icon", null) as null|anything in list("Waitress", "Heavy", "Sleek", "Butler", "Tophat", "Kent", "Bro")
 	if(!borg_icon)
 		return FALSE
 	switch(borg_icon)
@@ -400,23 +148,11 @@
 			cyborg_base_icon = "heavyserv"
 			special_light_key = "heavyserv"
 			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-		if("BootyF")
-			cyborg_base_icon = "bootyservice"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-			hat_offset = 3
-		if("BootyM")
-			cyborg_base_icon = "bootyserviceM"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-			hat_offset = 3
-		if("BootyS")
-			cyborg_base_icon = "bootyserviceS"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-			hat_offset = 3
 	return ..()
 
 /obj/item/robot_module/engineering/be_transformed_to(obj/item/robot_module/old_module)
 	var/mob/living/silicon/robot/R = loc
-	var/list/engymodels = list("Default", "Default - Treads", "Heavy", "Sleek", "Marina", "Can", "Spider", "Loader","Handy", "Pup Dozer", "BootyF", "BootyM", "BootyS")
+	var/list/engymodels = list("Default", "Default - Treads", "Heavy", "Sleek", "Can", "Spider", "Loader","Handy")
 	if(R.client && R.client.ckey in list("nezuli"))
 		engymodels += "Alina"
 	var/borg_icon = input(R, "Select an icon!", "Robot Icon", null) as null|anything in engymodels
@@ -451,40 +187,11 @@
 		if("Heavy")
 			cyborg_base_icon = "heavyeng"
 			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-		if("Pup Dozer")
-			cyborg_base_icon = "pupdozer"
-			can_be_pushed = FALSE
-			hat_offset = INFINITY
-			cyborg_icon_override = 'modular_citadel/icons/mob/widerobot.dmi'
-			has_snowflake_deadsprite = TRUE
-			dogborg = TRUE
-			cyborg_pixel_offset = -16
-		if("Alina")
-			cyborg_base_icon = "alina-eng"
-			special_light_key = "alina"
-			can_be_pushed = FALSE
-			hat_offset = INFINITY
-			cyborg_icon_override = 'modular_citadel/icons/mob/widerobot.dmi'
-			has_snowflake_deadsprite = TRUE
-			dogborg = TRUE
-			cyborg_pixel_offset = -16
-		if("BootyF")
-			cyborg_base_icon = "bootyengineer"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-			hat_offset = 3
-		if("BootyM")
-			cyborg_base_icon = "bootyengineerM"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-			hat_offset = 3
-		if("BootyS")
-			cyborg_base_icon = "bootyengineerS"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-			hat_offset = 3
 	return ..()
 
 /obj/item/robot_module/miner/be_transformed_to(obj/item/robot_module/old_module)
 	var/mob/living/silicon/robot/R = loc
-	var/borg_icon = input(R, "Select an icon!", "Robot Icon", null) as null|anything in list("Lavaland", "Heavy", "Sleek", "Marina", "Can", "Spider", "Asteroid", "Droid", "BootyF", "BootyM", "BootyS")
+	var/borg_icon = input(R, "Select an icon!", "Robot Icon", null) as null|anything in list("Lavaland", "Heavy", "Sleek", "Can", "Spider", "Asteroid", "Droid")
 	if(!borg_icon)
 		return FALSE
 	switch(borg_icon)
@@ -503,69 +210,30 @@
 		if("Can")
 			cyborg_base_icon = "canmin"
 			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-		if("Marina")
-			cyborg_base_icon = "marinamin"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
 		if("Spider")
 			cyborg_base_icon = "spidermin"
 			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
 		if("Heavy")
 			cyborg_base_icon = "heavymin"
 			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-		if("BootyF")
-			cyborg_base_icon = "bootyminer"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-			hat_offset = 3
-		if("BootyM")
-			cyborg_base_icon = "bootyminerM"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-			hat_offset = 3
-		if("BootyS")
-			cyborg_base_icon = "bootyminerS"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-			hat_offset = 3
 	return ..()
 
 /obj/item/robot_module/standard/be_transformed_to(obj/item/robot_module/old_module)
 	var/mob/living/silicon/robot/R = loc
-	var/borg_icon = input(R, "Select an icon!", "Robot Icon", null) as null|anything in list("Standard", "BootyF", "BootyM", "BootyS")
+	var/borg_icon = input(R, "Select an icon!", "Robot Icon", null) as null|anything in list("Standard")
 	if(!borg_icon)
 		return FALSE
 	switch(borg_icon)
 		if("Standard")
 			cyborg_base_icon = "standard"
-		if("BootyF")
-			cyborg_base_icon = "bootystandard"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-			hat_offset = 3
-		if("BootyM")
-			cyborg_base_icon = "bootystandardM"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-			hat_offset = 3
-		if("BootyS")
-			cyborg_base_icon = "bootystandardS"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-			hat_offset = 3
 	return ..()
 
 /obj/item/robot_module/clown/be_transformed_to(obj/item/robot_module/old_module)
 	var/mob/living/silicon/robot/R = loc
-	var/borg_icon = input(R, "Select an icon!", "Robot Icon", null) as null|anything in list("Standard", "BootyF", "BootyM", "BootyS")
+	var/borg_icon = input(R, "Select an icon!", "Robot Icon", null) as null|anything in list("Standard")
 	if(!borg_icon)
 		return FALSE
 	switch(borg_icon)
 		if("Standard")
 			cyborg_base_icon = "clown"
-		if("BootyF")
-			cyborg_base_icon = "bootyclown"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-			hat_offset = 3
-		if("BootyM")
-			cyborg_base_icon = "bootyclownM"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-			hat_offset = 3
-		if("BootyS")
-			cyborg_base_icon = "bootyclownS"
-			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
-			hat_offset = 3
 	return ..()

@@ -17,31 +17,6 @@
 		update_sight()
 	else if(istype(O, /obj/item/storage/bag/tray/))
 		SEND_SIGNAL(O, COMSIG_TRY_STORAGE_QUICK_EMPTY)
-	//CITADEL EDIT reee proc, Dogborg modules
-	if(istype(O,/obj/item/gun/energy/laser/cyborg))
-		laser = FALSE
-		update_icons()
-	else if(istype(O,/obj/item/gun/energy/disabler/cyborg))
-		disabler = FALSE
-		update_icons()
-	if(client)
-		client.screen -= O
-	observer_screen_update(O,FALSE)
-
-	if(module_active == O)
-		module_active = null
-	if(held_items[1] == O)
-		inv1.icon_state = "inv1"
-		held_items[1] = null
-	else if(held_items[2] == O)
-		inv2.icon_state = "inv2"
-		held_items[2] = null
-	else if(held_items[3] == O)
-		inv3.icon_state = "inv3"
-		held_items[3] = null
-
-	if(O.item_flags & DROPDEL)
-		O.item_flags &= ~DROPDEL //we shouldn't HAVE things with DROPDEL_1 in our modules, but better safe than runtiming horribly
 
 	O.forceMove(module) //Return item to module so it appears in its contents, so it can be taken out again.
 
@@ -52,14 +27,6 @@
 	. = FALSE
 	if(!(O in module.modules))
 		return
-	//CITADEL EDIT Dogborg lasers
-	if(istype(O,/obj/item/gun/energy/laser/cyborg))
-		laser = TRUE
-		update_icons() //REEEEEEACH FOR THE SKY
-	if(istype(O,/obj/item/gun/energy/disabler/cyborg))
-		disabler = TRUE
-		update_icons()
-	//END CITADEL EDIT
 	if(activated(O))
 		to_chat(src, "<span class='warning'>That module is already activated.</span>")
 		return
