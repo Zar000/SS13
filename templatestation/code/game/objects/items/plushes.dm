@@ -21,7 +21,7 @@
 
 /obj/item/toy/plush/huuskplushie
 	name = "\improper Duck Plushie"
-	desc = "A cute duck. Quack!"
+	desc = "A huge plushie of a duck. Quite cute. Quack!"
 	icon_state = "huusk"
 	item_state = "huusk"
 	attack_verb = list("quacked", "flapped")
