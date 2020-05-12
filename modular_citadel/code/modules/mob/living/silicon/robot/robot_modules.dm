@@ -38,7 +38,6 @@
 		/obj/item/soap/tongue,
 		/obj/item/analyzer/nose,
 		/obj/item/holosign_creator/security,
-		/obj/item/dogborg/sleeper/K9,
 		/obj/item/gun/energy/disabler/cyborg,
 		/obj/item/pinpointer/crew)
 	emag_modules = list(/obj/item/gun/energy/laser/cyborg)
@@ -87,7 +86,6 @@
 		/obj/item/soap/tongue,
 		/obj/item/extinguisher/mini,
 		/obj/item/healthanalyzer,
-		/obj/item/dogborg/sleeper/medihound,
 		/obj/item/roller/robo,
 		/obj/item/crowbar/cyborg,
 		/obj/item/borg/apparatus/beaker,
@@ -142,8 +140,7 @@
 		/obj/item/storage/bag/trash/cyborg,
 		/obj/item/lightreplacer/cyborg,
 		/obj/item/extinguisher/mini,
-		/obj/item/holosign_creator,
-		/obj/item/dogborg/sleeper/compactor)
+		/obj/item/holosign_creator)
 	emag_modules = list(/obj/item/dogborg/pounce)
 	ratvar_modules = list(
 		/obj/item/clockwork/slab/cyborg/janitor,

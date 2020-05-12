@@ -18,12 +18,10 @@
 					/obj/item/reagent_containers/glass/bottle/morphine = 4,
 					/obj/item/reagent_containers/glass/bottle/toxin = 3,
 					/obj/item/reagent_containers/syringe/antiviral = 6,
-					/obj/item/pregnancytest = 5,
 					/obj/item/storage/hypospraykit/fire = 2,
 					/obj/item/storage/hypospraykit/toxin = 2,
 					/obj/item/storage/hypospraykit/o2 = 2,
 					/obj/item/storage/hypospraykit/brute = 2,
-					/obj/item/storage/hypospraykit/enlarge = 2,
 					/obj/item/reagent_containers/glass/bottle/vial/small = 5)
 
 /obj/machinery/vending/wardrobe/chap_wardrobe
@@ -34,36 +32,6 @@
 #define CONTRABAND_CHARGE 2
 #define COIN_CHARGE 3
 
-/obj/machinery/vending/kink
-	name = "KinkMate"
-	desc = "A vending machine for all your unmentionable desires."
-	icon = 'icons/obj/citvending.dmi'
-	icon_state = "kink"
-	circuit = /obj/item/circuitboard/machine/kinkmate
-	product_slogans = "Kinky!;Sexy!;Check me out, big boy!"
-	vend_reply = "Have fun, you shameless pervert!"
-	products = list(
-				/obj/item/clothing/under/maid = 5,
-				/obj/item/clothing/under/stripper_pink = 5,
-				/obj/item/clothing/under/stripper_green = 5,
-				/obj/item/dildo/custom = 5,
-				/obj/item/reagent_containers/pill/penis_enlargement = 3,
-				/obj/item/reagent_containers/pill/breast_enlargement = 3,
-				/obj/item/clothing/gloves/latexsleeves = 3,
-				/obj/item/clothing/shoes/highheels = 3
-
-				)
-	contraband = list(/obj/item/restraints/handcuffs/fake/kinky = 5,
-				/obj/item/clothing/neck/petcollar = 5,
-				/obj/item/clothing/under/mankini = 1,
-				/obj/item/dildo/flared/huge = 1,
-				/obj/item/clothing/head/dominatrixcap = 1
-				)
-	premium = list(
-				/obj/item/electropack/shockcollar = 3,
-				/obj/item/clothing/neck/petcollar/locked = 1
-				)
-	refill_canister = /obj/item/vending_refill/kink
 /*
 /obj/machinery/vending/nazivend
 	name = "Nazivend"
@@ -122,12 +90,6 @@
 #undef STANDARD_CHARGE
 #undef CONTRABAND_CHARGE
 #undef COIN_CHARGE
-
-
-/obj/item/vending_refill/kink
-	machine_name 	= "KinkMate"
-	icon			= 'modular_citadel/icons/vending_restock.dmi'
-	icon_state 		= "refill_kink"
 
 /obj/item/vending_refill/nazi
 	machine_name 	= "nazivend"

@@ -2920,16 +2920,6 @@
 					/obj/item/vending_refill/wardrobe/law_wardrobe)
 	crate_name = "security department supply crate"
 
-/datum/supply_pack/costumes_toys/kinkmate
-	name = "Kinkmate construction kit"
-	cost = 2000
-	contraband = TRUE
-	contains = list(/obj/item/vending_refill/kink,
-					/obj/item/vending_refill/kink,
-					/obj/item/vending_refill/kink,
-					/obj/item/circuitboard/machine/kinkmate)
-	crate_name = "Kinkmate construction kit"
-
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////// Miscellaneous ///////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
@@ -3186,39 +3176,6 @@
 	contains = list(/obj/machinery/jukebox)
 	crate_name = "Jukebox"
 
-/datum/supply_pack/misc/lewd
-	name = "Lewd Crate" // OwO
-	desc = "Psss want to have a good time with your sluts? Well I got what you want! Maid clothing, dildos, collars and more!"
-	cost = 5000
-	contraband = TRUE
-	contains = list(/obj/item/dildo/custom,
-					/obj/item/dildo/custom,
-					/obj/item/circuitboard/machine/kinkmate,
-					/obj/item/vending_refill/kink,
-					/obj/item/vending_refill/kink,
-					/obj/item/vending_refill/kink,
-					/obj/item/clothing/under/maid,
-					/obj/item/clothing/under/maid,
-					/obj/item/electropack/shockcollar,
-					/obj/item/electropack/shockcollar,
-					/obj/item/restraints/handcuffs/fake/kinky,
-					/obj/item/restraints/handcuffs/fake/kinky,
-					/obj/item/clothing/head/kitty/genuine, // Why its illegal
-					/obj/item/clothing/head/kitty/genuine,
-					/obj/item/storage/pill_bottle/penis_enlargement,
-					/obj/structure/reagent_dispensers/keg/aphro)
-	crate_name = "lewd kit"
-	crate_type = /obj/structure/closet/crate
-
-/datum/supply_pack/misc/lewdkeg
-	name = "Lewd Deluxe Keg"
-	desc = "That other stuff not getting you ready? Well I have a Chemslut making tons of the good stuff."
-	cost = 7000 //It can be a weapon
-	contraband = TRUE
-	contains = list(/obj/structure/reagent_dispensers/keg/aphro/strong)
-	crate_name = "deluxe keg"
-	crate_type = /obj/structure/closet/crate
-
 /datum/supply_pack/misc/religious_supplies
 	name = "Religious Supplies Crate"
 	desc = "Keep your local chaplain happy and well-supplied, lest they call down judgement upon your cargo bay. Contains two bottles of holywater, bibles, chaplain robes, and burial garmets."
@@ -3231,19 +3188,6 @@
 					/obj/item/clothing/suit/hooded/chaplain_hoodie
 					)
 	crate_name = "religious supplies crate"
-
-/datum/supply_pack/misc/randomised/promiscuous
-	name = "Promiscuous Organs"
-	desc = "Do YOU want to have more genital? Well we have just the thing for you~. This crate has two autosurgeon, that will let you have a new sex, organ to impress that hot stud and or chick."
-	cost = 4000 //Only get 2!
-	contraband = TRUE
-	var/num_contained = 2
-	contains = list(/obj/item/autosurgeon/penis,
-					/obj/item/autosurgeon/testicles,
-					/obj/item/autosurgeon/vagina,
-					/obj/item/autosurgeon/breasts,
-					/obj/item/autosurgeon/womb)
-	crate_name = "promiscuous organs"
 
 /datum/supply_pack/misc/shower
 	name = "Shower Supplies"

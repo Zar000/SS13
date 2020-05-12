@@ -109,7 +109,6 @@
 		using.screen_loc = ui_boxarea // CIT CHANGE
 	static_inventory += using
 
-	using = new /obj/screen/voretoggle() //We fancy Vore now
 	using.icon = tg_ui_icon_to_cit_ui(ui_style)
 	using.screen_loc = ui_voremode
 	if(!widescreenlayout)
@@ -318,10 +317,6 @@
 
 	healths = new /obj/screen/healths()
 	infodisplay += healths
-	//CIT CHANGE - adds arousal and stamina to hud
-	arousal = new /obj/screen/arousal()
-	arousal.icon_state = (owner.canbearoused == 1 ? "arousal0" : "")
-	infodisplay += arousal
 
 	staminas = new /obj/screen/staminas()
 	infodisplay += staminas

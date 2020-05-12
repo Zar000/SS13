@@ -1,6 +1,3 @@
-mob/living/silicon
-	no_vore = TRUE
-
 /mob/living/silicon/robot
 	var/dogborg = FALSE
 

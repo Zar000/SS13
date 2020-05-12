@@ -1335,9 +1335,5 @@
 	if(!istype(L) || !L.Adjacent(get_turf(src)) ) //Invalid input
 		return
 
-	set_pin_data(IC_OUTPUT,	1, L.getArousalLoss())
-	set_pin_data(IC_OUTPUT,	2, L.min_arousal)
-	set_pin_data(IC_OUTPUT,	3, L.max_arousal)
-	set_pin_data(IC_OUTPUT,	4, L.canbearoused)
 	push_data()
 	activate_pin(2)

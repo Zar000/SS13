@@ -19,16 +19,3 @@
 	description = "<span class='nicegreen'>I've played with plushes recently.</span>\n"
 	mood_change = 3
 	timeout = 3000
-
-/datum/mood_event/orgasm
-	description = "<span class='userlove'>I came!</span>\n" //funny meme haha
-	mood_change = 3
-	timeout = 1000
-
-/datum/mood_event/fedpred
-	description = "<span class='nicegreen'>I've devoured someone!</span>\n"
-	mood_change = 3
-
-/datum/mood_event/fedprey
-	description = "<span class='nicegreen'>It feels quite cozy in here.</span>\n"
-	mood_change = 3

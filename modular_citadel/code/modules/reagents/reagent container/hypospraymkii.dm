@@ -51,9 +51,6 @@
 /obj/item/hypospray/mkii/tricord
 	start_vial = /obj/item/reagent_containers/glass/bottle/vial/small/preloaded/tricord
 
-/obj/item/hypospray/mkii/enlarge
-	spawnwithvial = FALSE
-
 //A vial-loaded hypospray. Cartridge-based!
 /obj/item/hypospray/mkii/disposable
 	name = "disposable hypospray mk.II"
