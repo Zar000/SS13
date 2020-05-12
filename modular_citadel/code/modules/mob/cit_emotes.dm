@@ -152,48 +152,6 @@
 
 //h13 emote	*bleat
 
-/datum/emote/living/bleat
-	key = "bleat"
-	key_third_person = "bleats loudly"
-	message = "bleats loudly!"
-	emote_type = EMOTE_AUDIBLE
-
-/datum/emote/living/bleat/run_emote(mob/living/user, params)
-	if(ishuman(user))
-		if(user.nextsoundemote >= world.time)
-			return
-		user.nextsoundemote = world.time + 7
-		playsound(user, 'modular_citadel/sound/voice/bleat.ogg', 50, 1, -1)
-	. = ..()
-
-/datum/emote/living/weh
-	key = "weh"
-	key_third_person = "lets out a weh"
-	message = "lets out a weh!"
-	emote_type = EMOTE_AUDIBLE
-
-/datum/emote/living/weh/run_emote(mob/living/user, params)
-	if(ishuman(user))
-		if(user.nextsoundemote >= world.time)
-			return
-		user.nextsoundemote = world.time + 7
-		playsound(user, 'modular_citadel/sound/voice/weh.ogg', 50, 1, -1)
-	. = ..()
-
-/datum/emote/living/peep
-	key = "peep"
-	key_third_person = "peeps like a bird"
-	message = "peeps like a bird!"
-	emote_type = EMOTE_AUDIBLE
-
-/datum/emote/living/peep/run_emote(mob/living/user, params)
-	if(ishuman(user))
-		if(user.nextsoundemote >= world.time)
-			return
-		user.nextsoundemote = world.time + 7
-		playsound(user, 'modular_citadel/sound/voice/peep.ogg', 50, 1, -1)
-	. = ..()
-
 /datum/emote/living/dab
 	key = "dab"
 	key_third_person = "suddenly hits a dab"
@@ -222,18 +180,4 @@
 			return
 		user.nextsoundemote = world.time + 7
 		playsound(user, 'modular_citadel/sound/voice/mothsqueak.ogg', 50, 1, -1)
-	. = ..()
-
-/datum/emote/living/merp
-	key = "merp"
-	key_third_person = "merps"
-	message = "merps!"
-	emote_type = EMOTE_AUDIBLE
-
-/datum/emote/living/merp/run_emote(mob/living/user, params)
-	if(ishuman(user))
-		if(user.nextsoundemote >= world.time)
-			return
-		user.nextsoundemote = world.time + 7
-		playsound(user, 'modular_citadel/sound/voice/merp.ogg', 50, 1, -1)
 	. = ..()

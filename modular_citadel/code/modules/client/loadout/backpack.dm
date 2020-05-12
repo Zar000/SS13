@@ -58,11 +58,6 @@
 	category = SLOT_IN_BACKPACK
 	path = /obj/item/toy/tennis/purple
 
-/datum/gear/dildo
-	name = "Customizable dildo"
-	category = SLOT_IN_BACKPACK
-	path = /obj/item/dildo/custom
-
 /datum/gear/paperbin
 	name = "Paper Bin"
 	category = SLOT_IN_BACKPACK
