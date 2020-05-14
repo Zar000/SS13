@@ -634,6 +634,14 @@
 	cut_overlays()
 	icon_state = module.cyborg_base_icon
 
+	icon = (module.cyborg_icon_override ? module.cyborg_icon_override : initial(icon))
+
+	if(stat == DEAD && module.has_snowflake_deadsprite)
+		icon_state = "[module.cyborg_base_icon]-wreck"
+
+	if(module.cyborg_pixel_offset)
+		pixel_x = module.cyborg_pixel_offset
+
 	if(module.cyborg_base_icon == "robot")
 		icon = 'icons/mob/robots.dmi'
 		pixel_x = initial(pixel_x)

@@ -1533,7 +1533,10 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			"You hear a slap."
 		)
 
+		user.do_attack_animation(target, ATTACK_EFFECT_FACE_SLAP)
+		user.adjustStaminaLossBuffered(3)
 		return FALSE
+
 	else if(attacker_style && attacker_style.disarm_act(user,target))
 		return 1
 	else

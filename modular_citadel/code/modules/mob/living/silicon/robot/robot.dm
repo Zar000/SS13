@@ -7,7 +7,7 @@
 
 /mob/living/silicon/robot/update_canmove()
 	..()
-	if(client && stat != DEAD)
+	if(client && stat != DEAD && dogborg == TRUE)
 		if(resting)
 			cut_overlays()
 			icon_state = "[module.cyborg_base_icon]-rest"
