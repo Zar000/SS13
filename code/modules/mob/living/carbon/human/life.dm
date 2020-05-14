@@ -55,10 +55,6 @@
 		var/obj/item/clothing/CH = head
 		if (CS.clothing_flags & CH.clothing_flags & STOPSPRESSUREDAMAGE)
 			return ONE_ATMOSPHERE
-	if(istype(loc, /obj/belly)) //START OF CIT CHANGES - Makes it so you don't suffocate while inside vore organs. Remind me to modularize this some time - Bhijn
-		return ONE_ATMOSPHERE
-	if(istype(loc, /obj/item/dogborg/sleeper))
-		return ONE_ATMOSPHERE //END OF CIT CHANGES
 	return pressure
 
 
@@ -135,14 +131,6 @@
 
 /mob/living/carbon/human/proc/get_thermal_protection()
 	var/thermal_protection = 0 //Simple check to estimate how protected we are against multiple temperatures
-	//CITADEL EDIT Vore code required overrides
-	if(istype(loc, /obj/item/dogborg/sleeper))
-		return FIRE_IMMUNITY_MAX_TEMP_PROTECT
-	if(ismob(loc))
-		return FIRE_IMMUNITY_MAX_TEMP_PROTECT
-	if(isbelly(loc))
-		return FIRE_IMMUNITY_MAX_TEMP_PROTECT
-//END EDIT
 	if(wear_suit)
 		if(wear_suit.max_heat_protection_temperature >= FIRE_SUIT_MAX_TEMP_PROTECT)
 			thermal_protection += (wear_suit.max_heat_protection_temperature*0.7)
@@ -249,14 +237,6 @@
 	return thermal_protection_flags
 
 /mob/living/carbon/human/proc/get_cold_protection(temperature)
-//CITADEL EDIT Mandatory for vore code.
-	if(istype(loc, /obj/item/dogborg/sleeper))
-		return TRUE //freezing to death in sleepers ruins fun.
-	if(isbelly(loc))
-		return TRUE
-	if(ismob(loc))
-		return TRUE //because lazy and being inside somemone insulates you from space
-//END EDIT
 	temperature = max(temperature, 2.7) //There is an occasional bug where the temperature is miscalculated in ares with a small amount of gas on them, so this is necessary to ensure that that bug does not affect this calculation. Space's temperature is 2.7K and most suits that are intended to protect against any cold, protect down to 2.0K.
 	var/thermal_protection_flags = get_cold_protection_flags(temperature)
 

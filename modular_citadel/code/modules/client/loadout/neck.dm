@@ -13,21 +13,6 @@
 	category = SLOT_NECK
 	path = /obj/item/clothing/neck/tie/black
 
-/datum/gear/collar
-	name = "Collar"
-	category = SLOT_NECK
-	path = /obj/item/clothing/neck/petcollar
-
-/datum/gear/leathercollar
-	name = "Leather collar"
-	category = SLOT_NECK
-	path = /obj/item/clothing/neck/petcollar/leather
-
-/datum/gear/choker
-	name = "Choker"
-	category = SLOT_NECK
-	path = /obj/item/clothing/neck/petcollar/choker
-
 /datum/gear/scarf
 	name = "White scarf"
 	category = SLOT_NECK

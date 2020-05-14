@@ -580,19 +580,6 @@
 	else
 		return ..()
 
-/mob/living/silicon/robot/crowbar_act(mob/living/user, obj/item/I) //TODO: make fucking everything up there in that attackby() proc use the proper tool_act() procs. But honestly, who has time for that? 'cause I know for sure that you, the person reading this, sure as hell doesn't.
-	var/validbreakout = FALSE
-	for(var/obj/item/dogborg/sleeper/S in held_items)
-		if(!LAZYLEN(S.contents))
-			continue
-		if(!validbreakout)
-			visible_message("<span class='notice'>[user] wedges [I] into the crevice separating [S] from [src]'s chassis, and begins to pry...</span>", "<span class='notice'>You wedge [I] into the crevice separating [S] from [src]'s chassis, and begin to pry...</span>")
-		validbreakout = TRUE
-		S.go_out()
-	if(validbreakout)
-		return TRUE
-	return ..()
-
 /mob/living/silicon/robot/verb/unlock_own_cover()
 	set category = "Robot Commands"
 	set name = "Unlock Cover"
@@ -646,30 +633,14 @@
 /mob/living/silicon/robot/update_icons()
 	cut_overlays()
 	icon_state = module.cyborg_base_icon
-	//Citadel changes start here - Allows modules to use different icon files, and allows modules to specify a pixel offset
-	icon = (module.cyborg_icon_override ? module.cyborg_icon_override : initial(icon))
-	if(laser)
-		add_overlay("laser")//Is this even used??? - Yes borg/inventory.dm
-	if(disabler)
-		add_overlay("disabler")//ditto
 
-	if(sleeper_g && module.sleeper_overlay)
-		add_overlay("[module.sleeper_overlay]_g[sleeper_nv ? "_nv" : ""]")
-	if(sleeper_r && module.sleeper_overlay)
-		add_overlay("[module.sleeper_overlay]_r[sleeper_nv ? "_nv" : ""]")
-	if(module.dogborg == TRUE)
-		if(resting)
-			cut_overlays()
-			icon_state = "[module.cyborg_base_icon]-rest"
-		else
-			icon_state = "[module.cyborg_base_icon]"
+	icon = (module.cyborg_icon_override ? module.cyborg_icon_override : initial(icon))
 
 	if(stat == DEAD && module.has_snowflake_deadsprite)
 		icon_state = "[module.cyborg_base_icon]-wreck"
 
 	if(module.cyborg_pixel_offset)
 		pixel_x = module.cyborg_pixel_offset
-	//End of citadel changes
 
 	if(module.cyborg_base_icon == "robot")
 		icon = 'icons/mob/robots.dmi'

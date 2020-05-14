@@ -107,15 +107,6 @@
 	//Status effects
 	msg += status_effect_examines()
 
-	//CIT CHANGES START HERE - adds genital details to examine text
-	if(LAZYLEN(internal_organs))
-		for(var/obj/item/organ/genital/dicc in internal_organs)
-			if(istype(dicc) && dicc.is_exposed())
-				msg += "[dicc.desc]\n"
-
-	msg += attempt_vr(src,"examine_bellies",args) //vore Code
-//END OF CIT CHANGES
-
 	//Jitters
 	switch(jitteriness)
 		if(300 to INFINITY)
@@ -312,13 +303,6 @@
 				msg += "[t_He] appear[p_s()] to not be responding to noises.\n"
 
 	msg += "</span>"
-
-	var/obj/item/organ/vocal_cords/Vc = user.getorganslot(ORGAN_SLOT_VOICE)
-	if(Vc)
-		if(istype(Vc, /obj/item/organ/vocal_cords/velvet))
-			if(client?.prefs.lewdchem)
-				msg += "<span class='velvet'><i>You feel your chords resonate looking at them.</i></span>\n"
-
 
 	if(!appears_dead)
 		if(stat == UNCONSCIOUS)

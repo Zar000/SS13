@@ -50,10 +50,6 @@
 	destination.dna.nameless = nameless
 	destination.dna.custom_species = custom_species
 	destination.dna.temporary_mutations = temporary_mutations.Copy()
-	if(ishuman(destination))
-		var/mob/living/carbon/human/H = destination
-		H.give_genitals(TRUE)//This gives the body the genitals of this DNA. Used for any transformations based on DNA
-	destination.flavor_text = destination.dna.features["flavor_text"] //Update the flavor_text to use new dna text
 	if(transfer_SE)
 		destination.dna.mutation_index = mutation_index
 

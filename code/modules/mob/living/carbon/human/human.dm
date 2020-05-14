@@ -8,7 +8,6 @@
 /mob/living/carbon/human/Initialize()
 	verbs += /mob/living/proc/mob_sleep
 	verbs += /mob/living/proc/lay_down
-	verbs += /mob/living/carbon/human/proc/underwear_toggle //fwee
 
 	//initialize limbs first
 	create_bodyparts()
@@ -42,7 +41,6 @@
 
 /mob/living/carbon/human/Destroy()
 	QDEL_NULL(physiology)
-	QDEL_NULL_LIST(vore_organs) // CITADEL EDIT belly stuff
 	return ..()
 
 
@@ -626,8 +624,6 @@
 	undershirt = "Nude"
 	update_body()
 	update_hair()
-	update_genitals()
-
 /mob/living/carbon/human/singularity_pull(S, current_size)
 	..()
 	if(current_size >= STAGE_THREE)

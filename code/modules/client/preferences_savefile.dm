@@ -112,12 +112,10 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["pda_skin"]			>> pda_skin
 
 	//citadel code
-	S["arousable"]			>> arousable
 	S["screenshake"]		>> screenshake
 	S["damagescreenshake"]	>> damagescreenshake
 	S["widescreenpref"]		>> widescreenpref
 	S["autostand"]			>> autostand
-	S["cit_toggles"]		>> cit_toggles
 	S["lewdchem"]			>> lewdchem
 
 	//try to fix any outdated data if necessfary
@@ -155,7 +153,6 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	damagescreenshake	= sanitize_integer(damagescreenshake, 0, 2, initial(damagescreenshake))
 	widescreenpref			= sanitize_integer(widescreenpref, 0, 1, initial(widescreenpref))
 	autostand			= sanitize_integer(autostand, 0, 1, initial(autostand))
-	cit_toggles			= sanitize_integer(cit_toggles, 0, 65535, initial(cit_toggles))
 
 
 	return 1
@@ -212,11 +209,8 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	//citadel code
 	WRITE_FILE(S["screenshake"], screenshake)
 	WRITE_FILE(S["damagescreenshake"], damagescreenshake)
-	WRITE_FILE(S["arousable"], arousable)
 	WRITE_FILE(S["widescreenpref"], widescreenpref)
 	WRITE_FILE(S["autostand"], autostand)
-	WRITE_FILE(S["cit_toggles"], cit_toggles)
-	WRITE_FILE(S["lewdchem"], lewdchem)
 
 	return 1
 

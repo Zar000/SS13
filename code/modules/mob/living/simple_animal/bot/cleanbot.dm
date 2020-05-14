@@ -282,9 +282,6 @@
 		/obj/effect/decal/cleanable/greenglow,
 		/obj/effect/decal/cleanable/dirt,
 		/obj/effect/decal/cleanable/insectguts,
-		/obj/effect/decal/cleanable/semen,
-		/obj/effect/decal/cleanable/milk,
-		/obj/effect/decal/cleanable/femcum,
 		/obj/effect/decal/remains
 		)
 

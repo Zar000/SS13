@@ -40,9 +40,6 @@
 					update_damage_overlays()
 			else
 				adjustStaminaLoss(damage * hit_percent)
-		//citadel code
-		if(AROUSAL)
-			adjustArousalLoss(damage * hit_percent)
 	return TRUE
 
 

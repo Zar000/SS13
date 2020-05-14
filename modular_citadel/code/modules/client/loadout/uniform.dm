@@ -349,21 +349,3 @@
 	name = "Green Feminine Christmas Suit"
 	category = SLOT_W_UNIFORM
 	path = /obj/item/clothing/under/christmas/christmasfemaleg
-
-//Memes
-/datum/gear/gear_harnesses
-	name = "Gear Harness"
-	category = SLOT_W_UNIFORM
-	path = /obj/item/clothing/under/gear_harness
-
-/datum/gear/pinkstripper
-	name = "Pink stripper outfit"
-	category = SLOT_W_UNIFORM
-	path = /obj/item/clothing/under/stripper_pink
-	cost = 3
-
-/datum/gear/greenstripper
-	name = "Green stripper outfit"
-	category = SLOT_W_UNIFORM
-	path = /obj/item/clothing/under/stripper_green
-	cost = 3

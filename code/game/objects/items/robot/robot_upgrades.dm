@@ -513,7 +513,6 @@
 	module_type = list(
 		/obj/item/robot_module/medical,
 		/obj/item/robot_module/syndicate_medical,
-		/obj/item/robot_module/medihound,
 		/obj/item/robot_module/borgi)
 
 /obj/item/borg/upgrade/advhealth/action(mob/living/silicon/robot/R, user = usr)
