@@ -20,7 +20,7 @@
 /obj/item/reagent_containers/spray/clown/selfcharge/examine(mob/user)
 	. = ..()
 	if(rechargeamount && chargeticks)
-		to_chat(user, "It synthesizes [rechargeamount] unit\s every [chargeticks] second\s.")
+		to_chat(user, "<span class='notice'>It synthesizes [rechargeamount] unit\s every [chargeticks] second\s.</span>")
 
 /obj/item/reagent_containers/spray/clown/selfcharge/Initialize()	//wrapper so it can be vv'd easier
 	..()
