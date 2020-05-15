@@ -7,15 +7,15 @@
 	item_state = "clown"
 	volume = 100
 	list_reagents = list("lube" = 50)
-	amount_per_transfer_from_this = 10
-	stream_amount = 20
 	possible_transfer_amounts = list(5,10,15,20,25,30,50,100,200)
 
 /obj/item/reagent_containers/spray/clown/selfcharge
 	name = "Floor-Be-Lubed DELUXE"
 	desc = "The ultimate in rapid lubrication technology, now with an ENDERLY-Pattern internal microreactor to synthesize lube for you!"
 	reagent_flags = AMOUNT_VISIBLE
-	volume = 200
+	volume = 120
+	amount_per_transfer_from_this = 10
+	stream_amount = 20
 	list_reagents = list("lube" = 200)
 	var/last_generate = 0
 	var/generate_delay = 10 // deciseconds
