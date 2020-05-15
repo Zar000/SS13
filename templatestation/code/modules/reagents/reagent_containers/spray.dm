@@ -46,7 +46,7 @@
 // bluespace spray bottle
 /obj/item/reagent_containers/spray/bluespace
 	name = "bluespace spray bottle"
-	desc = "A spray bottle utilizing bluespace technology in order to hold more reagents."
+	desc = "A spray bottle utilizing bluespace foam in order to hold more reagents."
 	icon = 'templatestation/icons/obj/janitor.dmi'
 	icon_state = "bluespace"
 	item_state = "bluespace"

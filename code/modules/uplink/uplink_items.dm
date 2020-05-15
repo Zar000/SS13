@@ -1746,13 +1746,13 @@ datum/uplink_item/stealthy_weapons/taeclowndo_shoes
 	cost = 20
 	restricted_roles = list("Clown")
 
-/datum/uplink_item/role_restricted/clownspray
+/datum/uplink_item/role_restricted/clownspray // TEMPLATE station addition
 	name = "Floor-Be-Lubed DELUXE"
 	desc = "The most classic clown-patented prank is lubricating the hallways, however this is hard without the help of a nice chemist. \
 			The folks over at Enderly Industries have figured out a way to solve this problem - The Floor-Be-Lubed DELUXE! \
-			This nifty little bottle uses partial bluespace technology in order to house a volume higher than that of the standard Floor-Be-Lubed bottle, \
-			while also housing an internal microreactor that can synthesize lubricant in small quantities relatively quickly, allowing you to continue your lubing spree neigh-indefinetly! \
-			Cannot be filled with reagents externally."
+			This nifty little bottle uses partial bluespace technology in order to house a volume slightly higher than that of the standard Floor-Be-Lubed bottle, \
+			while also housing an internal microreactor that can synthesize lubricant in small quantities, allowing you to slowly recharge your lube should you run dry. \
+			Nozzle can not be removed."
 	item = /obj/item/reagent_containers/spray/clown/selfcharge
 	cost = 6
 	restricted_roles = list("Clown")
