@@ -7,7 +7,7 @@
 	item_state = "clown"
 	volume = 100
 	list_reagents = list("lube" = 50)
-	possible_transfer_amounts = list(5,10,15,20,25,30,50,100,200)
+	possible_transfer_amounts = list(5,10,15,20,25,30,50,100)
 
 /obj/item/reagent_containers/spray/clown/selfcharge
 	name = "Floor-Be-Lubed DELUXE"
@@ -17,6 +17,7 @@
 	amount_per_transfer_from_this = 10
 	stream_amount = 20
 	list_reagents = list("lube" = 200)
+	possible_transfer_amounts = list(5,10,15,20,25,30,60,120)
 	var/last_generate = 0
 	var/generate_delay = 10 // deciseconds
 	var/generate_amount = 5
