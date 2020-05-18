@@ -573,8 +573,6 @@
 		"clownstears",
 		"minttoxin",
 		"atomicbomb",
-		"aphro",
-		"aphro+"
 	)
 
 /obj/machinery/chem_dispenser/drinks/beer/fullupgrade //fully ugpraded stock parts, emagged
