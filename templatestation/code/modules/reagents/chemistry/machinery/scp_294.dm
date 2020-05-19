@@ -11,7 +11,7 @@
 /obj/machinery/chem_dispenser/scp_294
 	name = "\improper strange coffee machine"
 	desc = "It appears to be a standard coffee vending machine, the only noticeable difference being an entry touchpad with buttons corresponding to a Galactic Common QWERTY keyboard."
-	icon = 'icons/obj/scp.dmi'
+	icon = 'templatestation/icons/obj/scp.dmi'
 	icon_state = "294_bottom"
 	amount = 10
 	resistance_flags = INDESTRUCTIBLE | FIRE_PROOF | ACID_PROOF | LAVA_PROOF
