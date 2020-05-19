@@ -91,7 +91,7 @@
 	..()
 	if(panel_open)
 		to_chat(user, "<span class='notice'>[src]'s maintenance hatch is open!</span>")
-	if(in_range(user, src) || isobserver(user))
+	if((in_range(user, src) || isobserver(user)) && !(resistance_flags & INDESTRUCTIBLE))
 		to_chat(user, "<span class='notice'>The status display reads: <br>Recharging <b>[recharge_amount]</b> power units per interval.<br>Power efficiency increased by <b>[(powerefficiency*1000)-100]%</b>.<span>")
 		switch(macrotier)
 			if(1)
