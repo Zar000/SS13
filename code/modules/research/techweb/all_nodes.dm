@@ -13,8 +13,8 @@
 	"space_heater", "xlarge_beaker", "sec_rshot", "sec_bshot", "sec_slug", "sec_Islug", "sec_dart", "sec_38", "sec_38lethal",
 	"rglass","plasteel","plastitanium","plasmaglass","plasmareinforcedglass","titaniumglass","plastitaniumglass","chem_pack","medkit_cabinet",
 	"disposable_hypospray","plastic_knife","plastic_fork","plastic_spoon",
-	// template station additions
-	"engilathe","servlathe","medlathe","cargolathe","scilathe","seclathe"
+	//Template station changes
+	"protolathe_engineering", "protolathe_service","protolathe_medical","protolathe_cargo","protolathe_science","protolathe_security"
 	)
 
 /datum/techweb_node/mmi
@@ -277,9 +277,8 @@
 	description = "Studies into the mysterious alternate dimension known as bluespace and how to place items in the threads of reality."
 	prereq_ids = list("adv_power", "adv_bluespace", "adv_biotech", "adv_plasma")
 	design_ids = list( "bluespacebodybag","bag_holding", "bluespace_pod", "borg_upgrade_trashofholding", "blutrash", "satchel_holding", "bsblood_bag",
-	// templatestation additions
-	"bluespacespraybottle"
-	)
+	//templatestation changes
+	"bluespacespraybottle")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5500)
 	export_price = 5000
 
@@ -439,7 +438,9 @@
 	display_name = "Computer Consoles"
 	description = "Computers and how they work."
 	prereq_ids = list("datatheory")
-	design_ids = list("cargo", "cargorequest", "libraryconsole", "mining", "miningshuttle", "crewconsole", "rdcamera", "comconsole", "idcardconsole", "seccamera")
+	design_ids = list("cargo", "cargorequest", "libraryconsole", "mining", "miningshuttle", "crewconsole", "rdcamera", "comconsole", "idcardconsole", "seccamera",
+	// Template station changes
+	"stockexchange")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2000)
 	export_price = 5000
 
