@@ -1,5 +1,5 @@
 /datum/design/bluespacespraybottle
-	name = "bluespace spray bottle"
+	name = "Bluespace Spray Bottle"
 	desc = "A spray bottle utilizing bluespace foam, allowing it to hold more reagents than normal spray bottles."
 	id = "bluespacespraybottle"
 	build_type = PROTOLATHE
