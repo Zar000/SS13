@@ -1,4 +1,4 @@
-"a" = (/turf/template_noop,/area/lavaland/surface/outdoors)
+"a" = (/turf/template_noop,/area/template_noop)
 "b" = (/turf/closed/mineral,/area/lavaland/surface/outdoors)
 "c" = (/turf/open/floor/plating/asteroid/basalt/lava_land_surface,/area/lavaland/surface/outdoors)
 "d" = (/obj/item/circlegame,/turf/open/floor/plating/asteroid/basalt/lava_land_surface,/area/lavaland/surface/outdoors)

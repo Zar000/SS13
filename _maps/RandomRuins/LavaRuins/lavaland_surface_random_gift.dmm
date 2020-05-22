@@ -1,4 +1,4 @@
-"a" = (/turf/template_noop,/area/lavaland/surface/outdoors)
+"a" = (/turf/template_noop,/area/template_noop)
 "b" = (/turf/closed/mineral,/area/lavaland/surface/outdoors)
 "c" = (/turf/open/floor/plating/asteroid/basalt/lava_land_surface,/area/lavaland/surface/outdoors)
 "d" = (/obj/structure/lattice,/turf/open/floor/plating/asteroid/basalt/lava_land_surface,/area/lavaland/surface/outdoors)
@@ -12,14 +12,14 @@
 "l" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/generic,/turf/open/floor/wood,/area/lavaland/surface/outdoors)
 
 (1,1,1) = {"
-aaabbbaaaa
-abbcccbbaa
-bcccdccbba
+aabbbbbaaa
+bbbcccbbaa
+bcccdccbbb
 bcdefghccb
 bcigjkedcb
-abcheldccb
-abccdccbba
+bbcheldccb
+abccdccbbb
 abbcccbbaa
-aaabbbaaaa
+aabbbbbaaa
 aaaaaaaaaa
 "}
