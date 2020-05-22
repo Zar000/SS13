@@ -13,8 +13,6 @@
 // END_PREFERENCES
 
 // BEGIN_INCLUDE
-#include "lavaland_surface_gotem.dmm"
-#include "lavaland_surface_random_gift.dmm"
 #include "_maps\_basemap.dm"
 #include "_maps\runtimestation.dm"
 #include "code\_compile_options.dm"
