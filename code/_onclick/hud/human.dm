@@ -111,8 +111,6 @@
 
 	using.icon = tg_ui_icon_to_cit_ui(ui_style)
 	using.screen_loc = ui_voremode
-	if(!widescreenlayout)
-		using.screen_loc = ui_boxvore
 	static_inventory += using
 
 	action_intent = new /obj/screen/act_intent/segmented
