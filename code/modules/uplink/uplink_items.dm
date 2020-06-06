@@ -1734,7 +1734,6 @@ datum/uplink_item/stealthy_weapons/taeclowndo_shoes
 	cost = 15
 	restricted_roles = list("Clown")
 
-/*
 /datum/uplink_item/role_restricted/clowncar
 	name = "Clown Car"
 	desc = "The Clown Car is the ultimate transportation method for any worthy clown! \
@@ -1743,9 +1742,20 @@ datum/uplink_item/stealthy_weapons/taeclowndo_shoes
 			someone saves them or they manage to crawl out. Be sure not to ram into any walls or vending machines, as the springloaded seats \
 			are very sensetive. Now with our included lube defense mechanism which will protect you against any angry shitcurity!"
 	item = /obj/vehicle/sealed/car/clowncar
-	cost = 15
+	cost = 20
 	restricted_roles = list("Clown")
-*/
+
+/datum/uplink_item/role_restricted/clownspray // TEMPLATE station addition
+	name = "Floor-Be-Lubed DELUXE"
+	desc = "The most classic clown-patented prank is lubricating the hallways, however this is hard without the help of a nice chemist. \
+			The folks over at Enderly Industries have figured out a way to solve this problem - The Floor-Be-Lubed DELUXE! \
+			This nifty little bottle uses partial bluespace technology in order to house a volume slightly higher than that of the standard Floor-Be-Lubed bottle, \
+			while also housing an internal microreactor that can synthesize lubricant in small quantities, allowing you to slowly recharge your lube should you run dry. \
+			Nozzle can not be removed."
+	item = /obj/item/reagent_containers/spray/clown/selfcharge
+	cost = 6
+	restricted_roles = list("Clown")
+
 
 /datum/uplink_item/role_restricted/clumsyDNA
 	name = "Clumsy Clown DNA"

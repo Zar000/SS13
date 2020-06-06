@@ -90,7 +90,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	//H13
 	var/body_size = 100					//Body Size in percent
-	var/can_get_preg = 0				//Body Size in percent
 
 	var/datum/species/pref_species = new /datum/species/human()	//Mutant race
 	var/list/features = list("mcolor" = "FFF",
@@ -1848,113 +1847,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					new_dors = input(user, "Choose your character's dorsal tube type:", "Character Preference") as null|anything in GLOB.xeno_dorsal_list
 					if(new_dors)
 						features["xenodorsal"] = new_dors
-				//Genital code
-				if("cock_color")
-					var/new_cockcolor = input(user, "Penis color:", "Character Preference") as color|null
-					if(new_cockcolor)
-						var/temp_hsv = RGBtoHSV(new_cockcolor)
-						if(new_cockcolor == "#000000")
-							features["cock_color"] = pref_species.default_color
-						else if((MUTCOLORS_PARTSONLY in pref_species.species_traits) || ReadHSV(temp_hsv)[3] >= ReadHSV("#202020")[3])
-							features["cock_color"] = sanitize_hexcolor(new_cockcolor)
-						else
-							to_chat(user,"<span class='danger'>Invalid color. Your color is not bright enough.</span>")
-
-				if("cock_length")
-					var/new_length = input(user, "Penis length in inches:\n([COCK_SIZE_MIN]-[COCK_SIZE_MAX])", "Character Preference") as num|null
-					if(new_length)
-						features["cock_length"] = max(min( round(text2num(new_length)), COCK_SIZE_MAX),COCK_SIZE_MIN)
-
-				if("cock_shape")
-					var/new_shape
-					new_shape = input(user, "Penis shape:", "Character Preference") as null|anything in GLOB.cock_shapes_list
-					if(new_shape)
-						features["cock_shape"] = new_shape
-
-				if("balls_color")
-					var/new_ballscolor = input(user, "Testicle Color:", "Character Preference") as color|null
-					if(new_ballscolor)
-						var/temp_hsv = RGBtoHSV(new_ballscolor)
-						if(new_ballscolor == "#000000")
-							features["balls_color"] = pref_species.default_color
-						else if((MUTCOLORS_PARTSONLY in pref_species.species_traits) || ReadHSV(temp_hsv)[3] >= ReadHSV("#202020")[3])
-							features["balls_color"] = sanitize_hexcolor(new_ballscolor)
-						else
-							to_chat(user,"<span class='danger'>Invalid color. Your color is not bright enough.</span>")
-
-				if("balls_shape")
-					var/new_shape
-					new_shape = input(user, "Testicle Type:", "Character Preference") as null|anything in GLOB.balls_shapes_list
-					if(new_shape)
-						features["balls_shape"] = new_shape
-
-				if("balls_fluid")
-					var/new_shape
-					new_shape = input(user, "Balls Fluid", "Character Preference") as null|anything in GLOB.genital_fluids_list
-					if(new_shape)
-						features["balls_fluid"] = new_shape
-
-				if("egg_size")
-					var/new_size
-					var/list/egg_sizes = list(1,2,3)
-					new_size = input(user, "Egg Diameter(inches):", "Egg Size") as null|anything in egg_sizes
-					if(new_size)
-						features["eggsack_egg_size"] = new_size
-
-				if("egg_color")
-					var/new_egg_color = input(user, "Egg Color:", "Character Preference") as color|null
-					if(new_egg_color)
-						var/temp_hsv = RGBtoHSV(new_egg_color)
-						if(ReadHSV(temp_hsv)[3] >= ReadHSV("#202020")[3])
-							features["eggsack_egg_color"] = sanitize_hexcolor(new_egg_color)
-						else
-							to_chat(user,"<span class='danger'>Invalid color. Your color is not bright enough.</span>")
-
-				if("breasts_size")
-					var/new_size
-					new_size = input(user, "Breast Size", "Character Preference") as null|anything in GLOB.breasts_size_list
-					if(new_size)
-						features["breasts_size"] = new_size
-
-				if("breasts_shape")
-					var/new_shape
-					new_shape = input(user, "Breast Shape", "Character Preference") as null|anything in GLOB.breasts_shapes_list
-					if(new_shape)
-						features["breasts_shape"] = new_shape
-
-				if("breasts_fluid")
-					var/new_shape
-					new_shape = input(user, "Breast Fluid", "Character Preference") as null|anything in GLOB.genital_fluids_list
-					if(new_shape)
-						features["breasts_fluid"] = new_shape
-
-				if("breasts_color")
-					var/new_breasts_color = input(user, "Breast Color:", "Character Preference") as color|null
-					if(new_breasts_color)
-						var/temp_hsv = RGBtoHSV(new_breasts_color)
-						if(new_breasts_color == "#000000")
-							features["breasts_color"] = pref_species.default_color
-						else if((MUTCOLORS_PARTSONLY in pref_species.species_traits) || ReadHSV(temp_hsv)[3] >= ReadHSV("#202020")[3])
-							features["breasts_color"] = sanitize_hexcolor(new_breasts_color)
-						else
-							to_chat(user,"<span class='danger'>Invalid color. Your color is not bright enough.</span>")
-
-				if("vag_shape")
-					var/new_shape
-					new_shape = input(user, "Vagina Type", "Character Preference") as null|anything in GLOB.vagina_shapes_list
-					if(new_shape)
-						features["vag_shape"] = new_shape
-
-				if("vag_color")
-					var/new_vagcolor = input(user, "Vagina color:", "Character Preference") as color|null
-					if(new_vagcolor)
-						var/temp_hsv = RGBtoHSV(new_vagcolor)
-						if(new_vagcolor == "#000000")
-							features["vag_color"] = pref_species.default_color
-						else if((MUTCOLORS_PARTSONLY in pref_species.species_traits) || ReadHSV(temp_hsv)[3] >= ReadHSV("#202020")[3])
-							features["vag_color"] = sanitize_hexcolor(new_vagcolor)
-						else
-							to_chat(user,"<span class='danger'>Invalid color. Your color is not bright enough.</span>")
 
 				if("ooccolor")
 					var/new_ooccolor = input(user, "Choose your OOC colour:", "Game Preference",ooccolor) as color|null
@@ -2046,43 +1938,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 		else
 			switch(href_list["preference"])
 				//CITADEL PREFERENCES EDIT - I can't figure out how to modularize these, so they have to go here. :c -Pooj
-				if("genital_colour")
-					features["genitals_use_skintone"] = !features["genitals_use_skintone"]
-				if("arousable")
-					arousable = !arousable
-				if("lewdchem")
-					lewdchem = !lewdchem
-				if("has_cock")
-					features["has_cock"] = !features["has_cock"]
-					if(features["has_cock"] == FALSE)
-						features["has_balls"] = FALSE
-				if("has_balls")
-					features["has_balls"] = !features["has_balls"]
-				if("has_ovi")
-					features["has_ovi"] = !features["has_ovi"]
-				if("has_eggsack")
-					features["has_eggsack"] = !features["has_eggsack"]
-				if("balls_internal")
-					features["balls_internal"] = !features["balls_internal"]
-				if("eggsack_internal")
-					features["eggsack_internal"] = !features["eggsack_internal"]
-				if("has_breasts")
-					features["has_breasts"] = !features["has_breasts"]
-					if(features["has_breasts"] == FALSE)
-						features["breasts_producing"] = FALSE
-				if("breasts_producing")
-					features["breasts_producing"] = !features["breasts_producing"]
-				if("has_vag")
-					features["has_vag"] = !features["has_vag"]
-					if(features["has_vag"] == FALSE)
-						features["has_womb"] = FALSE
-						features["can_get_preg"] = FALSE
-				if("has_womb")
-					features["has_womb"] = !features["has_womb"]
-				if("can_get_preg")
-					features["can_get_preg"] = !features["can_get_preg"]
-				if("exhibitionist")
-					features["exhibitionist"] = !features["exhibitionist"]
 				if("widescreenpref")
 					widescreenpref = !widescreenpref
 					user.client.change_view(CONFIG_GET(string/default_view))
@@ -2275,7 +2130,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 	//h13 character custom body size, make sure to set to 100% if the player hasn't choosen one yet.
 	character.custom_body_size = body_size
-	character.breedable = 0
 
 	character.gender = gender
 	character.age = age

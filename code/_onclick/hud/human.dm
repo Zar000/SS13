@@ -111,8 +111,6 @@
 
 	using.icon = tg_ui_icon_to_cit_ui(ui_style)
 	using.screen_loc = ui_voremode
-	if(!widescreenlayout)
-		using.screen_loc = ui_boxvore
 	static_inventory += using
 
 	action_intent = new /obj/screen/act_intent/segmented
@@ -120,23 +118,10 @@
 	static_inventory += action_intent
 
 	using = new /obj/screen/mov_intent
-	using.icon = tg_ui_icon_to_cit_ui(ui_style) // CIT CHANGE - overrides mov intent icon
+	using.icon = ui_style
 	using.icon_state = (mymob.m_intent == MOVE_INTENT_RUN ? "running" : "walking")
 	using.screen_loc = ui_movi
 	static_inventory += using
-
-	//CITADEL CHANGES - sprint button
-	using = new /obj/screen/sprintbutton
-	using.icon = tg_ui_icon_to_cit_ui(ui_style)
-	using.icon_state = (owner.sprinting ? "act_sprint_on" : "act_sprint")
-	using.screen_loc = ui_movi
-	static_inventory += using
-	//END OF CITADEL CHANGES
-
-	//same as above but buffer.
-	using.screen_loc = ui_sprintbufferloc
-	static_inventory += using
-
 
 	using = new /obj/screen/drop()
 	using.icon = ui_style
@@ -318,6 +303,11 @@
 
 	staminas = new /obj/screen/staminas()
 	infodisplay += staminas
+
+	if(!CONFIG_GET(flag/disable_stambuffer))
+		staminabuffer = new /obj/screen/staminabuffer()
+		infodisplay += staminabuffer
+	//END OF CIT CHANGES
 
 	healthdoll = new /obj/screen/healthdoll()
 	infodisplay += healthdoll

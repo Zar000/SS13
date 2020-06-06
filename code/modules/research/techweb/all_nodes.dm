@@ -12,7 +12,10 @@
 	"destructive_analyzer", "circuit_imprinter", "experimentor", "rdconsole", "design_disk", "tech_disk", "rdserver", "rdservercontrol", "mechfab",
 	"space_heater", "xlarge_beaker", "sec_rshot", "sec_bshot", "sec_slug", "sec_Islug", "sec_dart", "sec_38", "sec_38lethal",
 	"rglass","plasteel","plastitanium","plasmaglass","plasmareinforcedglass","titaniumglass","plastitaniumglass","chem_pack","medkit_cabinet",
-	"disposable_hypospray","plastic_knife","plastic_fork","plastic_spoon")
+	"disposable_hypospray","plastic_knife","plastic_fork","plastic_spoon",
+	//Template station changes
+	"protolathe_engineering", "protolathe_service","protolathe_medical","protolathe_cargo","protolathe_science","protolathe_security"
+	)
 
 /datum/techweb_node/mmi
 	id = "mmi"
@@ -231,6 +234,32 @@
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1000)
 	export_price = 5000
 
+/datum/techweb_node/flight_suit
+	id = "flight_suit"
+	display_name = "Experimental Hardsuits"
+	description = "Hardsuits designed with built-in support for flight."
+	prereq_ids = list("adv_engi", "NVGtech", "emp_adv", "combat_cyber_implants", "practical_bluespace" )
+	design_ids = list("flightsuit")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
+	export_price = 5000
+
+/datum/techweb_node/flight_boots
+	id = "flight_boots"
+	display_name = "Integrated RCS thrusters"
+	description = "Man-portable scale thrusters designed for flight."
+	prereq_ids = list("adv_engi", "NVGtech", "emp_adv", "combat_cyber_implants", "practical_bluespace" )
+	design_ids = list("flightshoes")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
+	export_price = 5000
+
+/datum/techweb_node/flight_pack
+	id = "flight_pack"
+	display_name = "Advanced Ion Thrusters"
+	description = "Man-portable ion thrusters, designed to be used for flight."
+	prereq_ids = list("adv_engi", "NVGtech", "emp_adv", "combat_cyber_implants", "practical_bluespace")
+	design_ids = list("flightpack")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
+	export_price = 5000
 /////////////////////////Bluespace tech/////////////////////////
 /datum/techweb_node/bluespace_basic //Bluespace-memery
 	id = "bluespace_basic"
@@ -273,7 +302,9 @@
 	display_name = "Bluespace Pockets"
 	description = "Studies into the mysterious alternate dimension known as bluespace and how to place items in the threads of reality."
 	prereq_ids = list("adv_power", "adv_bluespace", "adv_biotech", "adv_plasma")
-	design_ids = list( "bluespacebodybag","bag_holding", "bluespace_pod", "borg_upgrade_trashofholding", "blutrash", "satchel_holding", "bsblood_bag")
+	design_ids = list( "bluespacebodybag","bag_holding", "bluespace_pod", "borg_upgrade_trashofholding", "blutrash", "satchel_holding", "bsblood_bag",
+	//templatestation changes
+	"bluespacespraybottle")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 5500)
 	export_price = 5000
 
@@ -433,7 +464,9 @@
 	display_name = "Computer Consoles"
 	description = "Computers and how they work."
 	prereq_ids = list("datatheory")
-	design_ids = list("cargo", "cargorequest", "libraryconsole", "mining", "miningshuttle", "crewconsole", "rdcamera", "comconsole", "idcardconsole", "seccamera")
+	design_ids = list("cargo", "cargorequest", "libraryconsole", "mining", "miningshuttle", "crewconsole", "rdcamera", "comconsole", "idcardconsole", "seccamera",
+	// Template station changes
+	"stockexchange")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2000)
 	export_price = 5000
 
