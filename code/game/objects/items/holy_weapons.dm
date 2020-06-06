@@ -285,7 +285,6 @@
 	hitsound = 'sound/weapons/sear.ogg'
 	damtype = BURN
 	attack_verb = list("punched", "cross countered", "pummeled")
-	total_mass = TOTAL_MASS_HAND_REPLACEMENT
 
 /obj/item/nullrod/godhand/Initialize()
 	. = ..()
@@ -536,7 +535,6 @@
 	sharpness = IS_SHARP
 	attack_verb = list("sawed", "torn", "cut", "chopped", "diced")
 	hitsound = 'sound/weapons/chainsawhit.ogg'
-	total_mass = TOTAL_MASS_HAND_REPLACEMENT
 
 /obj/item/nullrod/chainsaw/Initialize()
 	. = ..()
@@ -613,7 +611,6 @@
 	item_flags = ABSTRACT
 	w_class = WEIGHT_CLASS_HUGE
 	sharpness = IS_SHARP
-	total_mass = TOTAL_MASS_HAND_REPLACEMENT
 
 /obj/item/nullrod/armblade/Initialize()
 	. = ..()
