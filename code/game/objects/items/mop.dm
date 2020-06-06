@@ -41,10 +41,6 @@
 
 	var/mob/living/L = user
 
-	if(istype(L) && L.getStaminaLoss() >= STAMINA_SOFTCRIT)
-		to_chat(user, "<span class='danger'>You're too exhausted for that.</span>")
-		return
-
 	if(reagents.total_volume < 1)
 		to_chat(user, "<span class='warning'>Your mop is dry!</span>")
 		return
