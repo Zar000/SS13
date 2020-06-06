@@ -1,11 +1,10 @@
-/*
 /datum/design/flightsuit
 	name = "Flight Suit"
 	desc = "A specialized hardsuit that is able to attach a flightpack and accessories.."
 	id = "flightsuit"
 	build_type = PROTOLATHE
 	build_path = /obj/item/clothing/suit/space/hardsuit/flightsuit
-	materials = list(MAT_METAL=16000, MAT_GLASS = 8000, MAT_DIAMOND = 200, MAT_GOLD = 3000, MAT_SILVER = 3000, MAT_TITANIUM = 16000)	//This expensive enough for you?
+	materials = list(MAT_METAL=16000, MAT_GLASS = 8000, MAT_DIAMOND = 200, MAT_GOLD = 3000, MAT_SILVER = 3000, MAT_TITANIUM = 16000, MAT_PLASTIC = 8000)
 	construction_time = 250
 	category = list("Misc")
 	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
@@ -16,7 +15,7 @@
 	id = "flightpack"
 	build_type = PROTOLATHE
 	build_path = /obj/item/flightpack
-	materials = list(MAT_METAL=16000, MAT_GLASS = 8000, MAT_DIAMOND = 4000, MAT_GOLD = 12000, MAT_SILVER = 12000, MAT_URANIUM = 20000, MAT_PLASMA = 16000, MAT_TITANIUM = 16000)	//This expensive enough for you?
+	materials = list(MAT_METAL=16000, MAT_GLASS = 8000, MAT_DIAMOND = 4000, MAT_GOLD = 12000, MAT_SILVER = 12000, MAT_URANIUM = 20000, MAT_PLASMA = 16000, MAT_TITANIUM = 16000, MAT_BLUESPACE = 6000 )	//This expensive enough for you?
 	construction_time = 250
 	category = list("Misc")
 	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
@@ -27,10 +26,10 @@
 	id = "flightshoes"
 	build_type = PROTOLATHE
 	build_path = /obj/item/clothing/shoes/flightshoes
-	materials = list(MAT_METAL = 5000, MAT_GLASS = 5000, MAT_GOLD = 1500, MAT_SILVER = 1500, MAT_PLASMA = 2000, MAT_TITANIUM = 2000)
+	materials = list(MAT_METAL = 5000, MAT_GLASS = 5000, MAT_GOLD = 1500, MAT_SILVER = 1500, MAT_PLASMA = 2000, MAT_TITANIUM = 2000, MAT_PLASTIC = 3000, MAT_BLUESPACE = 2000)
 	construction_time = 100
 	category = list("Misc")
-	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING */
+	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
 
 /datum/design/constructionhardsuit
 	name = "Construction Hardsuit"
