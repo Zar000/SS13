@@ -234,6 +234,32 @@
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 1000)
 	export_price = 5000
 
+/datum/techweb_node/flight_suit
+	id = "flight_suit"
+	display_name = "Experimental Hardsuits"
+	description = "Hardsuits designed with built-in support for flight."
+	prereq_ids = list("adv_engi", "NVGtech", "emp_adv", "combat_cyber_implants", "practical_bluespace" )
+	design_ids = list("flightsuit")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
+	export_price = 5000
+
+/datum/techweb_node/flight_boots
+	id = "flight_boots"
+	display_name = "Integrated RCS thrusters"
+	description = "Man-portable scale thrusters designed for flight."
+	prereq_ids = list("adv_engi", "NVGtech", "emp_adv", "combat_cyber_implants", "practical_bluespace" )
+	design_ids = list("flightshoes")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
+	export_price = 5000
+
+/datum/techweb_node/flight_pack
+	id = "flight_pack"
+	display_name = "Advanced Ion Thrusters"
+	description = "Man-portable ion thrusters, designed to be used for flight."
+	prereq_ids = list("adv_engi", "NVGtech", "emp_adv", "combat_cyber_implants", "practical_bluespace")
+	design_ids = list("flightpack")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
+	export_price = 5000
 /////////////////////////Bluespace tech/////////////////////////
 /datum/techweb_node/bluespace_basic //Bluespace-memery
 	id = "bluespace_basic"
