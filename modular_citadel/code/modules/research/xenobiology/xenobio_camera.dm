@@ -26,12 +26,12 @@
 	desc = "Allan please add detail."
 	icon_state = "datadisk5"
 	var/list/upgradetypes = list()
-/* // dont see the need to keep admin disk if we're removing slimebasic and monkey
-/obj/item/disk/xenobio_console_upgrade/admin 
+
+/obj/item/disk/xenobio_console_upgrade/admin // just in case
 	name = "Xenobio all access thing"
 	desc = "'the consoles are literally useless!!!!!!!!!!!!!!!'"
 	upgradetypes = list(XENOBIO_UPGRADE_SLIMEBASIC, XENOBIO_UPGRADE_SLIMEADV, XENOBIO_UPGRADE_MONKEYS)
-
+/*
 /obj/item/disk/xenobio_console_upgrade/monkey
 	name = "Xenobiology console monkey upgrade disk"
 	desc = "This disk will add the ability to remotely recycle monkeys via the Xenobiology console."
