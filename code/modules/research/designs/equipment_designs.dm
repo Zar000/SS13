@@ -19,7 +19,7 @@
 	construction_time = 250
 	category = list("Misc")
 	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
-
+/*
 /datum/design/flightshoes
 	name = "Flight Shoes"
 	desc = "Flight shoes, attachable to a flight suit to provide additional functions."
@@ -30,7 +30,7 @@
 	construction_time = 100
 	category = list("Misc")
 	departmental_flags = DEPARTMENTAL_FLAG_ENGINEERING
-
+*/
 /datum/design/constructionhardsuit
 	name = "Construction Hardsuit"
 	desc = "A hardsuit, designed for EVA construction and hazardous material transportation"
