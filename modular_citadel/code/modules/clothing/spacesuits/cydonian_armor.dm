@@ -105,9 +105,9 @@
 	var/mutable_appearance/suit_overlay
 
 	if(taurmode == SNEK_TAURIC)
-		suit_overlay = mutable_appearance('modular_citadel/icons/mob/taur_naga.dmi', "knight_cydonia_overlay", LIGHTING_LAYER + 1)
+		suit_overlay = mutable_appearance("knight_cydonia_overlay", LIGHTING_LAYER + 1)
 	else if(taurmode == PAW_TAURIC)
-		suit_overlay = mutable_appearance('modular_citadel/icons/mob/taur_canine.dmi', "knight_cydonia_overlay", LIGHTING_LAYER + 1)
+		suit_overlay = mutable_appearance("knight_cydonia_overlay", LIGHTING_LAYER + 1)
 	else
 		suit_overlay = mutable_appearance('modular_citadel/icons/lavaknight/item/suit.dmi', "knight_cydonia_overlay", LIGHTING_LAYER + 1)
 
