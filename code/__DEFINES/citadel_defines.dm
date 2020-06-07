@@ -28,17 +28,12 @@
 //Species stuffs. Remember to change this if upstream updates species flags
 #define MUTCOLORS2		35
 #define MUTCOLORS3		36
-#define NOAROUSAL		37 //Stops all arousal effects
 #define MATRIXED		39	//if icon is color matrix'd
 #define SKINTONE		40	//uses skin tones
 
 //Citadel istypes
 #define isborer(A) (istype(A, /mob/living/simple_animal/borer))
-#define isipcperson(A) (is_species(A, /datum/species/ipc))
-#define ismammal(A) (is_species(A, /datum/species/mammal))
-#define isavian(A) (is_species(A, /datum/species/avian))
-#define isaquatic(A) (is_species(A, /datum/species/aquatic))
-#define isinsect(A) (is_species(A, /datum/species/insect))
+//#define isipcperson(A) (is_species(A, /datum/species/ipc))
 #define isxenoperson(A) (is_species(A, /datum/species/xeno))
 
 #define CITADEL_MENTOR_OOC_COLOUR "#224724"

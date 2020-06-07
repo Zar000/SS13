@@ -49,13 +49,13 @@
 			sound = pick('modular_citadel/sound/voice/scream_m1.ogg', 'modular_citadel/sound/voice/scream_m2.ogg')
 			if(user.gender == FEMALE)
 				sound = pick('modular_citadel/sound/voice/scream_f1.ogg', 'modular_citadel/sound/voice/scream_f2.ogg')
-			if(is_species(user, /datum/species/android) || is_species(user, /datum/species/synth) || is_species(user, /datum/species/ipc))
+			if(is_species(user, /datum/species/android) || is_species(user, /datum/species/synth)) //|| is_species(user, /datum/species/ipc))
 				sound = 'modular_citadel/sound/voice/scream_silicon.ogg'
 			if(is_species(user, /datum/species/lizard))
 				sound = 'modular_citadel/sound/voice/scream_lizard.ogg'
 			if(is_species(user, /datum/species/skeleton))
 				sound = 'modular_citadel/sound/voice/scream_skeleton.ogg'
-			if (is_species(user, /datum/species/fly) || is_species(user, /datum/species/insect))
+			if (is_species(user, /datum/species/fly) || is_species(user, /datum/species/moth))
 				sound = 'modular_citadel/sound/voice/scream_moth.ogg'
 		if(isalien(user))
 			sound = 'sound/voice/hiss6.ogg'
