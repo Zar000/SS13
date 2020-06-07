@@ -13,7 +13,6 @@
 	exotic_blood = "slimejelly"
 	damage_overlay_type = ""
 	var/datum/action/innate/regenerate_limbs/regenerate_limbs
-	var/datum/action/innate/slime_change/slime_change	//CIT CHANGE
 	liked_food = TOXIC | MEAT
 	toxic_food = null
 	coldmod = 6   // = 3x cold damage
@@ -23,8 +22,6 @@
 /datum/species/jelly/on_species_loss(mob/living/carbon/C)
 	if(regenerate_limbs)
 		regenerate_limbs.Remove(C)
-	if(slime_change)	//CIT CHANGE
-		slime_change.Remove(C)	//CIT CHANGE
 	C.remove_language(/datum/language/slime)
 	C.faction -= "slime"
 	..()
@@ -36,8 +33,6 @@
 	if(ishuman(C))
 		regenerate_limbs = new
 		regenerate_limbs.Grant(C)
-		slime_change = new	//CIT CHANGE
-		slime_change.Grant(C)	//CIT CHANGE
 	C.faction |= "slime"
 
 /datum/species/jelly/spec_life(mob/living/carbon/human/H)

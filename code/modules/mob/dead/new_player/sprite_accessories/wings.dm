@@ -104,23 +104,3 @@
 	dimension_x = 46
 	center = TRUE
 	dimension_y = 34
-
-/datum/sprite_accessory/deco_wings/bee
-	name = "Bee"
-	icon_state = "bee"
-
-/datum/sprite_accessory/deco_wings/fairy
-	name = "Fairy"
-	icon_state = "fairy"
-
-/datum/sprite_accessory/deco_wings/bat
-	name = "Bat"
-	icon_state = "bat"
-
-/datum/sprite_accessory/deco_wings/feathery
-	name = "Feathery"
-	icon_state = "feathery"
-
-/datum/sprite_accessory/deco_wings/none
-	name = "None"
-	icon_state = "none"
