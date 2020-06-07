@@ -6,7 +6,6 @@
 	features["ipc_screen"] 	= sanitize_inlist(features["ipc_screen"], GLOB.ipc_screens_list)
 	features["ipc_antenna"] 	= sanitize_inlist(features["ipc_antenna"], GLOB.ipc_antennas_list)
 	//Citadel
-	features["flavor_text"]		= sanitize_text(features["flavor_text"], initial(features["flavor_text"]))
 	if(!features["mcolor2"] || features["mcolor"] == "#000")
 		features["mcolor2"] = pick("FFFFFF","7F7F7F", "7FFF7F", "7F7FFF", "FF7F7F", "7FFFFF", "FF7FFF", "FFFF7F")
 	if(!features["mcolor3"] || features["mcolor"] == "#000")
@@ -43,8 +42,6 @@
 	WRITE_FILE(S["feature_xeno_tail"], features["xenotail"])
 	WRITE_FILE(S["feature_xeno_dors"], features["xenodorsal"])
 	WRITE_FILE(S["feature_xeno_head"], features["xenohead"])
-	//flavor text
-	WRITE_FILE(S["feature_flavor_text"], features["flavor_text"])
 
 	//gear loadout
 	if(islist(chosen_gear))

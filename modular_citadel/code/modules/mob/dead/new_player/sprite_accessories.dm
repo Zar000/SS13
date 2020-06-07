@@ -2,8 +2,6 @@
 	var/extra = FALSE
 	var/extra_color_src = MUTCOLORS2						//The color source for the extra overlay.
 	var/extra2 = FALSE
-	var/extra_icon = 'modular_citadel/icons/mob/mam_tails.dmi'
-	var/extra2_icon = 'modular_citadel/icons/mob/mam_tails.dmi'
 	var/extra2_color_src = MUTCOLORS3
 	var/list/ckeys_allowed
 
