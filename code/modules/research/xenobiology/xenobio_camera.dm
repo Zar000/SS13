@@ -107,13 +107,13 @@
 	if(deleted in stored_slimes)
 		stored_slimes -= deleted
 
-/obj/machinery/computer/camera_advanced/xenobio/attackby(obj/item/O, mob/user, params)
-	if(istype(O, /obj/item/reagent_containers/food/snacks/monkeycube) && (upgradetier & XENOBIO_UPGRADE_MONKEYS)) //CIT CHANGE - makes monkey-related actions require XENOBIO_UPGRADE_MONKEYS
+/obj/machinery/computer/camera_advanced/xenobio/attackby(obj/item/O, mob/user, params) // TEMPLATESTATION CHANGES - no longer need upgrades for monkey / slime potion related things
+	if(istype(O, /obj/item/reagent_containers/food/snacks/monkeycube)) 
 		monkeys++
 		to_chat(user, "<span class='notice'>You feed [O] to [src]. It now has [monkeys] monkey cubes stored.</span>")
 		qdel(O)
 		return
-	else if(istype(O, /obj/item/storage/bag) && (upgradetier & XENOBIO_UPGRADE_MONKEYS)) //CIT CHANGE - makes monkey-related actions require XENOBIO_UPGRADE_MONKEYS
+	else if(istype(O, /obj/item/storage/bag)) 
 		var/obj/item/storage/P = O
 		var/loaded = FALSE
 		for(var/obj/G in P.contents)
@@ -124,7 +124,7 @@
 		if(loaded)
 			to_chat(user, "<span class='notice'>You fill [src] with the monkey cubes stored in [O]. [src] now has [monkeys] monkey cubes stored.</span>")
 		return
-	else if(istype(O, /obj/item/slimepotion/slime)  && (upgradetier & XENOBIO_UPGRADE_SLIMEADV)) // CIT CHANGE - makes giving slimes potions via console require XENOBIO_UPGRADE_SLIMEADV
+	else if(istype(O, /obj/item/slimepotion/slime))
 		var/replaced = FALSE
 		if(user && !user.transferItemToLoc(O, src))
 			return
