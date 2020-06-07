@@ -85,7 +85,7 @@
 
 	var/requires_suit = TRUE
 
-	var/datum/effect_system/trail_follow/ion/ion_trail
+	var/datum/effect_system/trail_follow/ion/flight/ion_trail
 
 	var/assembled = FALSE
 	var/obj/item/stock_parts/manipulator/part_manip = null
@@ -911,7 +911,7 @@
 			return FALSE
 		if(pack.flight && forced)
 			pack.disable_flight(1)
-		REMOVE_TRAIT(src, TRAIT_NODROP, FLIGHTSUIT_TRAIT)
+		REMOVE_TRAIT_FROM(pack, TRAIT_NODROP, FLIGHTSUIT_TRAIT)
 		resync()
 		if(user)
 			user.transferItemToLoc(pack, src, TRUE)
@@ -942,7 +942,7 @@
 	deployedshoes = TRUE
 
 /obj/item/clothing/suit/space/hardsuit/flightsuit/proc/retract_flightshoes(forced = FALSE)
-	REMOVE_TRAIT(src, TRAIT_NODROP, FLIGHTSUIT_TRAIT)
+	REMOVE_TRAIT_FROM(shoes, TRAIT_NODROP, FLIGHTSUIT_TRAIT)
 	playsound(src, 'sound/mecha/mechmove03.ogg', 50, 1)
 	if(user)
 		user.transferItemToLoc(shoes, src, TRUE)
