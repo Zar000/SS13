@@ -94,7 +94,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/datum/species/pref_species = new /datum/species/human()	//Mutant race
 	var/list/features = list("mcolor" = "FFF",
 		"tail_lizard" = "Smooth",
-		"tail_human" = "None",
 		"snout" = "Round",
 		"horns" = "None",
 		"ears" = "None",
@@ -109,18 +108,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 		"moth_markings" = "None",
 		"mcolor2" = "FFF",
 		"mcolor3" = "FFF",
-		"mam_body_markings" = "Plain",
-		"mam_ears" = "None",
-		"mam_snouts" = "None",
-		"mam_tail" = "None",
-		"mam_tail_animated" = "None",
 		"xenodorsal" = "Standard",
 		"xenohead" = "Standard",
-		"xenotail" = "Xenomorph Tail",
-		"taur" = "None",
+		"xenotail" = "Xenomorph Tail",,
 		"ipc_screen" = "Sunburst",
 		"ipc_antenna" = "None",
-		"flavor_text" = ""
 		)
 
 	var/list/custom_names = list()
@@ -308,17 +300,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						dat += "<a style='white-space:nowrap;' href='?_src_=prefs;preference=changeslot;num=[i];' [i == default_slot ? "class='linkOn'" : ""]>[name]</a> "
 					dat += "</center>"
 
-			update_preview_icon()
-			dat += "<table><tr><td width='340px' height='300px' valign='top'>"
-			dat += "<h2>Flavor Text</h2>"
-			dat += "<a href='?_src_=prefs;preference=flavor_text;task=input'><b>Set Examine Text</b></a><br>"
-			if(length(features["flavor_text"]) <= 40)
-				if(!length(features["flavor_text"]))
-					dat += "\[...\]"
-				else
-					dat += "[features["flavor_text"]]"
-			else
-				dat += "[TextPreview(features["flavor_text"])]...<BR>"
 			dat += "<h2>Body</h2>"
 			dat += "<b>Gender:</b><a style='display:block;width:100px' href='?_src_=prefs;preference=gender'>[gender == MALE ? "Male" : (gender == FEMALE ? "Female" : (gender == PLURAL ? "Non-binary" : "Object"))]</a><BR>"
 			dat += "<b>Species:</b><a style='display:block;width:100px' href='?_src_=prefs;preference=species;task=input'>[pref_species.id]</a><BR>"
@@ -1439,12 +1420,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					if(new_age)
 						age = max(min( round(text2num(new_age)), AGE_MAX),AGE_MIN)
 
-				if("flavor_text")
-					var/msg = stripped_multiline_input(usr, "Set the flavor text in your 'examine' verb. This can also be used for OOC notes and preferences!", "Flavor Text", html_decode(features["flavor_text"]), MAX_MESSAGE_LEN*2, TRUE)
-					if(!isnull(msg))
-						msg = copytext(msg, 1, MAX_MESSAGE_LEN*2)
-						features["flavor_text"] = msg
-
 				if("hair")
 					var/new_hair = input(user, "Choose your character's hair colour:", "Character Preference","#"+hair_color) as color|null
 					if(new_hair)
@@ -1553,13 +1528,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						if(features["mcolor3"] == "#000" || (!(MUTCOLORS_PARTSONLY in pref_species.species_traits) && ReadHSV(temp_hsv)[3] < ReadHSV("#202020")[3]))
 							features["mcolor3"] = pref_species.default_color
 
-				if("custom_species")
-					var/new_species = reject_bad_name(input(user, "Choose your species subtype, if unique. This will show up on examinations and health scans. Do not abuse this:", "Character Preference", custom_species) as null|text)
-					if(new_species)
-						custom_species = new_species
-					else
-						custom_species = null
-
 				if("mutant_color")
 					var/new_mutantcolor = input(user, "Choose your character's alien/mutant color:", "Character Preference","#"+features["mcolor"]) as color|null
 					if(new_mutantcolor)
@@ -1621,40 +1589,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							features["tail_human"] = "None"
 							features["mam_tail"] = "None"
 
-				if("tail_human")
-					var/list/snowflake_tails_list = list()
-					for(var/path in GLOB.tails_list_human)
-						var/datum/sprite_accessory/tails/human/instance = GLOB.tails_list_human[path]
-						if(istype(instance, /datum/sprite_accessory))
-							var/datum/sprite_accessory/S = instance
-							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
-								snowflake_tails_list[S.name] = path
-					var/new_tail
-					new_tail = input(user, "Choose your character's tail:", "Character Preference") as null|anything in snowflake_tails_list
-					if(new_tail)
-						features["tail_human"] = new_tail
-						if(new_tail != "None")
-							features["taur"] = "None"
-							features["tail_lizard"] = "None"
-							features["mam_tail"] = "None"
-
-				if("mam_tail")
-					var/list/snowflake_tails_list = list()
-					for(var/path in GLOB.mam_tails_list)
-						var/datum/sprite_accessory/mam_tails/instance = GLOB.mam_tails_list[path]
-						if(istype(instance, /datum/sprite_accessory))
-							var/datum/sprite_accessory/S = instance
-							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
-								snowflake_tails_list[S.name] = path
-					var/new_tail
-					new_tail = input(user, "Choose your character's tail:", "Character Preference") as null|anything in snowflake_tails_list
-					if(new_tail)
-						features["mam_tail"] = new_tail
-						if(new_tail != "None")
-							features["taur"] = "None"
-							features["tail_human"] = "None"
-							features["tail_lizard"] = "None"
-
 				if("snout")
 					var/list/snowflake_snouts_list = list()
 					for(var/path in GLOB.snouts_list)
@@ -1668,21 +1602,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					if(new_snout)
 						features["snout"] = new_snout
 						features["mam_snouts"] = "None"
-
-
-				if("mam_snouts")
-					var/list/snowflake_mam_snouts_list = list()
-					for(var/path in GLOB.mam_snouts_list)
-						var/datum/sprite_accessory/mam_snouts/instance = GLOB.mam_snouts_list[path]
-						if(istype(instance, /datum/sprite_accessory))
-							var/datum/sprite_accessory/S = instance
-							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
-								snowflake_mam_snouts_list[S.name] = path
-					var/new_mam_snouts
-					new_mam_snouts = input(user, "Choose your character's snout:", "Character Preference") as null|anything in snowflake_mam_snouts_list
-					if(new_mam_snouts)
-						features["mam_snouts"] = new_mam_snouts
-						features["snout"] = "None"
 
 				if("horns")
 					var/new_horns
@@ -1738,12 +1657,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					if(new_moth_wings)
 						features["moth_wings"] = new_moth_wings
 
-				if("moth_fluffs")
-					var/new_moth_fluff
-					new_moth_fluff = input(user, "Choose your character's fluff:", "Character Preference") as null|anything in GLOB.moth_fluffs_list
-					if(new_moth_fluff)
-						features["moth_fluff"] = new_moth_fluff
-
 				if("deco_wings")
 					var/new_deco_wings
 					new_deco_wings = input(user, "Choose your character's wings:", "Character Preference") as null|anything in GLOB.deco_wings_list
@@ -1761,24 +1674,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					if(new_s_tone)
 						skin_tone = new_s_tone
 
-				if("taur")
-					var/list/snowflake_taur_list = list()
-					for(var/path in GLOB.taur_list)
-						var/datum/sprite_accessory/taur/instance = GLOB.taur_list[path]
-						if(istype(instance, /datum/sprite_accessory))
-							var/datum/sprite_accessory/S = instance
-							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
-								snowflake_taur_list[S.name] = path
-					var/new_taur
-					new_taur = input(user, "Choose your character's tauric body:", "Character Preference") as null|anything in snowflake_taur_list
-					if(new_taur)
-						features["taur"] = new_taur
-						if(new_taur != "None")
-							features["mam_tail"] = "None"
-							features["xenotail"] = "None"
-							features["tail_human"] = "None"
-							features["tail_lizard"] = "None"
-
 				if("ears")
 					var/list/snowflake_ears_list = list()
 					for(var/path in GLOB.ears_list)
@@ -1791,38 +1686,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					new_ears = input(user, "Choose your character's ears:", "Character Preference") as null|anything in snowflake_ears_list
 					if(new_ears)
 						features["ears"] = new_ears
-
-				if("mam_ears")
-					var/list/snowflake_ears_list = list()
-					for(var/path in GLOB.mam_ears_list)
-						var/datum/sprite_accessory/mam_ears/instance = GLOB.mam_ears_list[path]
-						if(istype(instance, /datum/sprite_accessory))
-							var/datum/sprite_accessory/S = instance
-							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
-								snowflake_ears_list[S.name] = path
-					var/new_ears
-					new_ears = input(user, "Choose your character's ears:", "Character Preference") as null|anything in snowflake_ears_list
-					if(new_ears)
-						features["mam_ears"] = new_ears
-
-				if("mam_body_markings")
-					var/list/snowflake_markings_list = list()
-					for(var/path in GLOB.mam_body_markings_list)
-						var/datum/sprite_accessory/mam_body_markings/instance = GLOB.mam_body_markings_list[path]
-						if(istype(instance, /datum/sprite_accessory))
-							var/datum/sprite_accessory/S = instance
-							if((!S.ckeys_allowed) || (S.ckeys_allowed.Find(user.client.ckey)))
-								snowflake_markings_list[S.name] = path
-					var/new_mam_body_markings
-					new_mam_body_markings = input(user, "Choose your character's body markings:", "Character Preference") as null|anything in snowflake_markings_list
-					if(new_mam_body_markings)
-						features["mam_body_markings"] = new_mam_body_markings
-						if(new_mam_body_markings != "None")
-							features["body_markings"] = "None"
-						else if(new_mam_body_markings == "None")
-							features["mam_body_markings"] = "Plain"
-							features["body_markings"] = "None"
-						update_preview_icon()
 
 				//Xeno Bodyparts
 				if("xenohead")//Head or caste type

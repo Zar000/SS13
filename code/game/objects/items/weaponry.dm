@@ -433,7 +433,6 @@ for further reading, please see: https://github.com/tgstation/tgstation/pull/301
 	sharpness = IS_SHARP
 	attack_verb = list("sawed", "torn", "cut", "chopped", "diced")
 	hitsound = 'sound/weapons/chainsawhit.ogg'
-	total_mass = TOTAL_MASS_HAND_REPLACEMENT
 
 /obj/item/mounted_chainsaw/Initialize()
 	. = ..()

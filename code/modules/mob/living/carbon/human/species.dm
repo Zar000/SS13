@@ -747,18 +747,6 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 					S = GLOB.ipc_screens_list[H.dna.features["ipc_screen"]]
 				if("ipc_antenna")
 					S = GLOB.ipc_antennas_list[H.dna.features["ipc_antenna"]]
-				if("mam_tail")
-					S = GLOB.mam_tails_list[H.dna.features["mam_tail"]]
-				if("mam_waggingtail")
-					S = GLOB.mam_tails_animated_list[H.dna.features["mam_tail"]]
-				if("mam_body_markings")
-					S = GLOB.mam_body_markings_list[H.dna.features["mam_body_markings"]]
-				if("mam_ears")
-					S = GLOB.mam_ears_list[H.dna.features["mam_ears"]]
-				if("mam_snouts")
-					S = GLOB.mam_snouts_list[H.dna.features["mam_snouts"]]
-				if("taur")
-					S = GLOB.taur_list[H.dna.features["taur"]]
 				if("xenodorsal")
 					S = GLOB.xeno_dorsal_list[H.dna.features["xenodorsal"]]
 				if("xenohead")
@@ -1442,9 +1430,6 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	if(HAS_TRAIT(user, TRAIT_PACIFISM))
 		to_chat(user, "<span class='warning'>You don't want to harm [target]!</span>")
 		return FALSE
-	if(user.getStaminaLoss() >= STAMINA_SOFTCRIT) //CITADEL CHANGE - makes it impossible to punch while in stamina softcrit
-		to_chat(user, "<span class='warning'>You're too exhausted.</span>") //CITADEL CHANGE - ditto
-		return FALSE //CITADEL CHANGE - ditto
 	if(target.check_block())
 		target.visible_message("<span class='warning'>[target] blocks [user]'s attack!</span>")
 		return FALSE
@@ -1465,8 +1450,6 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 				user.do_attack_animation(target, ATTACK_EFFECT_SMASH)
 			else
 				user.do_attack_animation(target, ATTACK_EFFECT_PUNCH)
-
-		user.adjustStaminaLossBuffered(5) //CITADEL CHANGE - makes punching cause staminaloss
 
 		var/damage = rand(user.dna.species.punchdamagelow, user.dna.species.punchdamagehigh)
 
@@ -1520,9 +1503,6 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 	if(target.check_block()) //END EDIT
 		target.visible_message("<span class='warning'>[target] blocks [user]'s disarm attempt!</span>")
 		return 0
-	else if(user.getStaminaLoss() >= STAMINA_SOFTCRIT)
-		to_chat(user, "<span class='warning'>You're too exhausted!</span>")
-		return FALSE
 
 	else if(aim_for_mouth && ( target_on_help || target_restrained || target_aiming_for_mouth))
 		playsound(target.loc, 'sound/weapons/slap.ogg', 50, 1, -1)
@@ -1534,15 +1514,12 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 		)
 
 		user.do_attack_animation(target, ATTACK_EFFECT_FACE_SLAP)
-		user.adjustStaminaLossBuffered(3)
 		return FALSE
 
 	else if(attacker_style && attacker_style.disarm_act(user,target))
 		return 1
 	else
 		user.do_attack_animation(target, ATTACK_EFFECT_DISARM)
-
-		user.adjustStaminaLossBuffered(3) //CITADEL CHANGE - makes disarmspam cause staminaloss
 
 		if(target.w_uniform)
 			target.w_uniform.add_fingerprint(user)

@@ -15,7 +15,6 @@
 	var/arousable = TRUE
 	var/widescreenpref = TRUE
 	var/autostand = TRUE
-	var/lewdchem = TRUE
 
 	// stuff that was in base
 	max_save_slots = 10
@@ -45,4 +44,3 @@
 
 datum/preferences/copy_to(mob/living/carbon/human/character, icon_updates = 1)
 	..()
-	character.flavor_text = features["flavor_text"] //Let's update their flavor_text at least initially

@@ -60,10 +60,6 @@
 	if(item_flags & NOBLUDGEON)
 		return
 
-	if(user.getStaminaLoss() >= STAMINA_SOFTCRIT) // CIT CHANGE - makes it impossible to attack in stamina softcrit
-		to_chat(user, "<span class='warning'>You're too exhausted.</span>") // CIT CHANGE - ditto
-		return // CIT CHANGE - ditto
-
 	if(force && damtype != STAMINA && HAS_TRAIT(user, TRAIT_PACIFISM))
 		to_chat(user, "<span class='warning'>You don't want to harm other living beings!</span>")
 		return
@@ -82,18 +78,12 @@
 	log_combat(user, M, "attacked", src.name, "(INTENT: [uppertext(user.a_intent)]) (DAMTYPE: [uppertext(damtype)])")
 	add_fingerprint(user)
 
-	user.adjustStaminaLossBuffered(getweight())//CIT CHANGE - makes attacking things cause stamina loss
-
 //the equivalent of the standard version of attack() but for object targets.
 /obj/item/proc/attack_obj(obj/O, mob/living/user)
 	if(SEND_SIGNAL(src, COMSIG_ITEM_ATTACK_OBJ, O, user) & COMPONENT_NO_ATTACK_OBJ)
 		return
 	if(item_flags & NOBLUDGEON)
 		return
-	if(user.getStaminaLoss() >= STAMINA_SOFTCRIT) // CIT CHANGE - makes it impossible to attack in stamina softcrit
-		to_chat(user, "<span class='warning'>You're too exhausted.</span>") // CIT CHANGE - ditto
-		return // CIT CHANGE - ditto
-	user.adjustStaminaLossBuffered(getweight()*1.2)//CIT CHANGE - makes attacking things cause stamina loss
 	user.changeNext_move(CLICK_CD_MELEE)
 	user.do_attack_animation(O)
 	O.attacked_by(src, user)
