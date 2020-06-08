@@ -5692,7 +5692,7 @@
 "cfx" = (/obj/structure/table,/obj/machinery/microwave,/turf/open/floor/plating,/area/maintenance/port/aft)
 "cfy" = (/obj/structure/sink/kitchen{dir = 8; pixel_x = 11},/turf/open/floor/plating,/area/maintenance/port/aft)
 "cfz" = (/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{dir = 4},/obj/machinery/door/airlock/maintenance_hatch,/turf/open/floor/plating,/area/maintenance/starboard/aft)
-"cfA" = (/obj/structure/disposalpipe/segment,/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/door/airlock/maintenance_hatch,/turf/open/floor/plating,/area/maintenance/port/aft)
+"cfA" = (/obj/structure/disposalpipe/segment,/obj/structure/cable{icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/supply/hidden,/obj/machinery/door/airlock/maintenance_hatch{req_access_txt = "10"},/turf/open/floor/plating,/area/maintenance/port/aft)
 "cfB" = (/obj/machinery/telecomms/message_server,/turf/open/floor/plasteel/dark/telecomms,/area/tcommsat/server)
 "cfC" = (/obj/machinery/telecomms/broadcaster/preset_left,/turf/open/floor/plasteel/dark/telecomms,/area/tcommsat/server)
 "cfD" = (/obj/machinery/telecomms/receiver/preset_left,/turf/open/floor/plasteel/dark/telecomms,/area/tcommsat/server)
