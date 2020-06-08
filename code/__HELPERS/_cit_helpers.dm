@@ -31,6 +31,14 @@ proc/get_racelist(var/mob/user)//This proc returns a list of species that 'user'
 
 	return GLOB.whitelisted_species_list
 
+	//Mammal Species
+GLOBAL_LIST_EMPTY(mam_body_markings_list)
+GLOBAL_LIST_EMPTY(mam_ears_list)
+GLOBAL_LIST_EMPTY(mam_tails_list)
+GLOBAL_LIST_EMPTY(mam_tails_animated_list)
+GLOBAL_LIST_EMPTY(taur_list)
+GLOBAL_LIST_EMPTY(mam_snouts_list)
+
 	//Exotic Species
 GLOBAL_LIST_EMPTY(exotic_tails_list)
 GLOBAL_LIST_EMPTY(exotic_tails_animated_list)
@@ -47,6 +55,46 @@ GLOBAL_LIST_EMPTY(xeno_dorsal_list)
 GLOBAL_LIST_EMPTY(ipc_screens_list)
 GLOBAL_LIST_EMPTY(ipc_antennas_list)
 
+	//Genitals and Arousal Lists
+GLOBAL_LIST_EMPTY(cock_shapes_list)//global_lists.dm for the list initializations //Now also _DATASTRUCTURES globals.dm
+GLOBAL_LIST_EMPTY(cock_shapes_icons) //Associated list for names->icon_states for cockshapes.
+GLOBAL_LIST_EMPTY(gentlemans_organ_names)
+GLOBAL_LIST_EMPTY(balls_shapes_list)
+GLOBAL_LIST_EMPTY(balls_shapes_icons)
+GLOBAL_LIST_EMPTY(breasts_size_list)
+GLOBAL_LIST_EMPTY(genital_fluids_list)
+GLOBAL_LIST_EMPTY(breasts_shapes_list)
+GLOBAL_LIST_EMPTY(breasts_shapes_icons)
+GLOBAL_LIST_EMPTY(vagina_shapes_list)
+GLOBAL_LIST_INIT(cum_into_containers_list, list(/obj/item/reagent_containers/food/snacks/pie)) //Yer fuggin snowflake name list jfc
+GLOBAL_LIST_INIT(dick_nouns, list("dick","cock","member","shaft"))
+GLOBAL_LIST_INIT(cum_id_list,"semen")
+GLOBAL_LIST_INIT(milk_id_list,"milk")
+
+GLOBAL_LIST_INIT(dildo_shapes, list(
+		"Human"		= "human",
+		"Knotted"	= "knotted",
+		"Plain"		= "plain",
+		"Flared"	= "flared"
+		))
+GLOBAL_LIST_INIT(dildo_sizes, list(
+		"Small"		= 1,
+		"Medium"	= 2,
+		"Big"		= 3
+		))
+GLOBAL_LIST_INIT(dildo_colors, list(//mostly neon colors
+		"Cyan"		= "#00f9ff",//cyan
+		"Green"		= "#49ff00",//green
+		"Pink"		= "#ff4adc",//pink
+		"Yellow"	= "#fdff00",//yellow
+		"Blue"		= "#00d2ff",//blue
+		"Lime"		= "#89ff00",//lime
+		"Black"		= "#101010",//black
+		"Red"		= "#ff0000",//red
+		"Orange"	= "#ff9a00",//orange
+		"Purple"	= "#e300ff"//purple
+		))
+
 //Crew objective and miscreants stuff
 GLOBAL_VAR_INIT(miscreants_allowed, FALSE)
 
@@ -55,6 +103,17 @@ GLOBAL_VAR_INIT(miscreants_allowed, FALSE)
 		set category = "Admin"
 		if(!src.holder)	return
 		message_admins("[key_name_admin(usr)] manually reloaded mentors")
+
+//Flavor Text
+/mob/living/carbon/human/verb/set_flavor()
+	set name = "Set Flavor Text"
+	set desc = "Sets an extended description of your character's features."
+	set category = "IC"
+
+	var/new_flavor = input(src, "Enter your new flavor text:", "Flavor text", null) as message|null
+	if(!isnull(new_flavor))
+		flavor_text = sanitize(new_flavor)
+		to_chat(src, "Your flavor text has been updated.")
 
 //LOOC toggles
 /client/verb/listen_looc()

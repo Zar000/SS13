@@ -396,6 +396,10 @@ There are several things that need to be remembered:
 				S.alternate_worn_icon = null
 
 			if(S.tauric == TRUE) //Are we a suit with tauric mode possible?
+				if(S.taurmode == SNEK_TAURIC)
+					S.alternate_worn_icon = 'modular_citadel/icons/mob/taur_naga.dmi'
+				if(S.taurmode == PAW_TAURIC)
+					S.alternate_worn_icon = 'modular_citadel/icons/mob/taur_canine.dmi'
 				if(S.taurmode == NOT_TAURIC && S.adjusted == ALT_STYLE)
 					S.alternate_worn_icon = 'modular_citadel/icons/mob/suit_digi.dmi'
 				else if(S.taurmode == NOT_TAURIC && S.adjusted == NORMAL_STYLE)

@@ -198,6 +198,14 @@
 			sanitize_hexcolor(features["mcolor2"])
 		if(DNA_COLOR_THREE_BLOCK)
 			sanitize_hexcolor(features["mcolor3"])
+		if(DNA_MUTANTTAIL_BLOCK)
+			construct_block(GLOB.mam_tails_list.Find(features["mam_tail"]), GLOB.mam_tails_list.len)
+		if(DNA_MUTANTEAR_BLOCK)
+			construct_block(GLOB.mam_ears_list.Find(features["mam_ears"]), GLOB.mam_ears_list.len)
+		if(DNA_MUTANTMARKING_BLOCK)
+			construct_block(GLOB.mam_body_markings_list.Find(features["mam_body_markings"]), GLOB.mam_body_markings_list.len)
+		if(DNA_TAUR_BLOCK)
+			construct_block(GLOB.taur_list.Find(features["taur"]), GLOB.taur_list.len)
 
 //Please use add_mutation or activate_mutation instead
 /datum/dna/proc/force_give(datum/mutation/human/HM)
@@ -328,6 +336,7 @@
 
 	if(newfeatures)
 		dna.features = newfeatures
+		flavor_text = dna.features["flavor_text"] //Update the flavor_text to use new dna text
 
 	if(mrace)
 		var/datum/species/newrace = new mrace.type

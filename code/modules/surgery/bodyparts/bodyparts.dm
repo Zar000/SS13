@@ -355,6 +355,21 @@
 			should_draw_greyscale = TRUE
 		else
 			species_color = ""
+
+		if("mam_body_markings" in S.default_features)
+			var/datum/sprite_accessory/Smark
+			Smark = GLOB.mam_body_markings_list[H.dna.features["mam_body_markings"]]
+			if(Smark)
+				body_markings_icon = Smark.icon
+			if(H.dna.features.["mam_body_markings"] != "None")
+				body_markings = lowertext(H.dna.features.["mam_body_markings"])
+				auxmarking = lowertext(H.dna.features.["mam_body_markings"])
+			else
+				body_markings = "plain"
+				auxmarking = "plain"
+			markings_color = list(colorlist)
+
+		else
 			body_markings = null
 			auxmarking = null
 
