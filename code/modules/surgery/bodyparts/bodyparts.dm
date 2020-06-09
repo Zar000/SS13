@@ -48,7 +48,7 @@
 	var/mutation_color = ""
 	var/no_update = 0
 	var/body_markings = ""	//for bodypart markings
-	var/body_markings_icon = 'modular_citadel/icons/mob/mam_markings.dmi'
+	var/body_markings_icon = 'modular_citadel/icons/mob/markings_notmammals.dmi'
 	var/list/markings_color = list()
 	var/auxmarking = ""
 	var/list/auxmarking_color = list()

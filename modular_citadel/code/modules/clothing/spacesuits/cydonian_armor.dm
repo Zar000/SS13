@@ -132,9 +132,9 @@
 /obj/item/clothing/suit/space/hardsuit/lavaknight/proc/emissivelights(mob/user = usr)
 	var/mutable_appearance/energy_overlay
 	if(taurmode == SNEK_TAURIC)
-		energy_overlay = mutable_appearance('modular_citadel/icons/mob/taur_naga.dmi', "knight_cydonia_overlay", LIGHTING_LAYER + 1)
+		energy_overlay = mutable_appearance("knight_cydonia_overlay", LIGHTING_LAYER + 1)
 	else if(taurmode == PAW_TAURIC)
-		energy_overlay = mutable_appearance('modular_citadel/icons/mob/taur_canine.dmi', "knight_cydonia_overlay", LIGHTING_LAYER + 1)
+		energy_overlay = mutable_appearance("knight_cydonia_overlay", LIGHTING_LAYER + 1)
 	else
 		energy_overlay = mutable_appearance('modular_citadel/icons/lavaknight/mob/suit.dmi', "knight_cydonia_overlay", LIGHTING_LAYER + 1)
 
