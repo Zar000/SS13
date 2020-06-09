@@ -113,6 +113,15 @@
 			mood_level = 8
 		if(MOOD_LEVEL_HAPPY4 to INFINITY)
 			mood_level = 9
+	update_mood_icon()
+
+/datum/component/mood/proc/update_mood_icon()
+	var/mob/living/owner = parent
+	if(owner.client && owner.hud_used)
+		if(sanity < 25)
+			screen_obj.icon_state = "mood_insane"
+		else
+			screen_obj.icon_state = "mood[mood_level]"
 
 /datum/component/mood/process() //Called on SSmood process
 	var/mob/living/owner = parent
