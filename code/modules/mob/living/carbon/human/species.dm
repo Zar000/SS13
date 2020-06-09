@@ -454,20 +454,6 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 
 	H.apply_overlay(HAIR_LAYER)
 
-
-/mob/living/carbon/human //TEMPLATE STATION CHANGE: MOVED HERE CAUSE AROUSAL.DM IS DED
-	var/saved_underwear = ""//saves their underwear so it can be toggled later
-	var/saved_undershirt = ""
-	var/saved_socks = ""
-	var/hidden_underwear = FALSE
-	var/hidden_undershirt = FALSE
-	var/hidden_socks = FALSE
-
-/mob/living/carbon/human/New()
-	..()
-	saved_underwear = underwear
-	saved_undershirt = undershirt
-
 /datum/species/proc/handle_body(mob/living/carbon/human/H)
 	H.remove_overlay(BODY_LAYER)
 

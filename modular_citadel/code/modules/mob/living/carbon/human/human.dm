@@ -1,6 +1,19 @@
 /mob/living/proc/resist_embedded()
 	return
 
+/mob/living/carbon/human //TEMPLATE STATION CHANGE: MOVED HERE CAUSE AROUSAL.DM IS DED
+	var/saved_underwear = ""//saves their underwear so it can be toggled later
+	var/saved_undershirt = ""
+	var/saved_socks = ""
+	var/hidden_underwear = FALSE
+	var/hidden_undershirt = FALSE
+	var/hidden_socks = FALSE
+
+/mob/living/carbon/human/New()
+	..()
+	saved_underwear = underwear
+	saved_undershirt = undershirt
+
 /mob/living/carbon/human/resist_embedded()
 	if(handcuffed || legcuffed || (wear_suit && wear_suit.breakouttime))
 		return
