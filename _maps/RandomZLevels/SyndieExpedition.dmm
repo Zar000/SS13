@@ -1,0 +1,304 @@
+"aa" = (/turf/open/space/basic,/area/space)
+"ab" = (/turf/closed/indestructible/opshuttle,/area/space)
+"ac" = (/obj/structure/window/plastitanium,/obj/structure/grille,/obj/machinery/door/poddoor/shutters{id = "bridgesshutters"; name = "Bridge Shutters"},/turf/open/floor/plating,/area/space)
+"ad" = (/obj/structure/window/plastitanium,/obj/structure/grille,/obj/machinery/door/poddoor/shutters{id = "BridgeShutters"; name = "Bridge Shutters"},/turf/open/floor/plating,/area/space)
+"ae" = (/obj/machinery/computer/crew,/turf/open/floor/plasteel/dark,/area/space)
+"af" = (/obj/machinery/computer/camera_advanced/syndie,/turf/open/floor/plasteel/dark,/area/space)
+"ag" = (/obj/structure/table/reinforced,/turf/open/floor/plasteel/dark,/area/space)
+"ah" = (/obj/machinery/computer/shuttle/syndicate,/turf/open/floor/plasteel/dark,/area/space)
+"ai" = (/obj/structure/table/reinforced,/obj/machinery/button,/turf/open/floor/plasteel/dark,/area/space)
+"aj" = (/obj/structure/table/reinforced,/obj/item/clothing/head/beret,/turf/open/floor/plasteel/dark,/area/space)
+"ak" = (/obj/machinery/computer/secure_data,/turf/open/floor/plasteel/dark,/area/space)
+"al" = (/turf/open/floor/plasteel/dark,/area/space)
+"am" = (/obj/structure/chair/comfy/shuttle{dir = 1},/mob/living/simple_animal/hostile/syndicate/civilian,/turf/open/floor/plasteel/dark,/area/space)
+"an" = (/obj/structure/chair/office/dark{dir = 1; name = "tactical swivel chair"},/turf/open/floor/plasteel/dark,/area/space)
+"ao" = (/obj/structure/chair/office/dark{dir = 8; name = "tactical swivel chair"},/turf/open/floor/plasteel/dark,/area/space)
+"ap" = (/mob/living/simple_animal/hostile/syndicate/space,/turf/open/floor/plasteel/dark,/area/space)
+"aq" = (/obj/structure/window/plastitanium,/obj/structure/grille,/turf/open/floor/plating,/area/space)
+"ar" = (/obj/machinery/door/airlock/hatch{id_tag = "caravansyndicate3_bolt_bridge"; name = "Bridge"; req_access_txt = "150"},/turf/open/floor/plasteel/dark,/area/space)
+"as" = (/obj/structure/chair/comfy/shuttle{dir = 4; name = "tactical chair"},/turf/open/floor/plasteel/dark,/area/space)
+"at" = (/obj/structure/chair/comfy/shuttle{dir = 8; name = "tactical chair"},/turf/open/floor/plasteel/dark,/area/space)
+"au" = (/obj/structure/table/reinforced,/obj/machinery/light{dir = 1},/obj/item/storage/toolbox/syndicate,/turf/open/floor/mineral/plastitanium/red,/area/space)
+"av" = (/obj/effect/turf_decal/stripes/line{dir = 8},/obj/effect/turf_decal/stripes/line{dir = 4},/turf/open/floor/plasteel/dark,/area/space)
+"aw" = (/obj/machinery/suit_storage_unit/syndicate,/turf/open/floor/mineral/plastitanium/red,/area/space)
+"ax" = (/obj/effect/turf_decal/stripes/line{dir = 8},/obj/machinery/light{dir = 1},/turf/open/floor/plasteel/dark,/area/space)
+"ay" = (/obj/item/twohanded/required/kirbyplants{icon_state = "plant-22"},/turf/open/floor/plasteel/dark,/area/space)
+"az" = (/obj/machinery/light{dir = 1},/obj/machinery/vending/snack,/turf/open/floor/plasteel/dark,/area/space)
+"aA" = (/obj/structure/chair/sofa/right,/turf/open/floor/plasteel/dark,/area/space)
+"aB" = (/obj/structure/chair/sofa,/turf/open/floor/plasteel/dark,/area/space)
+"aC" = (/obj/machinery/light{dir = 1; light_color = "#c1caff"},/obj/structure/chair/sofa/left,/turf/open/floor/plasteel/dark,/area/space)
+"aD" = (/obj/structure/table/reinforced,/obj/item/gun/ballistic/revolver/reverse,/turf/open/floor/mineral/plastitanium/red,/area/space)
+"aE" = (/obj/effect/turf_decal/stripes/line{dir = 8},/obj/effect/turf_decal/stripes/corner{dir = 8},/turf/open/floor/plasteel/dark,/area/space)
+"aF" = (/obj/structure/chair/office/dark{dir = 4; name = "tactical swivel chair"},/mob/living/simple_animal/hostile/syndicate/melee,/turf/open/floor/plasteel/dark,/area/space)
+"aG" = (/obj/effect/turf_decal/stripes/corner{dir = 4},/turf/open/floor/plasteel/dark,/area/space)
+"aH" = (/obj/structure/closet/syndicate,/obj/item/gun/ballistic/automatic/pistol,/obj/item/ammo_box/magazine/m10mm,/turf/open/floor/mineral/plastitanium/red,/area/space)
+"aI" = (/obj/effect/turf_decal/stripes/line{dir = 8},/obj/effect/turf_decal/stripes/corner,/turf/open/floor/plasteel/dark,/area/space)
+"aJ" = (/obj/effect/turf_decal/stripes/line,/turf/open/floor/plasteel/dark,/area/space)
+"aK" = (/obj/effect/turf_decal/stripes/corner{dir = 1},/turf/open/floor/plasteel/dark,/area/space)
+"aL" = (/obj/item/twohanded/required/kirbyplants{icon_state = "plant-22"},/obj/machinery/light{dir = 8},/turf/open/floor/plasteel/dark,/area/space)
+"aM" = (/obj/machinery/door/airlock/hatch,/turf/open/floor/plasteel/dark,/area/space)
+"aN" = (/obj/machinery/light,/obj/structure/closet/syndicate,/obj/item/storage/belt/military,/obj/item/clothing/head/helmet/swat,/obj/item/clothing/glasses/thermal,/obj/item/clothing/under/syndicate/combat,/turf/open/floor/mineral/plastitanium/red,/area/space)
+"aO" = (/obj/machinery/suit_storage_unit/open,/turf/open/floor/mineral/plastitanium/red,/area/space)
+"aP" = (/obj/effect/turf_decal/stripes/line{dir = 8},/obj/machinery/light,/turf/open/floor/plasteel/dark,/area/space)
+"aQ" = (/obj/machinery/light,/obj/structure/table/reinforced,/obj/item/toy/cards/deck/syndicate,/turf/open/floor/plasteel/dark,/area/space)
+"aR" = (/obj/structure/table/reinforced,/obj/item/lighter,/obj/item/storage/fancy/cigarettes/cigpack_syndicate,/turf/open/floor/plasteel/dark,/area/space)
+"aS" = (/obj/structure/table/reinforced,/obj/item/reagent_containers/food/snacks/beans,/turf/open/floor/plasteel/dark,/area/space)
+"aT" = (/obj/machinery/light,/obj/item/twohanded/required/kirbyplants{icon_state = "plant-21"; pixel_x = -3; pixel_y = 3},/turf/open/floor/plasteel/dark,/area/space)
+"aU" = (/turf/open/floor/plasteel,/area/space)
+"aV" = (/obj/machinery/door/airlock/hatch{locked = 0; name = "Armoury"; req_access_txt = "150"},/obj/effect/mapping_helpers/airlock/locked,/turf/open/floor/plasteel/dark,/area/space)
+"aW" = (/turf/open/floor/plating,/area/space)
+"aX" = (/obj/machinery/light{dir = 8},/turf/open/floor/plasteel/dark,/area/space)
+"aY" = (/obj/structure/table/reinforced,/obj/item/storage/fancy/donut_box,/turf/open/floor/plasteel/dark,/area/space)
+"aZ" = (/obj/machinery/door/window/eastleft,/obj/effect/turf_decal/tile/red,/obj/effect/turf_decal/tile/red{dir = 4},/turf/open/floor/plasteel/dark,/area/space)
+"ba" = (/obj/effect/turf_decal/stripes/line{dir = 1},/mob/living/simple_animal/hostile/syndicate/space/stormtrooper,/turf/open/floor/plasteel/dark,/area/space)
+"bb" = (/obj/structure/bed/pod,/obj/item/bedsheet/syndie,/obj/effect/turf_decal/tile/red{dir = 1},/obj/effect/turf_decal/tile/red{dir = 8},/turf/open/floor/plasteel/dark,/area/space)
+"bc" = (/obj/structure/closet/syndicate/personal,/obj/item/storage/backpack/chameleon,/obj/item/clothing/under/syndicate/tacticool/skirt,/obj/item/clothing/shoes/sneakers/black,/obj/effect/turf_decal/tile/red{dir = 4},/obj/effect/turf_decal/tile/red,/turf/open/floor/plasteel/dark,/area/space)
+"bd" = (/obj/structure/closet/syndicate/personal,/obj/item/clothing/under/syndicate/tacticool,/obj/item/clothing/shoes/chameleon,/obj/item/clothing/glasses/night,/obj/item/crowbar/red,/obj/effect/turf_decal/tile/red{dir = 8},/obj/effect/turf_decal/tile/red{dir = 1},/turf/open/floor/plasteel/dark,/area/space)
+"be" = (/obj/structure/bed/pod,/obj/item/bedsheet/syndie,/obj/effect/turf_decal/tile/red,/obj/effect/turf_decal/tile/red{dir = 4},/turf/open/floor/plasteel/dark,/area/space)
+"bf" = (/obj/structure/table/reinforced,/obj/effect/turf_decal/tile/red{dir = 1},/obj/effect/turf_decal/tile/red{dir = 4},/obj/effect/turf_decal/tile/red,/obj/effect/turf_decal/tile/red{dir = 8},/turf/open/floor/plasteel/dark,/area/space)
+"bg" = (/obj/structure/table/reinforced,/obj/effect/turf_decal/tile/red{dir = 1},/obj/effect/turf_decal/tile/red{dir = 4},/obj/effect/turf_decal/tile/red,/obj/effect/turf_decal/tile/red{dir = 8},/obj/item/reagent_containers/food/snacks/burger/clown,/turf/open/floor/plasteel/dark,/area/space)
+"bh" = (/obj/structure/window/plastitanium,/obj/structure/grille,/turf/open/space/basic,/area/space)
+"bi" = (/obj/machinery/door/airlock/hatch,/turf/open/floor/plasteel,/area/space)
+"bj" = (/obj/structure/table/reinforced,/obj/machinery/door/poddoor/shutters/preopen{id = "kitchen2"; name = "kitchen shutters"},/obj/item/reagent_containers/food/snacks/dankpocket,/obj/item/reagent_containers/food/snacks/dankpocket,/obj/item/reagent_containers/food/snacks/dankpocket,/turf/open/floor/plasteel,/area/space)
+"bk" = (/obj/structure/table/reinforced,/obj/machinery/door/poddoor/shutters/preopen{id = "kitchen2"; name = "kitchen shutters"},/obj/item/reagent_containers/food/snacks/syndicake,/obj/item/reagent_containers/food/snacks/syndicake,/obj/item/reagent_containers/food/snacks/syndicake,/turf/open/floor/plasteel,/area/space)
+"bl" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/effect/turf_decal/tile/neutral{dir = 8},/obj/effect/turf_decal/tile/neutral{dir = 1},/turf/open/floor/plasteel/dark,/area/space)
+"bm" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/effect/turf_decal/tile/neutral{dir = 8},/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/item/twohanded/required/kirbyplants{icon_state = "plant-14"},/turf/open/floor/plasteel/dark,/area/space)
+"bn" = (/obj/effect/turf_decal/tile/red{dir = 1},/obj/effect/turf_decal/tile/red{dir = 4},/turf/open/floor/plasteel/dark,/area/space)
+"bo" = (/obj/effect/turf_decal/tile/red{dir = 1},/turf/open/floor/plasteel/dark,/area/space)
+"bp" = (/obj/structure/table/reinforced,/obj/effect/turf_decal/tile/red{dir = 1},/obj/effect/turf_decal/tile/red{dir = 4},/obj/effect/turf_decal/tile/red,/obj/effect/turf_decal/tile/red{dir = 8},/obj/effect/spawner/lootdrop/three_course_meal,/turf/open/floor/plasteel/dark,/area/space)
+"bq" = (/obj/structure/chair{dir = 1},/turf/open/floor/plasteel/dark,/area/space)
+"br" = (/obj/item/twohanded/required/kirbyplants{icon_state = "plant-21"; pixel_x = -3; pixel_y = 3},/turf/open/floor/plasteel/dark,/area/space)
+"bs" = (/obj/structure/bed/pod,/obj/item/bedsheet/syndie,/obj/effect/turf_decal/tile/red{dir = 8},/obj/effect/turf_decal/tile/red{dir = 1},/turf/open/floor/plasteel/dark,/area/space)
+"bt" = (/mob/living/simple_animal/hostile/syndicate/ranged/infiltrator,/turf/open/floor/plasteel/dark,/area/space)
+"bu" = (/obj/structure/closet/syndicate/personal,/obj/item/storage/backpack,/obj/item/clothing/under/chameleon,/obj/item/clothing/shoes/sneakers/black,/obj/effect/turf_decal/tile/red{dir = 1},/obj/effect/turf_decal/tile/red{dir = 8},/turf/open/floor/plasteel/dark,/area/space)
+"bv" = (/obj/structure/bed/pod,/obj/item/bedsheet/syndie,/obj/effect/turf_decal/tile/red{dir = 4},/obj/effect/turf_decal/tile/red,/turf/open/floor/plasteel/dark,/area/space)
+"bw" = (/obj/structure/table/reinforced,/turf/open/floor/mineral/plastitanium/red,/area/space)
+"bx" = (/obj/machinery/light{dir = 1; light_color = "#c1caff"},/turf/open/floor/plasteel,/area/space)
+"by" = (/obj/structure/rack,/obj/item/clothing/suit/space/syndicate,/obj/item/tank/internals/emergency_oxygen/empty,/turf/open/floor/plasteel,/area/space)
+"bz" = (/obj/effect/turf_decal/stripes/line,/turf/open/floor/mineral/plastitanium/red,/area/space)
+"bA" = (/obj/effect/turf_decal/stripes/line,/obj/effect/turf_decal/stripes/line{dir = 4},/turf/open/floor/mineral/plastitanium/red,/area/space)
+"bB" = (/obj/effect/turf_decal/stripes/line{dir = 8},/obj/effect/turf_decal/stripes/line,/turf/open/floor/mineral/plastitanium/red,/area/space)
+"bC" = (/obj/effect/turf_decal/tile/neutral{dir = 8},/obj/effect/turf_decal/tile/neutral{dir = 1},/turf/open/floor/plasteel/dark,/area/space)
+"bD" = (/obj/effect/turf_decal/stripes/corner,/turf/open/floor/plasteel/dark,/area/space)
+"bE" = (/obj/machinery/gateway{dir = 9},/obj/effect/turf_decal/stripes/line,/turf/open/floor/plasteel/dark,/area/space)
+"bF" = (/obj/structure/table/reinforced,/obj/machinery/recharger,/turf/open/floor/plasteel/dark,/area/space)
+"bG" = (/obj/machinery/gateway{dir = 5},/obj/effect/turf_decal/stripes/line,/turf/open/floor/plasteel/dark,/area/space)
+"bH" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 4},/turf/open/floor/plasteel/dark,/area/space)
+"bI" = (/obj/effect/turf_decal/tile/neutral{dir = 8},/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/structure/table/reinforced,/turf/open/floor/plasteel/dark,/area/space)
+"bJ" = (/obj/effect/turf_decal/stripes/line{dir = 4},/turf/open/floor/plasteel/dark,/area/space)
+"bK" = (/obj/machinery/gateway{dir = 8},/turf/open/floor/mineral/plastitanium/red,/area/space)
+"bL" = (/obj/structure/closet/crate/bin,/turf/open/floor/plasteel/dark,/area/space)
+"bM" = (/obj/machinery/gateway{dir = 4},/turf/open/floor/mineral/plastitanium/red,/area/space)
+"bN" = (/obj/effect/turf_decal/stripes/line{dir = 8},/turf/open/floor/plasteel/dark,/area/space)
+"bO" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/structure/table/reinforced,/turf/open/floor/plasteel/dark,/area/space)
+"bP" = (/turf/open/floor/mineral/plastitanium/red,/area/space)
+"bQ" = (/obj/machinery/power/smes,/obj/structure/cable{icon_state = "0-2"},/turf/open/floor/plating,/area/space)
+"bR" = (/obj/machinery/gateway{dir = 6},/turf/open/floor/mineral/plastitanium/red,/area/space)
+"bS" = (/obj/structure/shuttle/engine/heater,/obj/structure/window/reinforced{dir = 1; layer = 2.9},/turf/open/floor/plating,/area/space)
+"bT" = (/obj/effect/turf_decal/stripes/line,/turf/open/floor/plating,/area/space)
+"bU" = (/obj/structure/shuttle/engine/propulsion,/obj/effect/turf_decal/stripes/line,/turf/open/floor/plating,/area/space)
+"bV" = (/obj/structure/shuttle/engine/heater,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 1; layer = 2.9},/turf/open/floor/plating,/area/space)
+"bW" = (/obj/structure/shuttle/engine/heater,/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 1; layer = 2.9},/turf/open/floor/plating,/area/space)
+"bX" = (/obj/structure/shuttle/engine/large,/turf/open/space/basic,/area/space)
+"bY" = (/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 1},/obj/structure/shuttle/engine/heater,/turf/open/floor/plating,/area/space)
+"bZ" = (/obj/structure/window/reinforced{dir = 8},/obj/structure/window/reinforced{dir = 1},/obj/structure/shuttle/engine/heater,/turf/open/floor/plating,/area/space)
+"ca" = (/obj/structure/shuttle/engine/propulsion/burst,/turf/open/floor/plating,/area/space)
+"cb" = (/obj/effect/turf_decal/tile/red,/obj/effect/turf_decal/tile/red{dir = 4},/obj/effect/turf_decal/tile/red{dir = 1},/obj/effect/turf_decal/tile/red{dir = 8},/turf/open/floor/plasteel/dark,/area/space)
+"cc" = (/obj/structure/window/reinforced{dir = 1; layer = 2.9},/obj/structure/shuttle/engine/heater,/turf/open/floor/plating,/area/space)
+"cd" = (/obj/structure/closet/crate,/obj/item/stack/sheet/mineral/plasma,/obj/item/stack/sheet/mineral/plasma,/obj/item/stack/sheet/metal/twenty,/turf/open/floor/plating,/area/space)
+"ce" = (/obj/machinery/hydroponics/constructable,/turf/open/floor/grass,/area/space)
+"cf" = (/obj/machinery/biogenerator,/turf/open/floor/grass,/area/space)
+"cg" = (/obj/machinery/seed_extractor,/turf/open/floor/grass,/area/space)
+"ch" = (/obj/structure/window/reinforced,/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 1},/turf/open/floor/plasteel/dark,/area/space)
+"ci" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 1},/turf/open/floor/plasteel/dark,/area/space)
+"cj" = (/obj/machinery/power/terminal{dir = 8},/obj/structure/cable{icon_state = "0-4"},/turf/open/floor/plating,/area/space)
+"ck" = (/obj/structure/cable{icon_state = "0-8"},/obj/machinery/power/port_gen/pacman,/turf/open/floor/plating,/area/space)
+"cl" = (/obj/structure/window/reinforced{dir = 1; layer = 2.9},/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 1},/turf/open/floor/plasteel/dark,/area/space)
+"cm" = (/obj/structure/table/reinforced,/turf/open/floor/grass,/area/space)
+"cn" = (/obj/structure/rack,/obj/item/pickaxe,/obj/item/tank/internals/oxygen,/turf/open/floor/plasteel,/area/space)
+"co" = (/obj/structure/table/reinforced,/obj/machinery/power/apc/syndicate{step_y = 24},/obj/structure/cable{icon_state = "0-2"},/turf/open/floor/mineral/plastitanium/red,/area/space)
+"cp" = (/obj/structure/cable{icon_state = "0-4"},/obj/machinery/power/port_gen/pacman,/turf/open/floor/plating,/area/space)
+"cq" = (/obj/machinery/power/terminal{dir = 4},/obj/structure/cable{icon_state = "0-8"},/turf/open/floor/plating,/area/space)
+"cr" = (/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plating,/area/space)
+"cs" = (/obj/effect/turf_decal/stripes/line,/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/mineral/plastitanium/red,/area/space)
+"ct" = (/obj/structure/cable{icon_state = "1-4"},/turf/open/floor/plating,/area/space)
+"cu" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plating,/area/space)
+"cv" = (/obj/machinery/door/airlock/hatch,/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel/dark,/area/space)
+"cw" = (/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel/dark,/area/space)
+"cx" = (/obj/machinery/door/window/eastleft,/obj/effect/turf_decal/delivery/red,/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel/dark,/area/space)
+"cy" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel/dark,/area/space)
+"cz" = (/obj/machinery/door/window/westleft,/obj/effect/turf_decal/delivery/red,/obj/structure/cable{icon_state = "4-8"},/turf/open/floor/plasteel/dark,/area/space)
+"cA" = (/obj/structure/cable{icon_state = "2-8"},/obj/structure/cable{icon_state = "2-4"},/turf/open/floor/plasteel/dark,/area/space)
+"cB" = (/obj/structure/cable{icon_state = "4-8"},/obj/structure/cable{icon_state = "1-4"},/turf/open/floor/plasteel/dark,/area/space)
+"cC" = (/obj/structure/cable{icon_state = "1-8"},/turf/open/floor/plating,/area/space)
+"cD" = (/obj/machinery/gateway{dir = 1},/obj/effect/turf_decal/stripes/line,/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/plasteel/dark,/area/space)
+"cE" = (/obj/machinery/gateway/centeraway,/obj/structure/cable{icon_state = "1-2"},/turf/open/floor/mineral/plastitanium/red,/area/space)
+"cF" = (/obj/effect/turf_decal/stripes/line{dir = 8},/obj/effect/landmark/awaystart,/turf/open/floor/plasteel/dark,/area/space)
+"cG" = (/obj/effect/turf_decal/stripes/line{dir = 4},/obj/effect/landmark/awaystart,/turf/open/floor/plasteel/dark,/area/space)
+"cH" = (/obj/machinery/gateway,/obj/structure/cable,/turf/open/floor/mineral/plastitanium/red,/area/space)
+"cI" = (/obj/machinery/door/airlock/external,/obj/structure/fans/tiny,/obj/effect/mapping_helpers/airlock/cyclelink_helper{dir = 4},/turf/open/floor/plating,/area/space)
+"cJ" = (/obj/structure/shuttle/engine/propulsion/burst,/turf/open/space/basic,/area/space)
+"cK" = (/obj/structure/closet/crate,/obj/item/stack/sheet/metal/twenty,/turf/open/floor/plating,/area/space)
+"cL" = (/obj/machinery/door/airlock/external,/obj/effect/mapping_helpers/airlock/cyclelink_helper{dir = 8},/turf/open/floor/plating,/area/space)
+"cM" = (/obj/structure/rack,/obj/item/storage/toolbox/emergency,/turf/open/floor/plating,/area/space)
+"cN" = (/obj/structure/rack,/obj/item/storage/toolbox/mechanical/old,/turf/open/floor/plating,/area/space)
+"cO" = (/obj/structure/closet/crate,/obj/item/storage/pill_bottle/anitrad,/turf/open/floor/plating,/area/space)
+"cP" = (/obj/item/sharpener,/obj/structure/table/reinforced,/turf/open/floor/plasteel/dark,/area/space)
+"cQ" = (/obj/machinery/door/airlock/external,/obj/effect/mapping_helpers/airlock/cyclelink_helper{dir = 4},/turf/open/floor/plating,/area/space)
+"cR" = (/obj/machinery/door/airlock/external,/obj/structure/fans/tiny,/obj/effect/mapping_helpers/airlock/cyclelink_helper{dir = 8},/turf/open/floor/plating,/area/space)
+"cS" = (/obj/structure/rack,/obj/item/pickaxe,/obj/item/tank/internals/oxygen/empty,/turf/open/floor/plasteel,/area/space)
+"cT" = (/obj/structure/rack,/obj/item/clothing/head/helmet/space/syndicate,/turf/open/floor/plasteel,/area/space)
+"cU" = (/obj/machinery/light,/turf/open/floor/plasteel,/area/space)
+"cV" = (/obj/machinery/light{dir = 1; light_color = "#c1caff"},/turf/open/floor/plasteel/dark,/area/space)
+"cW" = (/obj/structure/chair,/obj/machinery/light{dir = 1; light_color = "#c1caff"},/turf/open/floor/plasteel/dark,/area/space)
+"cX" = (/obj/machinery/light{dir = 4},/turf/open/floor/plasteel/dark,/area/space)
+"cY" = (/obj/machinery/light,/turf/open/floor/plasteel/dark,/area/space)
+"cZ" = (/mob/living/simple_animal/hostile/syndicate/ranged/smg,/turf/open/floor/plasteel,/area/space)
+"da" = (/obj/structure/window/plastitanium,/obj/structure/grille,/obj/machinery/door/poddoor/shutters,/turf/open/floor/plating,/area/space)
+"db" = (/obj/machinery/hydroponics/constructable,/obj/machinery/light{dir = 8},/turf/open/floor/grass,/area/space)
+"dc" = (/obj/machinery/hydroponics/constructable,/obj/machinery/light{dir = 4; light_color = "#c1caff"},/turf/open/floor/grass,/area/space)
+"dd" = (/obj/effect/turf_decal/stripes/line{dir = 4},/obj/machinery/light{dir = 1; light_color = "#c1caff"},/turf/open/floor/mineral/plastitanium/red,/area/space)
+"de" = (/obj/effect/turf_decal/stripes/line{dir = 8},/obj/machinery/light{dir = 1; light_color = "#c1caff"},/turf/open/floor/mineral/plastitanium/red,/area/space)
+"df" = (/obj/machinery/mech_bay_recharge_port,/obj/machinery/light{dir = 1; light_color = "#c1caff"},/turf/open/floor/plasteel,/area/space)
+"dg" = (/obj/structure/mecha_wreckage/ripley/mkii,/turf/open/floor/plasteel,/area/space)
+"dh" = (/obj/machinery/mech_bay_recharge_port,/turf/open/floor/plasteel,/area/space)
+"di" = (/obj/structure/mecha_wreckage/marauder,/turf/open/floor/plasteel,/area/space)
+"dj" = (/obj/structure/rack,/obj/item/crowbar/red,/obj/item/weldingtool,/obj/machinery/light{dir = 1; light_color = "#c1caff"},/obj/item/clothing/head/welding,/turf/open/floor/plasteel,/area/space)
+"dk" = (/obj/structure/rack,/obj/machinery/light/small{dir = 8},/turf/open/floor/plating,/area/space)
+"dl" = (/obj/structure/cable{icon_state = "4-8"},/obj/structure/table/reinforced,/turf/open/floor/plasteel/dark,/area/space)
+"dm" = (/obj/structure/closet/crate,/obj/item/stack/sheet/mineral/plasma,/obj/item/stack/sheet/mineral/plasma,/obj/machinery/light/small{dir = 4},/turf/open/floor/plating,/area/space)
+"dn" = (/obj/machinery/hydroponics/constructable,/obj/machinery/hydroponics/constructable,/obj/machinery/light{dir = 4; light_color = "#c1caff"},/turf/open/floor/grass,/area/space)
+"do" = (/obj/machinery/mech_bay_recharge_port,/obj/machinery/light,/turf/open/floor/plasteel,/area/space)
+"dp" = (/obj/structure/mecha_wreckage/honker/dark,/turf/open/floor/plasteel,/area/space)
+"dq" = (/obj/structure/mecha_wreckage/ripley/deathripley,/turf/open/floor/plasteel,/area/space)
+"dr" = (/obj/structure/rack,/obj/item/stack/sheet/metal/twenty,/obj/machinery/light,/obj/item/clothing/head/welding,/turf/open/floor/plasteel,/area/space)
+"ds" = (/obj/effect/turf_decal/tile/neutral{dir = 8},/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/structure/table/reinforced,/obj/machinery/light{dir = 8},/turf/open/floor/plasteel/dark,/area/space)
+"dt" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/structure/table/reinforced,/obj/machinery/light{dir = 4},/turf/open/floor/plasteel/dark,/area/space)
+"du" = (/obj/machinery/light/small{brightness = 3; dir = 8},/turf/open/floor/plating,/area/space)
+"dv" = (/obj/machinery/light/small{dir = 4},/turf/open/floor/plating,/area/space)
+"dw" = (/obj/structure/sign/warning{step_x = 30},/turf/open/floor/plasteel/dark,/area/space)
+"dx" = (/obj/structure/sign/warning/vacuum,/turf/closed/indestructible/opshuttle,/area/space)
+"dy" = (/mob/living/simple_animal/hostile/syndicate/ranged/shotgun,/turf/open/floor/plasteel/dark,/area/space)
+"dz" = (/mob/living/simple_animal/hostile/syndicate/ranged/smg/space,/turf/open/floor/plasteel,/area/space)
+"dA" = (/mob/living/simple_animal/hostile/syndicate/melee/sword/space,/turf/open/floor/plasteel,/area/space)
+"dB" = (/obj/structure/flora/ausbushes/brflowers,/obj/structure/flora/ausbushes/lavendergrass,/obj/structure/flora/ausbushes/leafybush,/turf/open/floor/grass,/area/space)
+"dC" = (/obj/structure/flora/ausbushes/grassybush,/obj/structure/flora/ausbushes/lavendergrass,/turf/open/floor/grass,/area/space)
+"dD" = (/obj/structure/flora/ausbushes/pointybush,/obj/structure/flora/ausbushes/sparsegrass,/turf/open/floor/grass,/area/space)
+"dE" = (/obj/structure/flora/ausbushes/sunnybush,/obj/structure/flora/ausbushes/reedbush,/obj/structure/flora/ausbushes/ywflowers,/turf/open/floor/grass,/area/space)
+"dF" = (/obj/structure/flora/ausbushes/brflowers,/obj/structure/flora/ausbushes/grassybush,/turf/open/floor/grass,/area/space)
+"dG" = (/obj/structure/flora/ausbushes/pointybush,/obj/structure/flora/ausbushes/leafybush,/obj/structure/flora/ausbushes/sparsegrass,/turf/open/floor/grass,/area/space)
+"dH" = (/obj/structure/chair,/mob/living/simple_animal/hostile/syndicate/ranged,/turf/open/floor/plasteel/dark,/area/space)
+"dI" = (/mob/living/simple_animal/hostile/syndicate/ranged/smg,/turf/open/floor/plasteel/dark,/area/space)
+"dJ" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/effect/turf_decal/tile/neutral{dir = 8},/obj/effect/turf_decal/tile/neutral{dir = 1},/mob/living/simple_animal/hostile/syndicate/ranged/shotgun,/turf/open/floor/plasteel/dark,/area/space)
+"dK" = (/obj/structure/chair{dir = 1},/obj/machinery/light,/mob/living/simple_animal/hostile/syndicate/melee,/turf/open/floor/plasteel/dark,/area/space)
+"dL" = (/obj/structure/closet/syndicate/personal,/obj/effect/spawner/lootdrop/armory_contraband,/obj/item/clothing/shoes/combat,/obj/effect/turf_decal/tile/red,/obj/effect/turf_decal/tile/red{dir = 4},/mob/living/simple_animal/hostile/syndicate/melee/sword,/turf/open/floor/plasteel/dark,/area/space)
+"dM" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 1},/mob/living/simple_animal/hostile/syndicate/ranged/infiltrator,/turf/open/floor/plasteel/dark,/area/space)
+"dN" = (/mob/living/simple_animal/hostile/syndicate/ranged/infiltrator,/turf/open/floor/plasteel,/area/space)
+"dO" = (/obj/machinery/porta_turret/syndicate{dir = 9},/turf/closed/indestructible/opshuttle,/area/space)
+"dP" = (/obj/machinery/porta_turret/syndicate{dir = 5},/turf/closed/indestructible/opshuttle,/area/space)
+"dQ" = (/obj/machinery/porta_turret/syndicate/energy,/turf/closed/indestructible/opshuttle,/area/space)
+"dR" = (/obj/machinery/porta_turret/syndicate{dir = 10},/turf/closed/indestructible/opshuttle,/area/space)
+"dS" = (/obj/machinery/porta_turret/syndicate{dir = 6},/turf/closed/indestructible/opshuttle,/area/space)
+
+(1,1,1) = {"
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababacacacacadacacababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababaeafbFagahaiajafakababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacagalalalalamalalanalagacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacaYaoalapalalalalalaFbFacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababalalalalalalalalalababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababaqaraqababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabasalatabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabagalagabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabasalatabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadOabababababaqaraqabababababdPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabauavawaxabaLalayaqazaAaBaCabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaDaEbaaGabalbtalaqalalalalabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaHaIaJaKaValalalaMalalalalabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaNavaOaPabaXalalaqaQaRaSaTabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababababaqaMaqababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababaUaUaUabalalalabaUaUaUabababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababaUbxaUabaUaUaUabalalalabaUcZaUabaUbxaUababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbyaUaUaUabaUaUaUdQalalaldQaUaUaUabaUaUaUcnabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababalalabalalalalalalalalalaldwabalalabababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacIaWcLalalaMaldyalalalalalalalalalaMalalcQaWcRaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababdxalalabalalalalalalalalalalalabalaldxababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcSaUdzaUabaqaqaqabalalalabaqaqaqabaUdAaUcTabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadRabaUcUaUabdBdCdDabalalalabdEdFdGabaUcUaUabdSaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababababaqaMaqabababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcPcVaZaldHcWalabaXalcXabbbcVbcabbdcVbeabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabalalabalbfbgalbhalalalababaMabababbiababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbjbkabalalalalbialdIalaMblbldJblblblbmabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababbnbnboalbpbfalbhalalalababaMabababaMabababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaWaWabbLcYalalbqdKalabbralbrabbscYdLabbucYbvabaWaWabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababababababababababababdaaMdaababababababababababababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadOabbQcjckabdbcecfcgcedcabbwddalalaldecoabdfdgaUdhdidjabcpcqbQabdPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcdcraWaWaqchchcicichchdabzbAalalalbBcsdaaUaUaUaUaUaUaqaWaWcrcKabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabdkctcucucvcwcxcycyczcwcvcwcwcwcAcwcwcBcvcwcwdldlcwcwcvcucucCdmabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcMaWaWaWaqclcldMciclcldabCbDbEcDbGaKbHdaaUaUaUaUdNaUaqaWaWaWcNabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcOaWaWaWabdbcecmcmcednabbIbJbKcEbMcFbOabdodpaUdhdqdrabaWaWaWaWabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaWaWaWaWababababababababdscGbPcHbRbNdtababababababababaWaWaWaWabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabduaWaWdvabaaaaaaaaaaaaababbSbSbSbSbSababaaaaaaaaaaaaabduaWaWdvabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabaWaWaWaWabaaaaaaaaaaaaaadRbTbTbUbTbTdSaaaaaaaaaaaaaaabaWaWaWaWabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbVaWaWbWdSaaaaaaaaaaaaaaaabXaaaabXaaaaaaaaaaaaaaaaaadRbYaWaWbZabaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacabSbScaaaaaaablaacbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacccccaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacJcJaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacJcJaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+"}
