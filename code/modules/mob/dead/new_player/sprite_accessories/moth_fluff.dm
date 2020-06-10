@@ -6,10 +6,6 @@
 	icon = 'icons/mob/wings.dmi'
 	color_src = 0
 
-/datum/sprite_accessory/moth_fluff/none
-	name = "None"
-	icon_state = "none"
-
 /datum/sprite_accessory/moth_fluff/plain
 	name = "Plain"
 	icon_state = "plain"

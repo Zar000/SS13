@@ -9,5 +9,3 @@
 		return
 	if(hud_used.staminas)
 		hud_used.staminas.icon_state = staminahudamount()
-	if(hud_used.staminabuffer)
-		hud_used.staminabuffer.icon_state = staminabufferhudamount()

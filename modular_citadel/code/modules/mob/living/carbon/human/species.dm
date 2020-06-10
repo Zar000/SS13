@@ -24,13 +24,9 @@
 		if(INTENT_DISARM)
 			altdisarm(M, H, attacker_style)
 			return TRUE
-	return FALSE
 
 /datum/species/proc/althelp(mob/living/carbon/human/user, mob/living/carbon/human/target, datum/martial_art/attacker_style)
 	if(user == target && istype(user))
-		if(user.getStaminaLoss() >= STAMINA_SOFTCRIT)
-			to_chat(user, "<span class='warning'>You're too exhausted for that.</span>")
-			return
 		if(!user.resting)
 			to_chat(user, "<span class='notice'>You can only force yourself up if you're on the ground.</span>")
 			return
@@ -41,9 +37,6 @@
 		playsound(user, 'sound/weapons/thudswoosh.ogg', 50, 1, -1)
 
 /datum/species/proc/altdisarm(mob/living/carbon/human/user, mob/living/carbon/human/target, datum/martial_art/attacker_style)
-	if(user.getStaminaLoss() >= STAMINA_SOFTCRIT)
-		to_chat(user, "<span class='warning'>You're too exhausted.</span>")
-		return FALSE
 	if(target.check_block())
 		target.visible_message("<span class='warning'>[target] blocks [user]'s shoving attempt!</span>")
 		return FALSE
@@ -55,7 +48,6 @@
 		if(user == target)
 			return
 		user.do_attack_animation(target, ATTACK_EFFECT_DISARM)
-		user.adjustStaminaLossBuffered(4)
 		playsound(target, 'sound/weapons/thudswoosh.ogg', 50, TRUE, -1)
 
 		if(target.w_uniform)
