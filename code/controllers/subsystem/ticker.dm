@@ -211,6 +211,7 @@ SUBSYSTEM_DEF(ticker)
 				toggle_ooc(TRUE) // Turn it on
 				toggle_dooc(TRUE)
 				declare_completion(force_ending)
+				HandleTemplateStationRoundEnd()
 				Master.SetRunLevel(RUNLEVEL_POSTGAME)
 
 
