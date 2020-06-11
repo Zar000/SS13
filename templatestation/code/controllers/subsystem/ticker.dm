@@ -8,3 +8,6 @@
     for(var/obj/machinery/door/airlock/airlock in GLOB.roundend_open_airlocks)
         if(airlock)
             airlock.prison_open()
+    for(var/obj/machinery/door/poddoor/poddoor in GLOB.roundend_open_poddoors)
+        if(poddoor)
+            poddoor.open()
