@@ -87,7 +87,13 @@
 	var/shouldwakeup = FALSE //convenience var for forcibly waking up an idling AI on next check.
 
 	//domestication
-	var/tame = 0
+	var/tame = FALSE
+	//What the mob eats
+	var/list/food_tame_type
+	//Starting success chance for taming
+	var/tame_chance
+	//Added chance after failed tame
+	var/bonus_tame_chance
 
 	var/my_z // I don't want to confuse this with client registered_z
 
@@ -160,6 +166,27 @@
 						Move(get_step(src, anydir), anydir)
 						turns_since_move = 0
 			return 1
+
+/mob/living/simple_animal/attackby(obj/item/O, mob/user, params)
+	if(!is_type_in_list(O, food_tame_type))
+		..()
+		return
+	else
+		user.visible_message("<span class='notice'>[user] hand-feeds [O] to [src].</span>", "<span class='notice'>You hand-feed [O] to [src].</span>")
+		qdel(O)
+		if(tame)
+			return
+		if (prob(tame_chance))
+			user.visible_message("<span class='notice'>[user] hand-feeds [O] to [src].</span> and it looks more docile", "<span class='notice'>You hand-feed [O] to [src].</span> and looks more docile") 
+			tame = TRUE
+			tamed()
+		else
+			tame_chance += bonus_tame_chance
+
+///Extra effects to add when the mob is tamed, such as adding a riding component
+/mob/living/simple_animal/proc/tamed()
+	return
+
 
 /mob/living/simple_animal/proc/handle_automated_speech(var/override)
 	set waitfor = FALSE
