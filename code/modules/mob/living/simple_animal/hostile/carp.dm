@@ -19,6 +19,9 @@
 	speed = 0
 	maxHealth = 25
 	health = 25
+	food_tame_type = list(/obj/item/reagent_containers/food/snacks/meat)
+	tame_chance = 10
+	bonus_tame_chance = 5
 	spacewalk = TRUE
 
 	harm_intent_damage = 8
@@ -37,12 +40,6 @@
 	movement_type = FLYING
 	pressure_resistance = 200
 	gold_core_spawnable = HOSTILE_SPAWN
-
-/mob/living/simple_animal/hostile/carp/AttackingTarget()
-	. = ..()
-	if(. && ishuman(target))
-		var/mob/living/carbon/human/H = target
-		H.adjustStaminaLoss(8)
 
 /mob/living/simple_animal/hostile/carp/holocarp
 	icon_state = "holocarp"
@@ -105,3 +102,17 @@
 	melee_damage_upper = 18
 
 #undef REGENERATION_DELAY
+
+/mob/living/simple_animal/hostile/carp/tamed()
+	. = ..()
+	can_buckle = TRUE
+	buckle_lying = FALSE
+	var/datum/component/riding/D = LoadComponent(/datum/component/riding)
+	D.set_riding_offsets(RIDING_OFFSET_ALL, list(TEXT_NORTH = list(0, 13), TEXT_SOUTH = list(0, 15), TEXT_EAST = list(-2, 12), TEXT_WEST = list(2, 12)))
+	D.set_vehicle_dir_layer(SOUTH, ABOVE_MOB_LAYER)
+	D.set_vehicle_dir_layer(NORTH, OBJ_LAYER)
+	D.set_vehicle_dir_layer(EAST, OBJ_LAYER)
+	D.set_vehicle_dir_layer(WEST, OBJ_LAYER)
+	D.drive_verb = "ride"
+	D.override_allow_spacemove = TRUE
+	faction = list("neutral")
