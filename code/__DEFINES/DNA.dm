@@ -140,7 +140,6 @@
 #define ORGAN_SLOT_BRAIN_ANTIDROP "brain_antidrop"
 #define ORGAN_SLOT_BRAIN_ANTISTUN "brain_antistun"
 #define ORGAN_SLOT_TAIL "tail"
-#define ORGAN_SLOT_PENIS "penis"
 ////organ defines
 #define STANDARD_ORGAN_THRESHOLD 	100
 #define STANDARD_ORGAN_HEALING 		0.001
@@ -151,4 +150,4 @@
 //used for the can_chromosome var on mutations
 #define CHROMOSOME_NEVER 0
 #define CHROMOSOME_NONE 1
-#define CHROMOSOME_USED 2 
+#define CHROMOSOME_USED 2
