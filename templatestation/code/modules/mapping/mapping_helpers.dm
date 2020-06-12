@@ -13,7 +13,7 @@
 	. = ..()
 	if(!mapload)
 		log_world("### MAP WARNING, [src] spawned outside of mapload!")
-		//return hey hey people sseth here
+		return
 	var/obj/machinery/door/door = locate(/obj/machinery/door) in loc
 	if(door)
 		if(door in GLOB.roundend_open_doors)
