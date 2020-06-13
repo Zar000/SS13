@@ -12,7 +12,6 @@
 	//pref vars
 	var/screenshake = 100
 	var/damagescreenshake = 2
-	var/arousable = TRUE
 	var/widescreenpref = TRUE
 	var/autostand = TRUE
 
