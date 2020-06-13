@@ -1768,7 +1768,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					if (!isnull(desiredfps))
 						clientfps = desiredfps
 						parent.fps = desiredfps
-
 //Hyperstation Body Size
 
 				if("bodysize")
