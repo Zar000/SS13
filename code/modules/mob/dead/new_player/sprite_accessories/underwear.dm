@@ -12,12 +12,6 @@
 	has_color = TRUE
 	gender = MALE
 
-/datum/sprite_accessory/underwear/bottom/male_kinky
-	name = "Jockstrap"
-	icon_state = "jockstrap"
-	has_color = TRUE
-	gender = MALE
-
 /datum/sprite_accessory/underwear/bottom/briefs
 	name = "Briefs"
 	icon_state = "briefs"
@@ -95,11 +89,6 @@
 /datum/sprite_accessory/underwear/bottom/female_usastripe
 	name = "Panties - Freedom"
 	icon_state = "panties_assblastusa"
-	gender = FEMALE
-
-/datum/sprite_accessory/underwear/bottom/female_kinky
-	name = "Panties - Kinky Black"
-	icon_state = "panties_kinky"
 	gender = FEMALE
 
 /datum/sprite_accessory/underwear/bottom/panties_uk

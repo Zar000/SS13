@@ -639,10 +639,10 @@
 	required_reagents  = list("mindbreaker" = 1, "synaptizine" = 1, "water" = 1)
 
 /datum/chemical_reaction/cat
-	name = "felined mutation toxic"
+	name = "felinid mutation toxic"
 	id = "cats"
 	results = list("felinidmutationtoxin" = 1)
-	required_reagents  = list("mindbreaker" = 1, "ammonia" = 1, "water" = 1, "aphro" = 10, "stablemutationtoxin" = 1) // Maybe aphro+ if it becomes a shitty meme
+	required_reagents  = list("mindbreaker" = 1, "ammonia" = 1, "water" = 1, "stablemutationtoxin" = 1)
 	required_temp = 450
 
 /datum/chemical_reaction/moff
@@ -653,7 +653,7 @@
 	required_temp = 320
 
 /datum/chemical_reaction/notlight //Harder to make do to it being a hard race to play
-	name = "shadow muatatuin toxic"
+	name = "shadow mutation toxic"
 	id = "notlight"
 	results = list("shadowmutationtoxin" = 1)
 	required_reagents  = list("liquid_dark_matter" = 5, "synaptizine" = 10, "oculine" = 10, "stablemutationtoxin" = 1)
