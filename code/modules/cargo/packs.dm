@@ -1577,7 +1577,7 @@
 
 /datum/supply_pack/science/beakers
 	name = "Chemistry Beakers Crate"
-	desc = "Glassware for any chemistry lab! Contains four small beakers, three large, two plastic, and one metamaterial. As well as three droppers and two pairs of latex gloves."
+	desc = "Glassware for any chemistry lab! Contains four small beakers, three large, three plastic, two X-large, and one metamaterial. As well as three droppers and two pairs of latex gloves." // TEMPLATESTATION change: "two plastic" --> "three plastic, two X-large"
 	cost = 2000
 	contains = list(/obj/item/reagent_containers/glass/beaker,
 					/obj/item/reagent_containers/glass/beaker,
@@ -1586,6 +1586,9 @@
 					/obj/item/reagent_containers/glass/beaker/large,
 					/obj/item/reagent_containers/glass/beaker/large,
 					/obj/item/reagent_containers/glass/beaker/large,
+					/obj/item/reagent_containers/glass/beaker/plastic/small, // TEMPLATESTATION change
+					/obj/item/reagent_containers/glass/beaker/plastic/small, // TEMPLATESTATION change
+					/obj/item/reagent_containers/glass/beaker/plastic/small, // TEMPLATESTATION change
 					/obj/item/reagent_containers/glass/beaker/plastic,
 					/obj/item/reagent_containers/glass/beaker/plastic,
 					/obj/item/reagent_containers/glass/beaker/meta,
