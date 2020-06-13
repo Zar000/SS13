@@ -62,7 +62,6 @@
 	new_dna.species = new species.type
 	new_dna.real_name = real_name
 	new_dna.nameless = nameless
-	new_dna.custom_species = custom_species
 	new_dna.mutations = mutations.Copy()
 
 //See mutation.dm for what 'class' does. 'time' is time till it removes itself in decimals. 0 for no timer
