@@ -109,9 +109,9 @@
 		using.screen_loc = ui_boxarea // CIT CHANGE
 	static_inventory += using
 
-	using.icon = tg_ui_icon_to_cit_ui(ui_style)
+	/*using.icon = tg_ui_icon_to_cit_ui(ui_style)
 	using.screen_loc = ui_voremode
-	static_inventory += using
+	static_inventory += using*/
 
 	action_intent = new /obj/screen/act_intent/segmented
 	action_intent.icon_state = mymob.a_intent

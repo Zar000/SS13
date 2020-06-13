@@ -1,26 +1,6 @@
 // Fixed to work with Citadel code. Apparently none of them had NO_MUTANTRACE flags.
 // I was pissy when I realised how to fix this because it's so fucking easy and nobody apparently had done it.
 
-/obj/item/clothing/under/stripper_pink
-	name = "pink stripper outfit"
-	icon_state = "stripper_p"
-	item_state = "stripper_p"
-	item_color = "stripper_p"
-	can_adjust = 0
-	icon = 'modular_citadel/icons/obj/clothing/vg_clothes.dmi'
-	alternate_worn_icon = 'modular_citadel/icons/mob/citadel/uniforms.dmi'
-	mutantrace_variation = NO_MUTANTRACE_VARIATION
-
-/obj/item/clothing/under/stripper_green
-	name = "green stripper outfit"
-	icon_state = "stripper_g"
-	item_state = "stripper_g"
-	item_color = "stripper_g"
-	can_adjust = 0
-	icon = 'modular_citadel/icons/obj/clothing/vg_clothes.dmi'
-	alternate_worn_icon = 'modular_citadel/icons/mob/citadel/uniforms.dmi'
-	mutantrace_variation = NO_MUTANTRACE_VARIATION
-
 /obj/item/clothing/under/wedding/bride_orange
 	name = "orange wedding dress"
 	desc = "A big and puffy orange dress."
@@ -76,15 +56,6 @@
 	alternate_worn_icon = 'modular_citadel/icons/mob/citadel/uniforms.dmi'
 	mutantrace_variation = NO_MUTANTRACE_VARIATION
 
-/obj/item/clothing/under/mankini
-	name = "pink mankini"
-	icon_state = "mankini"
-	item_state = "mankini"
-	item_color = "mankini"
-	can_adjust = 0
-	icon = 'modular_citadel/icons/obj/clothing/vg_clothes.dmi'
-	alternate_worn_icon = 'modular_citadel/icons/mob/citadel/uniforms.dmi'
-	mutantrace_variation = NO_MUTANTRACE_VARIATION
 /*
 
 /obj/item/clothing/under/psysuit
