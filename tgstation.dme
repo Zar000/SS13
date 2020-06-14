@@ -3073,6 +3073,7 @@
 #include "templatestation\code\game\area\areas\ruins\space.dm"
 #include "templatestation\code\game\objects\items\plushes.dm"
 #include "templatestation\code\game\objects\items\circuitboards\computer_circuitboards.dm"
+#include "templatestation\code\game\objects\items\storage\boxes.dm"
 #include "templatestation\code\modules\awaymissions\mission_code\syndicateexpedition.dm"
 #include "templatestation\code\modules\mapping\mapping_helpers.dm"
 #include "templatestation\code\modules\reagents\reagent_containers.dm"
