@@ -76,3 +76,5 @@ Success! We managed to achieve a stable Gateway link with target, preparations f
     name = "Syndicate Hydroponics Ship"
     icon_state = "away2"
     has_gravity = STANDARD_GRAVITY
+    requires_power = FALSE
+    dynamic_lighting = DYNAMIC_LIGHTING_ENABLED
