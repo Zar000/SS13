@@ -1480,7 +1480,7 @@ GLOBAL_LIST_EMPTY(roundstart_races)
 			target.forcesay(GLOB.hit_appends)
 
 /datum/species/proc/disarm(mob/living/carbon/human/user, mob/living/carbon/human/target, datum/martial_art/attacker_style)
-	// TEMPLATE STATION CHANGE: can only slap faces now.
+	// toolbeltstation CHANGE: can only slap faces now.
 	var/aim_for_mouth = user.zone_selected == "mouth"
 	var/target_on_help = target.a_intent == INTENT_HELP
 	var/target_aiming_for_mouth = target.zone_selected == "mouth"

@@ -2,7 +2,7 @@
 // This works for all doors, airlocks, blastdoors and shutters alike.
 /obj/effect/mapping_helpers/door
 	name = "generic door map helper"
-	icon = 'templatestation/icons/effects/mapping_helpers.dmi'
+	icon = 'toolbeltstation/icons/effects/mapping_helpers.dmi'
 	icon_state = ""
 
 /obj/effect/mapping_helpers/door/openroundend

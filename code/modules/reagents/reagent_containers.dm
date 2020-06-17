@@ -19,7 +19,7 @@
 	var/container_HP = 2
 	var/cached_icon
 	var/splashable = FALSE
-	var/fillstate // TEMPLATESTATION change
+	var/fillstate // toolbeltstation change
 
 /obj/item/reagent_containers/Initialize(mapload, vol)
 	. = ..()

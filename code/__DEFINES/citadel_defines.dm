@@ -39,7 +39,7 @@
 #define CITADEL_MENTOR_OOC_COLOUR "#224724"
 
 //xenobio console upgrade stuff
-#define XENOBIO_UPGRADE_MONKEYS				1 // template station change:
+#define XENOBIO_UPGRADE_MONKEYS				1 // toolbeltstation change:
 #define XENOBIO_UPGRADE_SLIMEBASIC			2 // these two now unused. would remove defines but zeke said "we might expand on xenobio in the future so keep em"
 #define XENOBIO_UPGRADE_SLIMEADV			4
 

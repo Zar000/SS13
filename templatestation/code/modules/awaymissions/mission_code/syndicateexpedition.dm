@@ -1,32 +1,3 @@
-/*
-Universal Recorder with following recording - For syndie exploration away mission.
-
-"This is my first flight log I guess...
-
-I don't know how I survived that shitshow but now I'm here.
-
-I've been blindly traveling for a day in this damned pod but shortage of hyperfuel is becoming an issue.
-
-I'll have to drop out of hyperflight soon, lets just hope for the best..."´
-
-
-
-Paper for Syndie Expedition Cruiser - Away mission
-
-^|Gateway Infiltration Experiment|^
-
-## Entry 1-A
- * Experiment Status
-Complete failure, loss of an Agent to a rouge Goliath after achieving linkage to a wrong location.
-
-## Entry 1-B
- * Experiment Status
-Strides toward improvement, managed to link our Gateway Device to target yet unexpected interference led to delimbing of one reconnaissance team agent.
-
-## Entry 1-C
- * Expermiment Status
-Success! We managed to achieve a stable Gateway link with target, preparations for infiltrations have begun.
-*/
 /obj/item/paper/fluff/awaymissions/syndicateexpedition/gatewayexperiment
 	name = "Gateway Infiltration Experiment"
 	info = "<h1><center>Gateway Infiltration Experiment</center></h3><br><hr>\
