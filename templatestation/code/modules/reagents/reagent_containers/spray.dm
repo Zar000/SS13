@@ -5,6 +5,8 @@
 	icon = 'toolbeltstation/icons/obj/janitor.dmi'
 	icon_state = "clown"
 	item_state = "clown"
+	lefthand_file = 'toolbeltstation/icons/mob/inhands/equipment/custodial_lefthand.dmi'
+	righthand_file = 'toolbeltstation/icons/mob/inhands/equipment/custodial_righthand.dmi'
 	volume = 100
 	list_reagents = list("lube" = 50)
 	possible_transfer_amounts = list(5,10,15,20,25,30,50,100)
