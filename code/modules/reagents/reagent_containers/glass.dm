@@ -133,12 +133,12 @@
 
 /obj/item/reagent_containers/glass/beaker/update_icon() 
 	if(!cached_icon)
-	// TEMPLATESTATION CHANGES BEGIN
+	// toolbeltstation CHANGES BEGIN
 		if(!fillstate || fillstate == null) // idk if !fillstate handles fillstate being null but just to be safe
 			cached_icon = icon_state
 		else
 			cached_icon = fillstate 
-	//TEMPLATESTATION CHANGES END
+	//toolbeltstation CHANGES END
 	cut_overlays()
 
 	if(reagents.total_volume)
@@ -188,7 +188,7 @@
 	volume = 150
 	amount_per_transfer_from_this = 10
 	possible_transfer_amounts = list(5,10,15,20,25,30,50,100,150)
-	fillstate = "beakerlarge" // TEMPLATESTATION change
+	fillstate = "beakerlarge" // toolbeltstation change
 
 /obj/item/reagent_containers/glass/beaker/plastic/Initialize()
 	beaker_weakness_bitflag &= ~PH_WEAK

@@ -1,7 +1,7 @@
 /mob/living/proc/resist_embedded()
 	return
 
-/mob/living/carbon/human //TEMPLATE STATION CHANGE: MOVED HERE CAUSE AROUSAL.DM IS DED
+/mob/living/carbon/human //toolbeltstation CHANGE: MOVED HERE CAUSE AROUSAL.DM IS DED
 	var/saved_underwear = ""//saves their underwear so it can be toggled later
 	var/saved_undershirt = ""
 	var/saved_socks = ""

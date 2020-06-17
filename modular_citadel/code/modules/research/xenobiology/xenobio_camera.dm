@@ -1,5 +1,5 @@
 /obj/machinery/computer/camera_advanced/xenobio
-	max_slimes = 5 // templatestation change 1 --> 5
+	max_slimes = 5 // toolbeltstation change 1 --> 5
 	var/upgradetier = 0
 
 /obj/machinery/computer/camera_advanced/xenobio/attackby(obj/item/O, mob/user, params)

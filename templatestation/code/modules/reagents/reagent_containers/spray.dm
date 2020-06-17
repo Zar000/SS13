@@ -2,7 +2,7 @@
 /obj/item/reagent_containers/spray/clown
 	name = "Floor-Be-Lubed" // better name soon(tm)
 	desc = "The ultimate in rapid lubrication technology!"
-	icon = 'templatestation/icons/obj/janitor.dmi'
+	icon = 'toolbeltstation/icons/obj/janitor.dmi'
 	icon_state = "clown"
 	item_state = "clown"
 	volume = 100
@@ -48,10 +48,10 @@
 /obj/item/reagent_containers/spray/bluespace
 	name = "bluespace spray bottle"
 	desc = "A spray bottle utilizing bluespace foam in order to hold more reagents."
-	icon = 'templatestation/icons/obj/janitor.dmi'
+	icon = 'toolbeltstation/icons/obj/janitor.dmi'
 	icon_state = "bluespace"
 	item_state = "bluespace"
-	lefthand_file = 'templatestation/icons/mob/inhands/equipment/custodial_lefthand.dmi'
-	righthand_file = 'templatestation/icons/mob/inhands/equipment/custodial_righthand.dmi'
+	lefthand_file = 'toolbeltstation/icons/mob/inhands/equipment/custodial_lefthand.dmi'
+	righthand_file = 'toolbeltstation/icons/mob/inhands/equipment/custodial_righthand.dmi'
 	volume = 300
 	possible_transfer_amounts = list(5,10,15,20,25,30,50,100,150,300)

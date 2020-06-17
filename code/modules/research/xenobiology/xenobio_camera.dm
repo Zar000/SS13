@@ -70,7 +70,7 @@
 
 /obj/machinery/computer/camera_advanced/xenobio/GrantActions(mob/living/user)
 	..()
-	// TEMPLATESTATION CHANGES - removed need for cit xenobio upgrades to get console things
+	// toolbeltstation CHANGES - removed need for cit xenobio upgrades to get console things
 	if(slime_up_action) 
 		slime_up_action.target = src
 		slime_up_action.Grant(user)
@@ -107,7 +107,7 @@
 	if(deleted in stored_slimes)
 		stored_slimes -= deleted
 
-/obj/machinery/computer/camera_advanced/xenobio/attackby(obj/item/O, mob/user, params) // TEMPLATESTATION CHANGES - no longer need upgrades for monkey / slime potion related things
+/obj/machinery/computer/camera_advanced/xenobio/attackby(obj/item/O, mob/user, params) // toolbeltstation CHANGES - no longer need upgrades for monkey / slime potion related things
 	if(istype(O, /obj/item/reagent_containers/food/snacks/monkeycube)) 
 		monkeys++
 		to_chat(user, "<span class='notice'>You feed [O] to [src]. It now has [monkeys] monkey cubes stored.</span>")
