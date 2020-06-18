@@ -22,7 +22,7 @@
 	if(forumurl)
 		if(alert("This will open in your browser. Are you sure?",,"Yes","No")!="Yes")
 			return
-		src << link("https://discord.gg/erQcBfg")
+		src << link("https://discord.gg/bndjfWR")
 	else
 		to_chat(src, "<span class='danger'>The forum URL is not set in the server configuration.</span>")
 	return
