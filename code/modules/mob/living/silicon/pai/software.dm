@@ -1,7 +1,6 @@
 // TODO:
 //	- Additional radio modules
 //	- Potentially roll HUDs and Records into one
-//	- Shock collar/lock system for prisoner pAIs?
 //  - Put cable in user's hand instead of on the ground
 //  - Camera jack
 

@@ -23,8 +23,7 @@
 									 "Ok, now, this is epic.",
 									 "HUMAN FUNNY.",
 									 "But I'm already tracer!",
-									 "How do I vore people?",
-									 "ERP?",
+									 "Despite making up 13% of the station crew...",
 									 "Not epic bros...")
 
 

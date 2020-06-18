@@ -20,7 +20,7 @@
 			if(INTENT_DISARM)
 				visible_message("<span class='notice'>[src] shoos away [A].</span>", "<span class='notice'>You shoo away [A].</span>")
 			if(INTENT_GRAB)
-				visible_message("<span class='notice'>[src] beckons [A] to come.</span>", "<span class='notice'>You beckon [A] to come.</span>") //This sounds lewder than it actually is. Fuck.
+				visible_message("<span class='notice'>[src] beckons [A] to come.</span>", "<span class='notice'>You beckon [A] to come closer.</span>") //This sounds lewder than it actually is. Fuck.
 			if(INTENT_HARM)
 				visible_message("<span class='notice'>[src] shakes [p_their()] fist at [A].</span>", "<span class='notice'>You shake your fist at [A].</span>")
 		return TRUE

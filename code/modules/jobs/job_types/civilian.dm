@@ -35,7 +35,7 @@ Clown
 		/obj/item/reagent_containers/spray/waterflower = 1,
 		/obj/item/reagent_containers/food/snacks/grown/banana = 1,
 		/obj/item/instrument/bikehorn = 1,
-		/obj/item/reagent_containers/spray/clown = 1, // template station change, honk!
+		/obj/item/reagent_containers/spray/clown = 1, // toolbeltstation change, honk!
 		)
 
 	implants = list(/obj/item/implant/sad_trombone)

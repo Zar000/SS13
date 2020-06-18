@@ -50,4 +50,3 @@
 			else
 				target.LAssailant = user
 			last_hit = world.time
-			user.adjustStaminaLossBuffered(getweight())//CIT CHANGE - makes swinging batons cost stamina

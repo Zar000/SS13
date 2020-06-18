@@ -1745,7 +1745,7 @@ datum/uplink_item/stealthy_weapons/taeclowndo_shoes
 	cost = 20
 	restricted_roles = list("Clown")
 
-/datum/uplink_item/role_restricted/clownspray // TEMPLATE station addition
+/datum/uplink_item/role_restricted/clownspray // toolbeltstation addition
 	name = "Floor-Be-Lubed DELUXE"
 	desc = "The most classic clown-patented prank is lubricating the hallways, however this is hard without the help of a nice chemist. \
 			The folks over at Enderly Industries have figured out a way to solve this problem - The Floor-Be-Lubed DELUXE! \

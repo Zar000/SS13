@@ -131,9 +131,14 @@
 	desc = "A small bottle. Contains a trace amount of a substance found by scientists that can be used to create extremely advanced diseases once exposed to uranium."
 	list_reagents = list("viralbase" = 1)
 
-/obj/item/reagent_containers/glass/beaker/update_icon()
+/obj/item/reagent_containers/glass/beaker/update_icon() 
 	if(!cached_icon)
-		cached_icon = icon_state
+	// toolbeltstation CHANGES BEGIN
+		if(!fillstate || fillstate == null) // idk if !fillstate handles fillstate being null but just to be safe
+			cached_icon = icon_state
+		else
+			cached_icon = fillstate 
+	//toolbeltstation CHANGES END
 	cut_overlays()
 
 	if(reagents.total_volume)
@@ -161,13 +166,13 @@
 
 /obj/item/reagent_containers/glass/beaker/jar
 	name = "honey jar"
-	desc = "A jar for honey. It can hold up to 50 units of sweet delight. Unable to withstand reagents of an extreme pH."
+	desc = "A jar for honey. It can hold up to 50 units of sweet delight."
 	icon = 'icons/obj/chemical.dmi'
 	icon_state = "vapour"
 
 /obj/item/reagent_containers/glass/beaker/large
 	name = "large beaker"
-	desc = "A large beaker. Can hold up to 100 units. Unable to withstand reagents of an extreme pH."
+	desc = "A large beaker. Can hold up to 100 units."
 	icon_state = "beakerlarge"
 	materials = list(MAT_GLASS=2500)
 	volume = 100
@@ -177,26 +182,22 @@
 
 /obj/item/reagent_containers/glass/beaker/plastic
 	name = "x-large beaker"
-	desc = "An extra-large beaker. Can hold up to 150 units. Is able to resist acid and alkaline solutions, but melts at 444K"
+	desc = "An extra-large beaker. Can hold up to 150 units."
 	icon_state = "beakerwhite"
 	materials = list(MAT_GLASS=2500, MAT_PLASTIC=3000)
 	volume = 150
 	amount_per_transfer_from_this = 10
 	possible_transfer_amounts = list(5,10,15,20,25,30,50,100,150)
+	fillstate = "beakerlarge" // toolbeltstation change
 
 /obj/item/reagent_containers/glass/beaker/plastic/Initialize()
 	beaker_weakness_bitflag &= ~PH_WEAK
 	beaker_weakness_bitflag |= TEMP_WEAK
 	. = ..()
 
-/obj/item/reagent_containers/glass/beaker/plastic/update_icon()
-	icon_state = "beakerlarge" // hack to lets us reuse the large beaker reagent fill states
-	..()
-	icon_state = "beakerwhite"
-
 /obj/item/reagent_containers/glass/beaker/meta
 	name = "metamaterial beaker"
-	desc = "A large beaker. Can hold up to 200 units. Is able to withstand all chemical situations."
+	desc = "A large beaker. Can hold up to 200 units."
 	icon_state = "beakergold"
 	materials = list(MAT_GLASS=2500, MAT_PLASTIC=3000, MAT_GOLD=1000, MAT_TITANIUM=1000)
 	volume = 200
@@ -227,7 +228,7 @@
 	name = "bluespace beaker"
 	desc = "A bluespace beaker, powered by experimental bluespace technology \
 		and Element Cuban combined with the Compound Pete. Can hold up to \
-		300 units. Unable to withstand reagents of an extreme pH."
+		300 units."
 	icon_state = "beakerbluespace"
 	materials = list(MAT_GLASS=3000)
 	volume = 300
