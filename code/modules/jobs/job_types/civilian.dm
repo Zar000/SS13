@@ -146,7 +146,8 @@ Curator
 	backpack_contents = list(
 		/obj/item/melee/curator_whip = 1,
 		/obj/item/soapstone = 1,
-		/obj/item/barcodescanner = 1
+		/obj/item/barcodescanner = 1,
+		/obj/item/herobeacon = 1
 	)
 
 

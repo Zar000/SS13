@@ -369,3 +369,9 @@
 	desc = "This one is rusted."
 	force = 30
 	armour_penetration = 15
+
+/obj/item/claymore/weak/ceremonial
+	desc = "A trusty blade used by ancient scottish clans passed down the ages as a symbol of defiance"
+	force = 15
+	block_chance = 30
+	armour_penetration = 5
