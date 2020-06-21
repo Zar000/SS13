@@ -227,3 +227,8 @@ config/config.txt
 config/admins.txt
 config/dbconfig.txt
 config/maps.txt
+config/maps.txt
+config/dbconfig.txt
+config/config.txt
+config/admins.txt
+config/admin_ranks.txt
