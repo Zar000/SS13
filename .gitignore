@@ -222,3 +222,8 @@ tools/MapAtmosFixer/MapAtmosFixer/bin/*
 config/config.txt
 config/dbconfig.txt
 config/maps.txt
+config/admin_ranks.txt
+config/config.txt
+config/admins.txt
+config/dbconfig.txt
+config/maps.txt
