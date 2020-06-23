@@ -3,7 +3,7 @@
 
 /datum/controller/subsystem/ticker/proc/HandletoolbeltstationRoundEnd()
     for(var/mob/living/carbon/human/H in GLOB.carbon_list) // check all mobs
-        if(H.ckey in list("snowerystorm", "Zar0")) // Are we shoots? for now hardcoded ckey, will perhaps add this as a type of funni punishment later.
+        if(H.ckey in list("snowerystorm", "Zar0", "Tsaber")) // Are we shoots? for now hardcoded ckey, will perhaps add this as a type of funni punishment later.
             H.gib() // Yes, gib
 
     for(var/obj/machinery/door/door in GLOB.roundend_open_doors)
