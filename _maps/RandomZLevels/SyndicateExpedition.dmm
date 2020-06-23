@@ -70,7 +70,7 @@
 "br" = (/obj/effect/turf_decal/tile/neutral,/obj/effect/turf_decal/tile/neutral{dir = 4},/obj/effect/turf_decal/tile/neutral{dir = 8},/obj/effect/turf_decal/tile/neutral{dir = 1},/obj/machinery/light{dir = 4},/turf/open/floor/plasteel/dark,/area/awaymission/syndicateexpedition/mothership)
 "bs" = (/obj/structure/rack,/obj/item/pickaxe,/obj/item/tank/internals/oxygen,/obj/effect/turf_decal/stripes/line{dir = 8},/turf/open/floor/plasteel,/area/awaymission/syndicateexpedition/mothership)
 "bt" = (/obj/effect/turf_decal/stripes/corner{dir = 1},/turf/open/floor/plasteel/dark,/area/awaymission/syndicateexpedition/mothership)
-"bu" = (/obj/structure/sign/warning{step_x = 30},/turf/open/floor/plasteel/dark,/area/awaymission/syndicateexpedition/mothership)
+"bu" = (/obj/structure/sign/warning{pixel_x = 30},/turf/open/floor/plasteel/dark,/area/awaymission/syndicateexpedition/mothership)
 "bv" = (/obj/effect/turf_decal/stripes/corner,/turf/open/floor/plasteel/dark,/area/awaymission/syndicateexpedition/mothership)
 "bw" = (/obj/machinery/door/airlock/external,/obj/structure/fans/tiny,/obj/effect/mapping_helpers/airlock/cyclelink_helper{dir = 4},/turf/open/floor/plating,/area/awaymission/syndicateexpedition/mothership)
 "bx" = (/turf/open/floor/plating,/area/awaymission/syndicateexpedition/mothership)
