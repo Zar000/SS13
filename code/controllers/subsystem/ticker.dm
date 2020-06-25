@@ -506,8 +506,6 @@ SUBSYSTEM_DEF(ticker)
 	queued_players = SSticker.queued_players
 	maprotatechecked = SSticker.maprotatechecked
 
-	modevoted = SSticker.modevoted
-
 	switch (current_state)
 		if(GAME_STATE_SETTING_UP)
 			Master.SetRunLevel(RUNLEVEL_SETUP)
