@@ -53,3 +53,5 @@
 				CB.Invoke()
 
 	log_message("Client [key_name(src)] has taken ownership of mob [src]([src.type])", LOG_OWNERSHIP)
+
+	toolbelt_on_mob_login() //toolbelt station change
