@@ -500,7 +500,7 @@ GLOBAL_LIST_EMPTY(external_rsc_urls)
 
 				log_access("Failed Login: [key] - New account attempting to connect during panic bunker")
 				message_admins("<span class='adminnotice'>Failed Login: [key] - New account attempting to connect without being whitelisted!</span>")
-				to_chat(src, "<span class='notice'>You must first join the Discord to verify your account before joining this server.<br>To do so, join the Discord server linked below and bug the admins about it.<br> <a href='https://discord.gg/bndjfWR'>https://discord.gg/bndjfWR</a></span>") //CIT CHANGE - makes the panic bunker disconnect message point to the discord 
+				to_chat(src, "<span class='notice'>You must first join the Discord to verify your account before joining this server.<br>To do so, join the Discord server linked below and bug the admins about it.<br> <a href='https://discord.gg/XMMegTV'>https://discord.gg/XMMegTV</a></span>") //CIT CHANGE - makes the panic bunker disconnect message point to the discord 
 				var/list/connectiontopic_a = params2list(connectiontopic)
 				var/list/panic_addr = CONFIG_GET(string/panic_server_address)
 				if(panic_addr && !connectiontopic_a["redirect"])
