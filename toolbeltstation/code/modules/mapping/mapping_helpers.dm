@@ -1,5 +1,6 @@
 // Makes doors open by themselves on round end.
 // This works for all doors, airlocks, blastdoors and shutters alike.
+// Probably super hacky, but who cares right?
 /obj/effect/mapping_helpers/door
 	name = "generic door map helper"
 	icon = 'toolbeltstation/icons/effects/mapping_helpers.dmi'
