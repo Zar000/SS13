@@ -225,6 +225,5 @@ tools/travis/travis_config.txt
 config/maps.txt
 config/game_options.txt
 config/dbconfig.txt
-config/config.txt
 config/admins.txt
 config/admin_ranks.txt
