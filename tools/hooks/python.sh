@@ -18,4 +18,4 @@ print(os.pathsep)
 EOF
 )
 export PYTHONPATH=tools/mapmerge2/${PATHSEP}${PYTHONPATH}
-exec $PY "$@
+exec $PY "$@"
