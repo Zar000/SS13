@@ -119,6 +119,7 @@
 			if(M.confused < power)
 				var/diff = power * CONFUSION_STACK_MAX_MULTIPLIER - M.confused
 				M.confused += min(power, diff)
+				M.Knockdown(60)
 			if(user)
 				terrible_conversion_proc(M, user)
 				visible_message("<span class='disarm'>[user] blinds [M] with the flash!</span>")
@@ -139,6 +140,7 @@
 		if(M.flash_act())
 			var/diff = power * CONFUSION_STACK_MAX_MULTIPLIER - M.confused
 			M.confused += min(power, diff)
+	
 
 /obj/item/assembly/flash/attack(mob/living/M, mob/user)
 	if(!try_use_flash(user))
