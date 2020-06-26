@@ -221,3 +221,10 @@ tools/MapAtmosFixer/MapAtmosFixer/bin/*
 !/config/title_screens/images/exclude
 config
 tools
+tools/travis/travis_config.txt
+config/maps.txt
+config/game_options.txt
+config/dbconfig.txt
+config/config.txt
+config/admins.txt
+config/admin_ranks.txt
