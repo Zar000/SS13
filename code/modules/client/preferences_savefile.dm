@@ -117,6 +117,9 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	S["widescreenpref"]		>> widescreenpref
 	S["autostand"]			>> autostand
 
+	// toolbelt station code
+	S["rules_prompted"]		>> rules_prompted
+
 	//try to fix any outdated data if necessfary
 	if(needs_update >= 0)
 		update_preferences(needs_update, S)		//needs_update = savefile_version if we need an update (positive integer)
@@ -209,6 +212,9 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	WRITE_FILE(S["damagescreenshake"], damagescreenshake)
 	WRITE_FILE(S["widescreenpref"], widescreenpref)
 	WRITE_FILE(S["autostand"], autostand)
+
+	// toolbelt station code
+	WRITE_FILE(S["rules_prompted"], rules_prompted)
 
 	return 1
 
