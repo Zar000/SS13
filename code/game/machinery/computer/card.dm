@@ -19,6 +19,7 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 	var/list/region_access = null
 	var/list/head_subordinates = null
 	var/target_dept = 0 //Which department this computer has access to. 0=all departments
+	// 0=All 1=Service 2=Security 3=Medical 4=Science 5=Engineering 6=Cargo
 
 	//Cooldown for closing positions in seconds
 	//if set to -1: No cooldown... probably a bad idea
@@ -640,6 +641,6 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 
 /obj/machinery/computer/card/minor/qm
 	target_dept = 6
-	icon_screen = "idce"
+	icon_screen = "idce" //Im using the CE one cause idk how to overlay : )
 
 	light_color = LIGHT_COLOR_YELLOW
