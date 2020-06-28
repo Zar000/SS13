@@ -217,8 +217,8 @@ tools/MapAtmosFixer/MapAtmosFixer/bin/*
 !/config/jukebox_music/sounds/exclude
 /config/title_music/sounds/*
 !/config/title_music/sounds/exclude
-/config/title_screens/images/*
-!/config/title_screens/images/exclude
+#/config/title_screens/images/*
+#!/config/title_screens/images/exclude
 tools/travis/travis_config.txt
 config/maps.txt
 config/game_options.txt
