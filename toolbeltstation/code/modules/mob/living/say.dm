@@ -12,9 +12,3 @@
 		if(S in GLOB.dead_mob_list)
 			var/link = FOLLOW_LINK(S, src)
 			to_chat(S, "[link] [rendered]")
-/*
-/mob/living/carbon/alien/humanoid/royal/queen/alien_talk(message, shown_name = name)
-	shown_name = "<FONT size = 3>[shown_name]</FONT>"
-	..(message, shown_name)
-
-*/
