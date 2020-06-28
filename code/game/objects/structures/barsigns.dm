@@ -302,7 +302,7 @@
 /datum/barsign/meow_mix
 	name = "Meow Mix"
 	icon = "meow_mix"
-	desc = "No, we don't serve catnip, officer!"
+	desc = "No, we don't serve moonsugar, officer!"
 
 /datum/barsign/goose
 	name = "The Loose Goose"

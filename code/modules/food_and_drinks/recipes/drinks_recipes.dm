@@ -861,7 +861,7 @@
 	name = "Malibu Sunset"
 	id = "malibu_sunset"
 	results = list("malibu_sunset" = 5)
-	required_reagents = list("creme_de_coconut" = 1, "pineapplejuice" = 1, "grenadine" = 1, "orangejuice" = 1, "ice" = 1)
+	required_reagents = list("creme_de_coconut" = 1, "pineapplejuice" = 1, "grenadine" = 1, "limejuice" = 1, "ice" = 1)
 
 /datum/chemical_reaction/liz_fizz
 	name = "Liz Fizz"
