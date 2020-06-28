@@ -6,7 +6,7 @@
 /obj/item/implant/hivemind/implant(mob/living/target, mob/user, silent = FALSE)
     if(..())
         if(target.stat != DEAD && !silent)
-            to_chat(target, "<span class='notice'>Your mind is invaded by a foreign presence! You are now part of the hivemind. Use 'v' to communicate using it.</span>")
+            to_chat(target, "<span class='notice'>Your mind is invaded by a foreign presence! You are now part of the hivemind. Use 'v' to communicate using it.</span><span class='warning'> This does NOT mean you are an antagonist if you weren't one previously.</span>")
             return TRUE
     return FALSE
 
