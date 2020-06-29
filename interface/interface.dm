@@ -15,14 +15,14 @@
 	return
 
 /client/verb/forum()
-	set name = "Discord"
+	set name = "forum"
 	set desc = "Visit the discord."
 	set hidden = 1
 	var/forumurl = CONFIG_GET(string/forumurl)
 	if(forumurl)
 		if(alert("This will open in your browser. Are you sure?",,"Yes","No")!="Yes")
 			return
-		src << link("https://discord.gg/XMMegTV")
+		src << link(forumurl)
 	else
 		to_chat(src, "<span class='danger'>The forum URL is not set in the server configuration.</span>")
 	return
