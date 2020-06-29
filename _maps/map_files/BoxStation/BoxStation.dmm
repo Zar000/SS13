@@ -39517,6 +39517,7 @@
 	},
 /obj/item/analyzer,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/item/pipe_dispenser,
 /turf/open/floor/plasteel/white,
 /area/science/mixing)
 "bKN" = (
