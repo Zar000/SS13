@@ -34697,14 +34697,15 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/qm)
 "bAx" = (
-/obj/machinery/holopad,
 /obj/effect/turf_decal/tile/brown{
 	dir = 1
 	},
 /obj/effect/turf_decal/tile/brown{
 	dir = 4
 	},
-/obj/item/twohanded/required/kirbyplants/random,
+/obj/machinery/computer/card/minor/qm{
+	dir = 2
+	},
 /turf/open/floor/plasteel,
 /area/quartermaster/qm)
 "bAy" = (
@@ -35399,6 +35400,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/machinery/holopad,
 /turf/open/floor/plasteel,
 /area/quartermaster/qm)
 "bBS" = (
@@ -35998,7 +36000,6 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/qm)
 "bDb" = (
-/obj/structure/filingcabinet,
 /obj/machinery/light_switch{
 	pixel_y = -25
 	},
@@ -36012,6 +36013,7 @@
 /obj/effect/turf_decal/tile/brown{
 	dir = 8
 	},
+/obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/plasteel,
 /area/quartermaster/qm)
 "bDc" = (
