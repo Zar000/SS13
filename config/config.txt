@@ -236,7 +236,7 @@ CHECK_RANDOMIZER
 # SERVER ss13.example.com:2506
 
 ## forum address
-# FORUMURL http://discord.gg/XMMegTV
+FORUMURL http://discord.gg/XMMegTV
 
 ## Wiki address
 # WIKIURL http://www.tgstation13.org/wiki
@@ -245,7 +245,7 @@ CHECK_RANDOMIZER
 # RULESURL
 
 ## Github address
-#GITHUBURL https://github.com/Toolbelt-station/SS13
+GITHUBURL https://github.com/Toolbelt-station/SS13
 
 ## Round specific stats address
 ## Link to round specific parsed logs; IE statbus. It is appended with the RoundID automatically by ticker/Reboot()
