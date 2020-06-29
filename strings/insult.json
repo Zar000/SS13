@@ -23,7 +23,7 @@
 		"whack",
 		"beat",
 		"tackle",
-		"destroy",
+		"destroy"
     ],
 
     "verbs_touch": [

@@ -1,25 +1,174 @@
-"a" = (/turf/template_noop,/area/template_noop)
-"b" = (/turf/closed/mineral,/area/lavaland/surface/outdoors)
-"c" = (/turf/open/floor/plating/asteroid/basalt/lava_land_surface,/area/lavaland/surface/outdoors)
-"d" = (/obj/structure/lattice,/turf/open/floor/plating/asteroid/basalt/lava_land_surface,/area/lavaland/surface/outdoors)
-"e" = (/obj/effect/decal/cleanable/dirt,/turf/open/floor/wood,/area/lavaland/surface/outdoors)
-"f" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/glass,/mob/living/simple_animal/hostile/tree,/turf/open/floor/wood,/area/lavaland/surface/outdoors)
-"g" = (/obj/effect/decal/cleanable/blood,/obj/effect/decal/cleanable/dirt,/turf/open/floor/wood,/area/lavaland/surface/outdoors)
-"h" = (/obj/structure/lattice,/obj/effect/mob_spawn/human/corpse/damaged,/turf/open/floor/plating/asteroid/basalt/lava_land_surface,/area/lavaland/surface/outdoors)
-"i" = (/obj/effect/mob_spawn/human/corpse/damaged,/turf/open/floor/plating/asteroid/basalt/lava_land_surface,/area/lavaland/surface/outdoors)
-"j" = (/obj/item/a_gift/anything,/obj/effect/decal/cleanable/dirt,/turf/open/floor/wood,/area/lavaland/surface/outdoors)
-"k" = (/obj/structure/lattice,/obj/effect/decal/remains/human,/turf/open/floor/plating/asteroid/basalt/lava_land_surface,/area/lavaland/surface/outdoors)
-"l" = (/obj/effect/decal/cleanable/dirt,/obj/effect/decal/cleanable/generic,/turf/open/floor/wood,/area/lavaland/surface/outdoors)
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/template_noop,
+/area/template_noop)
+"b" = (
+/turf/closed/mineral,
+/area/lavaland/surface/outdoors)
+"c" = (
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/lavaland/surface/outdoors)
+"d" = (
+/obj/structure/lattice,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/lavaland/surface/outdoors)
+"e" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/lavaland/surface/outdoors)
+"f" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/glass,
+/mob/living/simple_animal/hostile/tree,
+/turf/open/floor/wood,
+/area/lavaland/surface/outdoors)
+"g" = (
+/obj/effect/decal/cleanable/blood,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/lavaland/surface/outdoors)
+"h" = (
+/obj/structure/lattice,
+/obj/effect/mob_spawn/human/corpse/damaged,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/lavaland/surface/outdoors)
+"i" = (
+/obj/effect/mob_spawn/human/corpse/damaged,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/lavaland/surface/outdoors)
+"j" = (
+/obj/item/a_gift/anything,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/wood,
+/area/lavaland/surface/outdoors)
+"k" = (
+/obj/structure/lattice,
+/obj/effect/decal/remains/human,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/lavaland/surface/outdoors)
+"l" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/wood,
+/area/lavaland/surface/outdoors)
 
 (1,1,1) = {"
-aabbbbbaaa
-bbbcccbbaa
-bcccdccbbb
-bcdefghccb
-bcigjkedcb
-bbcheldccb
-abccdccbbb
-abbcccbbaa
-aabbbbbaaa
-aaaaaaaaaa
+a
+b
+b
+b
+b
+b
+a
+a
+a
+a
+"}
+(2,1,1) = {"
+a
+b
+c
+c
+c
+b
+b
+b
+a
+a
+"}
+(3,1,1) = {"
+b
+b
+c
+d
+i
+c
+c
+b
+b
+a
+"}
+(4,1,1) = {"
+b
+c
+c
+e
+g
+h
+c
+c
+b
+a
+"}
+(5,1,1) = {"
+b
+c
+d
+f
+j
+e
+d
+c
+b
+a
+"}
+(6,1,1) = {"
+b
+c
+c
+g
+k
+l
+c
+c
+b
+a
+"}
+(7,1,1) = {"
+b
+b
+c
+h
+e
+d
+c
+b
+b
+a
+"}
+(8,1,1) = {"
+a
+b
+b
+c
+d
+c
+b
+b
+a
+a
+"}
+(9,1,1) = {"
+a
+a
+b
+c
+c
+c
+b
+a
+a
+a
+"}
+(10,1,1) = {"
+a
+a
+b
+b
+b
+b
+b
+a
+a
+a
 "}
