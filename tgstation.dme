@@ -3076,6 +3076,8 @@
 #include "toolbeltstation\code\modules\awaymissions\mission_code\syndicateexpedition.dm"
 #include "toolbeltstation\code\modules\mapping\mapping_helpers.dm"
 #include "toolbeltstation\code\modules\reagents\reagent_containers.dm"
+#include "toolbeltstation\code\modules\reagents\Blobology_reagents\Blobology_reagents.dm"
+#include "toolbeltstation\code\modules\reagents\Blobology_reagents\Blobology_recipies.dm"
 #include "toolbeltstation\code\modules\reagents\chemistry\machinery\scp_294.dm"
 #include "toolbeltstation\code\modules\reagents\reagent_containers\glass.dm"
 #include "toolbeltstation\code\modules\reagents\reagent_containers\spray.dm"
