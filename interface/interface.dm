@@ -15,31 +15,30 @@
 	return
 
 /client/verb/forum()
-	set name = "Discord"
+	set name = "forum"
 	set desc = "Visit the discord."
 	set hidden = 1
 	var/forumurl = CONFIG_GET(string/forumurl)
 	if(forumurl)
 		if(alert("This will open in your browser. Are you sure?",,"Yes","No")!="Yes")
 			return
-		src << link("https://discord.gg/bndjfWR")
+		src << link(forumurl)
 	else
 		to_chat(src, "<span class='danger'>The forum URL is not set in the server configuration.</span>")
 	return
 
-
-/client/verb/rules()
+//TOOLBELT EDIT - changes rules verb
+/client/verb/rules() // taken from toolbox station, mostly copy pasted here with slight edits
 	set name = "rules"
 	set desc = "Show Server Rules."
 	set hidden = 1
-	var/rulesurl = CONFIG_GET(string/rulesurl)
-	if(rulesurl)
-		if(alert("This will open the rules in your browser. Are you sure?",,"Yes","No")!="Yes")
-			return
-		src << link(rulesurl)
+	if (fexists("config/html/rules.html"))
+		src << browse(file("config/html/rules.html"), "window=rules;size=800x540")
 	else
-		to_chat(src, "<span class='danger'>The rules URL is not set in the server configuration.</span>")
+		to_chat(src, "<span class='danger'>No rules.html file present in server config. Notify the server administrators about this issue.</span>")
+		src << sound('sound/items/bikehorn.ogg')
 	return
+// TOOLBELT EDIT END
 
 /client/verb/github()
 	set name = "github"

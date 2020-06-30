@@ -2116,7 +2116,7 @@
 	id = "moonsugar"
 	description = "The primary precursor for an ancient feline delicacy known as skooma. While it has no notable effects on it's own, mixing it with morphine in a chilled container may yield interesting results."
 	color = "#FAEAFF"
-	taste_description = "synthetic catnip"
+	taste_description = "synthetic nyaa"
 
 /datum/reagent/moonsugar/on_mob_life(mob/living/carbon/M)
 	if(prob(20))

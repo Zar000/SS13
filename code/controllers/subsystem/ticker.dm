@@ -66,8 +66,6 @@ SUBSYSTEM_DEF(ticker)
 	var/mode_result = "undefined"
 	var/end_state = "undefined"
 
-	var/modevoted = FALSE					//Have we sent a vote for the gamemode?
-
 /datum/controller/subsystem/ticker/Initialize(timeofday)
 	load_mode()
 
@@ -176,8 +174,6 @@ SUBSYSTEM_DEF(ticker)
 			if(start_immediately)
 				timeLeft = 0
 
-			if(!modevoted)
-				send_gamemode_vote()
 			//countdown
 			if(timeLeft < 0)
 				return
@@ -473,13 +469,6 @@ SUBSYSTEM_DEF(ticker)
 /datum/controller/subsystem/ticker/proc/IsRoundInProgress()
 	return current_state == GAME_STATE_PLAYING
 
-/proc/send_gamemode_vote() //CIT CHANGE - adds roundstart gamemode votes
-	if(SSticker.current_state == GAME_STATE_PREGAME)
-		if(SSticker.timeLeft < 900)
-			SSticker.timeLeft = 900
-		SSticker.modevoted = TRUE
-		SSvote.initiate_vote("roundtype","server",TRUE)
-
 /datum/controller/subsystem/ticker/Recover()
 	current_state = SSticker.current_state
 	force_ending = SSticker.force_ending
@@ -516,8 +505,6 @@ SUBSYSTEM_DEF(ticker)
 	queue_delay = SSticker.queue_delay
 	queued_players = SSticker.queued_players
 	maprotatechecked = SSticker.maprotatechecked
-
-	modevoted = SSticker.modevoted
 
 	switch (current_state)
 		if(GAME_STATE_SETTING_UP)

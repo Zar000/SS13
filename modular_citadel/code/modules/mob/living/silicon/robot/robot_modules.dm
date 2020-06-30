@@ -225,7 +225,8 @@
 		return FALSE
 	switch(borg_icon)
 		if("Standard")
-			cyborg_base_icon = "standard"
+			cyborg_base_icon = "robot"
+			cyborg_icon_override = 'modular_citadel/icons/mob/robots.dmi'
 	return ..()
 
 /obj/item/robot_module/clown/be_transformed_to(obj/item/robot_module/old_module)

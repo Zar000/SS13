@@ -1471,7 +1471,25 @@
 		var/mob/dead/new_player/NP = new()
 		NP.ckey = M.ckey
 		qdel(M)
+// TOOLBELT EDIT START -- Force Open Rules for someone thing.
+	else if(href_list["forcerules"])
+		if(!check_rights(R_ADMIN))
+			return
 
+		var/mob/M = locate(href_list["forcerules"])
+		if(!M.client)
+			to_chat(usr, "<span class='warning'>[M] doesn't seem to have an active client.</span>")
+			return
+
+		if(alert(usr, "Force rules on [key_name(M)]?", "Message", "Yes", "No") != "Yes")
+			return
+
+		M.client.rules()
+		to_chat(M, "<span class='adminnotice'>The rules were forced on you!</span>")
+
+		log_admin("[key_name(usr)] has forced the rules on [key_name(M)]!")
+		message_admins("[key_name_admin(usr)] has forced the rules on [key_name_admin(M)]!")
+// TOOLBELT EDIT END
 	else if(href_list["tdome1"])
 		if(!check_rights(R_FUN))
 			return

@@ -1,14 +1,67 @@
-"a" = (/turf/template_noop,/area/template_noop)
-"b" = (/turf/closed/mineral,/area/lavaland/surface/outdoors)
-"c" = (/turf/open/floor/plating/asteroid/basalt/lava_land_surface,/area/lavaland/surface/outdoors)
-"d" = (/obj/item/circlegame,/turf/open/floor/plating/asteroid/basalt/lava_land_surface,/area/lavaland/surface/outdoors)
-"e" = (/obj/effect/mob_spawn/human/corpse/charredskeleton,/turf/open/floor/plating/asteroid/basalt/lava_land_surface,/area/lavaland/surface/outdoors)
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/template_noop,
+/area/template_noop)
+"b" = (
+/turf/closed/mineral,
+/area/lavaland/surface/outdoors)
+"c" = (
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/lavaland/surface/outdoors)
+"d" = (
+/obj/item/circlegame,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/lavaland/surface/outdoors)
+"e" = (
+/obj/effect/mob_spawn/human/corpse/charredskeleton,
+/turf/open/floor/plating/asteroid/basalt/lava_land_surface,
+/area/lavaland/surface/outdoors)
 
 (1,1,1) = {"
-abbbba
-bbbcba
-bcdcba
-bcecba
-bbcbba
-abbbaa
+a
+b
+b
+b
+b
+a
+"}
+(2,1,1) = {"
+b
+b
+c
+c
+b
+b
+"}
+(3,1,1) = {"
+b
+b
+d
+e
+c
+b
+"}
+(4,1,1) = {"
+b
+c
+c
+c
+b
+b
+"}
+(5,1,1) = {"
+b
+b
+b
+b
+b
+a
+"}
+(6,1,1) = {"
+a
+a
+a
+a
+a
+a
 "}

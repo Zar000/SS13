@@ -280,7 +280,7 @@ GLOBAL_VAR(restart_counter)
 
 	s += "<b>[station_name()]</b>";
 	s += " ("
-	s += "<a href=\"https://discord.gg/bndjfWR\">" //Change this to wherever you want the hub to link to. TOOLBELT CHANGE - changes to discord
+	s += "<a href=\"https://discord.gg/XMMegTV\">" //Change this to wherever you want the hub to link to. TOOLBELT CHANGE - changes to discord
 	s += "Discord"  //Replace this with something else. Or ever better, delete it and uncomment the game version. TOOLBELT CHANGE - changes to discord
 	s += "</a>"
 	s += ")\]" //CIT CHANGE - encloses the server title in brackets to make the hub entry fancier

@@ -19,6 +19,7 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 	var/list/region_access = null
 	var/list/head_subordinates = null
 	var/target_dept = 0 //Which department this computer has access to. 0=all departments
+	// 0=All 1=Service 2=Security 3=Medical 4=Science 5=Engineering 6=Cargo
 
 	//Cooldown for closing positions in seconds
 	//if set to -1: No cooldown... probably a bad idea
@@ -391,6 +392,9 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 						if((ACCESS_CE in scan.access) && ((target_dept==5) || !target_dept))
 							region_access |= 5
 							get_subordinates("Chief Engineer")
+						if((ACCESS_QM in scan.access) && ((target_dept==6) || !target_dept))   //Toolbelt station changes
+							region_access |= 6                                                 //
+							get_subordinates("Quartermaster")                                  //
 						if(region_access)
 							authenticated = 1
 			else if ((!( authenticated ) && issilicon(usr)) && (!modify))
@@ -610,7 +614,7 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 		typed_circuit.target_dept = target_dept
 	else
 		target_dept = typed_circuit.target_dept
-	var/list/dept_list = list("general","security","medical","science","engineering")
+	var/list/dept_list = list("general","security","medical","science","engineering","cargo")  //Toolbelt station change
 	name = "[dept_list[target_dept]] department console"
 
 /obj/machinery/computer/card/minor/hos
@@ -633,4 +637,10 @@ GLOBAL_VAR_INIT(time_last_changed_position, 0)
 	target_dept = 5
 	icon_screen = "idce"
 
+	light_color = LIGHT_COLOR_YELLOW
+
+/obj/machinery/computer/card/minor/qm                                              //Toolbelt station addition
+	target_dept = 6                                                                //
+	icon_screen = "idce" //Im using the CE one cause idk how to overlay : )        //
+   
 	light_color = LIGHT_COLOR_YELLOW
