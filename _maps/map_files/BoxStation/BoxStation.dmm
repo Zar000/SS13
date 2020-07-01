@@ -4074,11 +4074,6 @@
 /turf/open/floor/plasteel,
 /area/security/main)
 "aij" = (
-/obj/machinery/door/airlock/maintenance{
-	dir = 4;
-	name = "Security Maintenance";
-	req_access_txt = "1"
-	},
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -4087,6 +4082,10 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
+	},
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Security Maintenance";
+	req_access_txt = "1"
 	},
 /turf/open/floor/plating,
 /area/maintenance/fore/secondary)
@@ -7090,12 +7089,12 @@
 /turf/open/floor/plating,
 /area/security/processing)
 "aoG" = (
-/obj/machinery/door/airlock/maintenance{
-	name = "Security Maintenance";
-	req_access_txt = "2"
-	},
 /obj/structure/cable{
 	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Security Maintenance";
+	req_access_txt = "2"
 	},
 /turf/open/floor/plating,
 /area/maintenance/fore)
@@ -7882,7 +7881,10 @@
 /area/crew_quarters/fitness)
 "aqH" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Access";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/fore/secondary)
 "aqI" = (
@@ -8418,7 +8420,7 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "arQ" = (
-/obj/structure/door_assembly/door_assembly_mai,
+/obj/structure/door_assembly/door_assembly_mhatch,
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "arR" = (
@@ -8427,7 +8429,10 @@
 	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Access";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/fore/secondary)
 "arS" = (
@@ -8787,12 +8792,6 @@
 /area/maintenance/starboard/fore)
 "asQ" = (
 /obj/structure/table,
-/turf/open/floor/plating,
-/area/maintenance/starboard/fore)
-"asR" = (
-/obj/machinery/door/airlock/maintenance/abandoned{
-	req_access_txt = "12"
-	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "asS" = (
@@ -9359,7 +9358,10 @@
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "aum" = (
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "aun" = (
@@ -9703,7 +9705,10 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "auW" = (
@@ -9924,7 +9929,10 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "avw" = (
@@ -10324,16 +10332,12 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
-"awu" = (
-/obj/machinery/door/airlock/maintenance/abandoned{
-	dir = 4;
-	name = "Firefighting equipment";
-	req_access_txt = "12"
-	},
-/turf/open/floor/plating,
-/area/maintenance/port/fore)
 "awv" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "aww" = (
@@ -10601,7 +10605,10 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Access";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "axd" = (
@@ -10614,7 +10621,10 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Access";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "axe" = (
@@ -10661,8 +10671,8 @@
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness)
 "axk" = (
-/obj/machinery/door/airlock/maintenance{
-	dir = 4;
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Holodeck Maintenance";
 	req_access_txt = "12"
 	},
 /turf/open/floor/plating,
@@ -11203,7 +11213,10 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 9
 	},
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Access";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/fore/secondary)
 "ayC" = (
@@ -11375,11 +11388,11 @@
 /turf/closed/wall,
 /area/hydroponics/garden)
 "aze" = (
-/obj/machinery/door/airlock/maintenance{
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/door/airlock/maintenance_hatch{
 	name = "Garden Maintenance";
 	req_access_txt = "12"
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "azf" = (
@@ -11942,17 +11955,6 @@
 /obj/machinery/hydroponics/soil,
 /turf/open/floor/grass,
 /area/hydroponics/garden)
-"aAn" = (
-/obj/machinery/light{
-	dir = 1;
-	pixel_y = 16
-	},
-/obj/structure/sink{
-	pixel_y = 30
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/open/floor/plasteel,
-/area/hydroponics/garden)
 "aAo" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel,
@@ -12336,9 +12338,9 @@
 /turf/closed/wall,
 /area/security/checkpoint/auxiliary)
 "aBh" = (
-/obj/machinery/door/airlock/maintenance{
+/obj/machinery/door/airlock/maintenance_hatch{
 	name = "Security Maintenance";
-	req_access_txt = "1"
+	req_access_txt = "2"
 	},
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
@@ -12385,14 +12387,14 @@
 /turf/closed/wall,
 /area/storage/primary)
 "aBo" = (
-/obj/machinery/door/airlock/maintenance{
-	name = "Tool Storage Maintenance";
-	req_access_txt = "12"
-	},
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Tool Storage Maintenance";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "aBp" = (
@@ -13652,16 +13654,6 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
-"aDV" = (
-/obj/machinery/door/airlock/maintenance{
-	dir = 4;
-	req_access_txt = "12"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/maintenance/port/fore)
 "aDW" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -14896,11 +14888,11 @@
 /turf/closed/wall,
 /area/library)
 "aGy" = (
-/obj/machinery/door/airlock/maintenance{
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/machinery/door/airlock/maintenance_hatch{
 	name = "Library Maintenance";
 	req_access_txt = "12"
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "aGz" = (
@@ -14926,12 +14918,12 @@
 /turf/closed/wall,
 /area/chapel/office)
 "aGD" = (
-/obj/machinery/door/airlock/maintenance{
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/door/airlock/maintenance_hatch{
 	name = "Crematorium Maintenance";
 	req_access_txt = "27"
 	},
-/obj/structure/disposalpipe/segment,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "aGE" = (
@@ -16006,12 +15998,12 @@
 /turf/open/floor/plasteel/freezer,
 /area/crew_quarters/toilet)
 "aIY" = (
-/obj/machinery/door/airlock{
-	name = "Entertainment";
-	req_access_txt = "46"
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
+	},
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Entertainment Maintenance";
+	req_access_txt = "46"
 	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
@@ -16080,19 +16072,22 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Access";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "aJi" = (
 /turf/closed/wall,
 /area/crew_quarters/kitchen)
 "aJj" = (
-/obj/machinery/door/airlock/maintenance{
+/obj/structure/disposalpipe/segment,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/door/airlock/maintenance_hatch{
 	name = "Kitchen Maintenance";
 	req_access_txt = "28"
 	},
-/obj/structure/disposalpipe/segment,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "aJk" = (
@@ -16121,11 +16116,11 @@
 /area/hydroponics)
 "aJn" = (
 /obj/structure/disposalpipe/segment,
-/obj/machinery/door/airlock/maintenance{
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/machinery/door/airlock/maintenance_hatch{
 	name = "Hydroponics Maintenance";
 	req_access_txt = "35"
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
 "aJo" = (
@@ -17755,7 +17750,10 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Access";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/port)
 "aNu" = (
@@ -19106,7 +19104,10 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Access";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/port)
 "aQL" = (
@@ -20869,8 +20870,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/obj/machinery/door/airlock/maintenance{
-	dir = 4;
+/obj/machinery/door/airlock/maintenance_hatch{
 	name = "Chapel Maintenance";
 	req_access_txt = "12"
 	},
@@ -21918,8 +21918,8 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 1
 	},
-/obj/machinery/door/airlock/maintenance{
-	name = "Cargo Bay Warehouse Maintenance";
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Warehouse Maintenance";
 	req_access_txt = "31"
 	},
 /turf/open/floor/plating,
@@ -23781,7 +23781,10 @@
 	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Access";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "bcn" = (
@@ -25673,7 +25676,10 @@
 /area/crew_quarters/bar)
 "bgU" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "bgV" = (
@@ -26515,7 +26521,9 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/structure/disposalpipe/segment,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Toxins Maintenance"
+	},
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "biD" = (
@@ -26802,9 +26810,8 @@
 /turf/open/floor/plasteel,
 /area/crew_quarters/bar)
 "bjq" = (
-/obj/machinery/door/airlock/maintenance{
-	dir = 4;
-	name = "Detective Maintenance";
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Detective's Office Maintenance";
 	req_access_txt = "4"
 	},
 /turf/open/floor/plating,
@@ -27435,13 +27442,12 @@
 /turf/open/floor/plating,
 /area/maintenance/disposal)
 "bkG" = (
-/obj/machinery/door/airlock/maintenance{
-	dir = 4;
-	name = "Disposal Access";
-	req_access_txt = "12"
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
+	},
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Disposals Access";
+	req_access_txt = "12"
 	},
 /turf/open/floor/plating,
 /area/maintenance/disposal)
@@ -28069,14 +28075,14 @@
 /turf/closed/wall,
 /area/quartermaster/storage)
 "bmh" = (
-/obj/machinery/door/airlock/maintenance{
-	name = "Cargo Bay Maintenance";
-	req_access_txt = "31"
-	},
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Cargo Bay Maintenance";
+	req_access_txt = "31"
+	},
 /turf/open/floor/plating,
 /area/maintenance/port)
 "bmi" = (
@@ -28224,12 +28230,12 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "bmx" = (
-/obj/machinery/door/airlock/maintenance{
-	dir = 4;
-	req_access_txt = "12"
-	},
 /obj/structure/cable{
 	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Access";
+	req_access_txt = "12"
 	},
 /turf/open/floor/plating,
 /area/maintenance/central)
@@ -29323,16 +29329,15 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/machinery/door/airlock/maintenance{
-	dir = 4;
-	name = "Morgue Maintenance";
-	req_access_txt = "6"
-	},
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
+	},
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Morgue Maintenance";
+	req_access_txt = "6"
 	},
 /turf/open/floor/plating,
 /area/medical/morgue)
@@ -32685,7 +32690,10 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Access";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/aft)
 "bwb" = (
@@ -33379,7 +33387,9 @@
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Toxins Maintenance"
+	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
 "bxH" = (
@@ -35121,7 +35131,10 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
 "bBr" = (
@@ -36773,13 +36786,13 @@
 /turf/open/floor/plating,
 /area/maintenance/starboard)
 "bEt" = (
-/obj/machinery/door/airlock/maintenance/abandoned{
-	dir = 4;
-	req_one_access_txt = "8;12"
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/structure/cable{
 	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
+	req_access_txt = "12"
 	},
 /turf/open/floor/plating,
 /area/maintenance/starboard)
@@ -36805,12 +36818,13 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/miningdock)
 "bEx" = (
-/obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12"
-	},
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable{
 	icon_state = "1-2"
+	},
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Access";
+	req_access_txt = "12"
 	},
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
@@ -36857,13 +36871,14 @@
 /turf/closed/wall,
 /area/maintenance/aft)
 "bEF" = (
-/obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12"
-	},
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
 /obj/structure/disposalpipe/segment,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Access";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/aft)
 "bEG" = (
@@ -37122,8 +37137,8 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/obj/machinery/door/airlock/maintenance{
-	dir = 4;
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Mining Maintenance";
 	req_access_txt = "12"
 	},
 /turf/open/floor/plating,
@@ -38400,8 +38415,8 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/miningdock)
 "bIk" = (
-/obj/machinery/door/airlock/maintenance/abandoned{
-	name = "Firefighting equipment";
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Access";
 	req_access_txt = "12"
 	},
 /turf/open/floor/plating,
@@ -38735,16 +38750,15 @@
 	},
 /area/maintenance/bar)
 "bIZ" = (
-/obj/machinery/door/airlock/maintenance{
-	dir = 4;
-	name = "Maint Bar Access";
-	req_access_txt = "12"
-	},
 /obj/structure/barricade/wooden{
 	name = "wooden barricade (CLOSED)"
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
+	},
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
+	req_access_txt = "12"
 	},
 /turf/open/floor/plating,
 /area/maintenance/bar)
@@ -40704,7 +40718,10 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Access";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "bNt" = (
@@ -40922,9 +40939,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/door/firedoor/heavy,
-/obj/machinery/door/airlock/maintenance{
+/obj/machinery/door/airlock/maintenance_hatch{
 	name = "Atmospherics Maintenance";
-	req_access_txt = "24"
+	req_access_txt = "12;24"
 	},
 /turf/open/floor/plating,
 /area/maintenance/aft)
@@ -40990,11 +41007,6 @@
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
 "bOh" = (
-/obj/machinery/door/airlock/maintenance{
-	dir = 4;
-	name = "Medbay Maintenance";
-	req_access_txt = "5"
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -41003,6 +41015,10 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
+	},
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Medbay Maintenance";
+	req_access_txt = "5"
 	},
 /turf/open/floor/plating,
 /area/maintenance/aft)
@@ -42674,14 +42690,16 @@
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "bSl" = (
-/obj/machinery/door/airlock/maintenance_hatch,
 /turf/open/floor/plating,
 /area/maintenance/bar)
 "bSm" = (
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "bSn" = (
@@ -44139,7 +44157,10 @@
 /obj/structure/barricade/wooden{
 	name = "wooden barricade (CLOSED)"
 	},
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "bVI" = (
@@ -44473,7 +44494,10 @@
 /area/maintenance/port/aft)
 "bWz" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
 "bWA" = (
@@ -46407,11 +46431,17 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Access";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "cbl" = (
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "cbm" = (
@@ -47191,16 +47221,6 @@
 	icon_state = "platingdmg3"
 	},
 /area/maintenance/starboard/aft)
-"cdl" = (
-/obj/machinery/door/airlock/maintenance/abandoned{
-	name = "Incinerator Access";
-	req_access_txt = "12"
-	},
-/obj/structure/barricade/wooden{
-	name = "wooden barricade (CLOSED)"
-	},
-/turf/open/floor/plating,
-/area/maintenance/port/aft)
 "cdm" = (
 /obj/machinery/atmospherics/components/unary/tank/air,
 /obj/effect/decal/cleanable/generic,
@@ -47766,18 +47786,27 @@
 	},
 /obj/structure/disposalpipe/segment,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Access";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "ceA" = (
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
 "ceB" = (
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "ceC" = (
@@ -47787,7 +47816,10 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
 "ceD" = (
@@ -47997,7 +48029,7 @@
 /turf/open/floor/plating,
 /area/maintenance/aft)
 "cfg" = (
-/obj/machinery/door/airlock/atmos/abandoned{
+/obj/machinery/door/airlock/maintenance_hatch{
 	name = "Atmospherics Maintenance";
 	req_access_txt = "12;24"
 	},
@@ -48192,7 +48224,10 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/obj/machinery/door/airlock/maintenance_hatch,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
 "cfA" = (
@@ -48202,7 +48237,8 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/door/airlock/maintenance_hatch{
-	req_access_txt = "10"
+	name = "Engineering Maintenance";
+	req_access_txt = "12;10"
 	},
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
@@ -48537,13 +48573,14 @@
 /area/maintenance/aft)
 "cgr" = (
 /obj/structure/disposalpipe/segment,
-/obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12"
-	},
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Access";
+	req_access_txt = "12"
+	},
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
 "cgs" = (
@@ -50625,6 +50662,9 @@
 	name = "Atmospherics";
 	req_access_txt = "24"
 	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/engine/atmos)
 "clC" = (
@@ -50681,6 +50721,9 @@
 	dir = 4;
 	name = "Atmospherics";
 	req_access_txt = "24"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
 	},
 /turf/open/floor/plating,
 /area/maintenance/disposal/incinerator)
@@ -52352,11 +52395,11 @@
 /turf/open/floor/plating,
 /area/maintenance/aft)
 "cpk" = (
-/obj/machinery/door/airlock/maintenance/abandoned{
-	name = "Biohazard Disposals";
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
 	req_access_txt = "12"
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plating,
 /area/maintenance/aft)
 "cpl" = (
@@ -58840,6 +58883,14 @@
 	dir = 1
 	},
 /area/engine/break_room)
+"dAV" = (
+/obj/machinery/hydroponics/soil,
+/obj/machinery/light{
+	dir = 1;
+	light_color = "#c1caff"
+	},
+/turf/open/floor/grass,
+/area/hydroponics/garden)
 "dJc" = (
 /obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/plasteel,
@@ -58857,6 +58908,21 @@
 /obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+"fcz" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Access";
+	req_access_txt = "12"
+	},
+/turf/open/floor/plating,
+/area/maintenance/fore)
+"flV" = (
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Access";
+	req_access_txt = "12"
+	},
+/turf/open/floor/plating,
+/area/maintenance/fore/secondary)
 "fns" = (
 /obj/machinery/light,
 /turf/open/floor/plasteel,
@@ -58923,6 +58989,13 @@
 /obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/plasteel/white,
 /area/medical/virology)
+"rUm" = (
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Maintenance Hatch";
+	req_access_txt = "12"
+	},
+/turf/open/floor/plating,
+/area/maintenance/port/fore)
 "tIS" = (
 /obj/item/twohanded/required/kirbyplants/random,
 /turf/open/floor/wood,
@@ -73963,7 +74036,7 @@ alz
 alz
 alz
 azc
-aAm
+dAV
 aAm
 aAm
 aEj
@@ -74220,7 +74293,7 @@ aug
 aug
 axN
 azd
-aAn
+aBi
 aBi
 aCE
 aCF
@@ -75505,7 +75578,7 @@ alz
 ave
 atZ
 azc
-aAm
+dAV
 aAm
 aAm
 aCF
@@ -76519,7 +76592,7 @@ aaa
 aaa
 alz
 alz
-anD
+rUm
 alz
 alz
 aoB
@@ -77044,7 +77117,7 @@ alz
 alz
 alz
 alz
-awu
+rUm
 alz
 ave
 aAv
@@ -77548,7 +77621,7 @@ aaa
 alz
 alz
 alz
-anD
+rUm
 alz
 aoB
 alz
@@ -78329,7 +78402,7 @@ alz
 atk
 atk
 ave
-aDV
+aAv
 alz
 aoE
 arY
@@ -79421,7 +79494,7 @@ bYE
 bZP
 cbe
 ccf
-cdl
+bVH
 bJI
 cbl
 bJI
@@ -85774,7 +85847,7 @@ amu
 amY
 anu
 aoa
-aqE
+fcz
 apy
 apy
 apy
@@ -92968,7 +93041,7 @@ ajd
 ajd
 ajd
 ajd
-apa
+flV
 ajd
 aoX
 apN
@@ -103258,7 +103331,7 @@ amI
 amI
 alt
 alt
-asR
+aum
 alt
 alt
 alt
