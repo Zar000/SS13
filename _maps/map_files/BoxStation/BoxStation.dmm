@@ -27442,13 +27442,12 @@
 /turf/open/floor/plating,
 /area/maintenance/disposal)
 "bkG" = (
-/obj/machinery/door/airlock/maintenance{
-	dir = 4;
-	name = "Disposal Access";
-	req_access_txt = "12"
-	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
+	},
+/obj/machinery/door/airlock/maintenance_hatch{
+	name = "Disposals Access";
+	req_access_txt = "12"
 	},
 /turf/open/floor/plating,
 /area/maintenance/disposal)
